@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+/* 
+.common-line-height{
+    height: 3px!important;
+}
+
+.panel-header{
+    background-color: #cce5fd;
+}
+
+.case-textarea{
+    font-size:14px!important;
+    font-family: MicroSoft YaHei!important; 
+    overflow-y:visible!important; 
+    resize: vertical!important;
+    padding: 0px 4px!important;
+}
+
+.case-common-td-class0{
+    text-align: right!important; 
+    width: 5%!important;
+    height: 40px!important;
+}
+.case-common-td-class1{
+    text-align: right!important; 
+    width: 12%!important;
+    height: 40px!important;
+}
+.case-common-td-class2{
+    text-align: left!important; 
+    width: 18%!important;
+    height: 40px!important;
+}
+.datebox-calendar-inner {
+    height: 180px;
+}
+.textbox-label{
+    width: auto;
+    overflow: visible;
+}
+.textbox-label-a label{
+    margin-right: 10px;
+}
+.textbox-label-a{
+    white-space: nowrap;
+}
+
+
+* research panel 閿熸枻鎷峰紡 *
+.case-common-panel-body{
+    height: auto !important;
+} */
+
+.case-common-td-class0{
+    text-align: right!important; 
+    width: 5%!important;
+    height: 40px!important;
+}
+.case-common-td-class1{
+    text-align: right!important; 
+    width: 20%!important;
+    height: 40px!important;
+}
+.case-common-td-class2{
+    text-align: left!important; 
+    width: 70%!important;
+    height: 40px!important;
+}
+.datebox-calendar-inner {
+    height: 180px;
+}
+.textbox-label{
+    width: auto;
+    overflow: visible;
+}
+.textbox-label-after{
+    margin-right: 10px;
+}
+#buttonDiv{
+    position:fixed; 
+    bottom:0;
+    background-color: #fff;
+    text-align: center; 
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.tagbox-label{
+    margin: 4px;
+}

@@ -1,0 +1,26 @@
+.picexplore_panel{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:0px;
+	overflow:hidden;
+	background-image:url(shadow.png);
+	z-index:1000000000000000000000;
+}
+.picexplore_img{
+	position:absolute;
+	left:0px;
+	top:0px;
+	cursor:url(grabhand.cur), move;
+	z-index:1000000000000000000001;
+}
+.picexplore_close_btn{
+	height:45px;
+	width:115px;
+	background-image:url(closeBtn.png);
+	z-index:10000000000000000000010;
+	position:fixed;
+	top:0px;
+	right:0px;
+	cursor:pointer;
+}

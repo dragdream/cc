@@ -1,0 +1,11 @@
+#smsFlash {
+  display: none;
+  visibility: visible;
+  cursor: pointer;
+  position: absolute;
+  left: 214px;
+  bottom: 0px;
+  z-index: 9999;
+  width: 65px;
+  height: 55px;
+}

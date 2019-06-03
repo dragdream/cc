@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="res/jquery.js"></script>
+<script src="popupmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="res/style.css" />
+<script>
+window.onload=function(){
+	$("#test").mousedown(function(){
+		$(this).popupEmbedMenu([{text:'分享邮件',title:'可分享邮件信息给精\n灵群中的所有人员',func:test},
+								{text:'创建并发流程',title:'可创建并发流程，这一点很重要哦',func:test},
+								{text:'自动获取附件',title:'获取附件不用你手动了~~~~',func:test},
+								{text:'多长的文字都可以兼容的啊！！！！！！',title:'兼容啊兼容！！！！！！！',func:test}]);		
+	});
+
+	$("#test1").mousedown(function(){
+		$(this).popupEmbedMenu([{text:'分享邮件',title:'可分享邮件信息给精\n灵群中的所有人员',func:test},
+								{text:'创建并发流程',title:'可创建并发流程，这一点很重要哦',func:test},
+								{text:'自动获取附件',title:'获取附件不用你手动了~~~~',func:test},
+								{text:'多长的文字都可以兼容的啊！！！！！！',title:'兼容啊兼容！！！！！！！',func:test}]);		
+	});
+}
+
+function test(obj){
+	alert(obj);
+}
+</script>
+</head>
+<body>
+<div id="test" style="background:red;float:left;left:500px;top:200px;position:absolute;">点这</div>
+<div id="test1" style="background:red;float:left;left:100px;top:200px;position:absolute;">点这</div>
+</body>
+</html>

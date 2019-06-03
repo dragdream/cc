@@ -1,0 +1,117 @@
+.modal-open {
+	overflow: hidden;
+}
+.modal-open.page-overflow .page-container {
+	-ms-overflow-y: scroll;
+}
+.modal-open.page-overflow .page-container .navbar-fixed-top {
+	-ms-overflow-y: scroll;
+}
+.modal-open.page-overflow .page-container .navbar-fixed-bottom {
+	-ms-overflow-y: scroll;
+}
+.modal-open.page-overflow .modal-scrollable {
+	-ms-overflow-y: scroll;
+}
+@media all and (max-width:979px)
+{
+.modal-open.page-overflow .page-container .navbar-fixed-top {
+	-ms-overflow-y: visible;
+}
+.modal-open.page-overflow .page-container .navbar-fixed-bottom {
+	-ms-overflow-y: visible;
+}
+}
+.modal-scrollable {
+	left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: auto; position: fixed;
+}
+.modal {
+	top: 50%; overflow: visible; margin-top: 0px; position: absolute;
+}
+.modal.fade {
+	transition:opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out; top: -100%; -webkit-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out; -moz-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out; -o-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;
+}
+.modal.fade.in {
+	top: 50%;
+}
+.modal-body {
+	overflow: visible; max-height: none;
+}
+.modal.modal-absolute {
+	position: absolute; z-index: 950;
+}
+.modal .loading-mask {
+	background: rgb(255, 255, 255); border-radius: 6px; left: 0px; top: 0px; right: 0px; bottom: 0px; position: absolute;
+}
+.modal-backdrop.modal-absolute {
+	position: absolute; z-index: 940;
+}
+.modal-backdrop {
+	background: rgb(255, 255, 255); opacity: 0.7;
+}
+.modal-backdrop.fade.in {
+	background: rgb(255, 255, 255); opacity: 0.7;
+}
+.modal.container {
+	width: 940px; margin-left: -470px;
+}
+.modal-overflow.modal {
+	top: 1%;
+}
+.modal-overflow.modal.fade {
+	top: -100%;
+}
+.modal-overflow.modal.fade.in {
+	top: 1%;
+}
+.modal-overflow .modal-body {
+	overflow: auto; -webkit-overflow-scrolling: touch;
+}
+@media all and (min-width:1200px)
+{
+.modal.container {
+	width: 1170px; margin-left: -585px;
+}
+}
+@media all and (max-width:800px)
+{
+.modal {
+	margin: 0px !important; padding: 0px !important; left: 1%; top: 1%; width: auto !important; height: auto !important; right: 1%; bottom: auto;
+}
+.modal.container {
+	margin: 0px !important; padding: 0px !important; left: 1%; top: 1%; width: auto !important; height: auto !important; right: 1%; bottom: auto;
+}
+.modal.modal-overflow {
+	margin: 0px !important; padding: 0px !important; left: 1%; top: 1%; width: auto !important; height: auto !important; right: 1%; bottom: auto;
+}
+.modal.fade.in {
+	top: 1%; bottom: auto;
+}
+.modal.container.fade.in {
+	top: 1%; bottom: auto;
+}
+.modal.modal-overflow.fade.in {
+	top: 1%; bottom: auto;
+}
+.modal-body {
+	margin: 0px; height: auto !important; overflow: visible !important; position: static; max-height: none !important;
+}
+.modal-overflow .modal-body {
+	margin: 0px; height: auto !important; overflow: visible !important; position: static; max-height: none !important;
+}
+.modal-footer {
+	position: static;
+}
+.modal-overflow .modal-footer {
+	position: static;
+}
+}
+.loading-spinner {
+	margin: -12px 0px 0px -12px; left: 50%; top: 50%; position: absolute;
+}
+.animated {
+	animation-duration: 1s; animation-fill-mode: both; -webkit-animation-duration: 1s; -moz-animation-duration: 1s; -o-animation-duration: 1s; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -o-animation-fill-mode: both;
+}
+.shake {
+	animation-name: shake; -webkit-animation-name: shake; -moz-animation-name: shake; -o-animation-name: shake;
+}

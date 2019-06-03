@@ -1,0 +1,74 @@
+.edit-table-div {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.edit-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px #aaa solid;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.edit-table th {
+    background: #D5D5D5;
+    height: 40px;
+    min-width: 50px;
+    border: 1px #aaa solid;
+}
+
+.edit-table tr td input {
+    height: 70%;
+    border: none;
+    text-align: center;
+}
+
+.edit-table tr td select {
+    width: 70%;
+    height: 70%;
+    border: none;
+}
+
+.edit-table tr td {
+    border: 1px #aaa solid;
+    height: 40px;
+    min-width: 50px;
+}
+
+.edit-table-add {
+    margin: 0;
+    text-align: center;
+    background-color: #EDF6FF;
+    height: 30px;
+    line-height: 30px;
+    border: 1px #aaa solid;
+    border-top: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#rp_btn {
+    position: fixed;
+    bottom: 0px;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    padding: 6px 30px 6px;
+    border-top: 1px #e6e9ed solid;
+    /* margin-right: 10px; */
+    /* margin: 0 auto; */
+}
+
+#rp_btn input {
+    width: 80px;
+    height: 28px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #3379b7;
+}

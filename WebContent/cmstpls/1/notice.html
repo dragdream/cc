@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)http://www.drame.cn/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>内网门户</title>
+<link href="<@Rootpath src="css/css.css" />" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="1003" border="0" align="center" cellspacing="0">
+  <tr>
+    <td width="267" align="center"><img src="<@Rootpath src="logo/logo1.jpg" />" width="247" height="90" /></td>
+    <td width="338" align="center" valign="bottom"><img src="<@Rootpath src="images/r1_c4.jpg" />" width="329" height="62" /></td>
+    <td width="392"><table width="380" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><img src="<@Rootpath src="images/menu_top_01.gif" />"  width="40" height="35" /></td>
+        <td class="font_14"><a href="#">网站首页<br />
+          INDEX</a></td>
+        <td><img src="<@Rootpath src="images/menu_top_03.gif" />"  width="40" height="35" /></td>
+        <td class="font_14"><a href="#">意见留言<br />
+          LIUYAN</a></td>
+        <td><img src="<@Rootpath src="images/menu_top_02.gif" />"  width="40" height="35" /></td>
+        <td class="font_14"><a href="#">OA系统<br />
+          OFFICE</a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="35"  background="<@Rootpath src="images/menu_bg_l.gif" />" ><table width="65%" border="0" align="center" cellspacing="0">
+      <tr>
+        <td><strong class="font_01" style="color:white">
+		<@Site>
+			<a href="<@Out name="REL_PATH" />">首页</a> |
+		</@Site>
+		<@Channels type="TOP">
+			 <a href="<@Out name="REL_PATH" />"><@Out name="chnlName" /></a> |
+		</@Channels>
+		
+		</strong></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<div style="width:1003px;height:300px;margin:0 auto;">
+<div style="width:30%;height:100%;float:left;">
+<@Channels type="CHILD">
+	 <a href="<@Out name="REL_PATH" />"><@Out name="chnlName" /></a><br/>
+</@Channels>
+</div>
+<div style="width:70%;height:100%;float:left;text-align:left;">
+<table width="1003" border="0" align="left" cellspacing="0">
+  <tr>
+    <td>
+		<@Documents pager="true"  chnlIds="nbgg">
+			<div style="text-align:left"><@Out name="docTitle" /></div>
+               </@Documents>
+               <div style="text-align:left;"> <@Pager currentClass="current" disabledClass="disabled"/></div>
+	</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<table width="1003" border="0" align="center" cellspacing="0" class="border3">
+  <tr>
+    <td height="25" align="center">关于我们 | 联系我们 | 网站声明 | 招聘信息 | 网站地图 | 友情连接</td>
+  </tr>
+</table>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="290" height="100" align="right"><img src="<@Rootpath src="logo/footlogo.gif" />" width="81" height="74" /></td>
+    <td width="423" align="center">Copyright &copy; 2006 - 2008 <a href=""><strong>TeneeOA</strong></a>，All   Rights Reserved<br />
+公司地址：北京市海淀区&nbsp;&nbsp;&nbsp;联系电话：010-88888888 66666666 <br />
+制作单位：TeneeOA网站群建设组&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备06008888号</a><br />
+1024x768环境下显示全屏</td>
+    <td width="290"><img src="<@Rootpath src="images/biaoshi.gif" />" width="40" height="48" /></td>
+  </tr>
+</table>
+</body>
+</html>

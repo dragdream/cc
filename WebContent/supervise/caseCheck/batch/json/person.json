@@ -1,0 +1,105 @@
+﻿{
+  "total": 10,
+  "rows": [
+    {
+      "name": "张三丰",
+      "caseType": 1,
+      "department": "深圳市司法局",
+      "sex": 0,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 0
+    },
+    {
+      "name": "李四",
+      "caseType": 2,
+      "department": "深圳市司法局",
+      "sex": 0,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 0
+    },
+    {
+      "name": "王五",
+      "caseType": 3,
+      "department": "深圳市司法局",
+      "sex": 0,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 0
+    },
+    {
+      "name": "赵六",
+      "caseType": 1,
+      "department": "深圳市司法局",
+      "sex": 0,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 0
+    },
+    {
+      "name": "孙尚香",
+      "caseType": 2,
+      "department": "深圳市司法局",
+      "sex": 1,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 1
+    },
+    {
+      "name": "赵本山",
+      "caseType": 3,
+      "department": "深圳市司法局",
+      "sex": 0,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 1
+    },
+    {
+      "name": "黄颖",
+      "caseType": 1,
+      "department": "深圳市司法局",
+      "sex": 1,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 1
+    },
+    {
+      "name": "黄颖",
+      "caseType": 1,
+      "department": "深圳市司法局",
+      "sex": 1,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 1
+    },
+    {
+      "name": "黄颖",
+      "caseType": 1,
+      "department": "深圳市司法局",
+      "sex": 1,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 1
+    },
+    {
+      "name": "黄超",
+      "caseType": 1,
+      "department": "深圳市司法局",
+      "sex": 0,
+      "IDCard": 42222222222222220,
+      "phoneNumber": 13112342345,
+      "checkTime": 10,
+      "isGroupLeader": 1
+    }
+  ]
+}

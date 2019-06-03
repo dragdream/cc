@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ScriptX组件打印</title>
+</head>
+<body>
+<!--这里调用控件ScriptX.cab-->
+<object id="factory" style="DISPLAY: none" viewastext classid="clsid:1663ed61-23eb-11d2-b92f-008048fdd814" codebase="smsx.cab#Version=6,5,439,72"></object>
+<script type="text/javascript">
+//用于设置打印参数
+factory.printing.header = ""   //页眉
+factory.printing.footer = ""   //页脚
+factory.printing.portrait = false   //true为纵向打印，false为横向打印
+factory.printing.leftMargin = 88   //左页边距
+factory.printing.topMargin = 88   //上页边距
+factory.printing.rightMargin = 88   //右页边距
+factory.printing.bottomMargin = 88   //下页边距
+
+</script>
+<div>
+<input type="button" value="打印" onclick="factory.printing.Print(false);" />
+<input type="button" value="预览" onclick="factory.printing.Preview();" />
+</div>
+<div>
+<br />
+打印内容<br /><br />
+<b>打印使用ScriptX打印组件</b><br>
+好像只能在IE下使用<br>
+组件提供商：<a href="http://www.meadroid.com/scriptx/" target="_blank">http://www.meadroid.com/scriptx/</a><br>
+组件文档：<a href="http://www.meadroid.com/scriptx/docs/printdoc.asp" target="_blank">http://www.meadroid.com/scriptx/docs/printdoc.asp</a><br>
+更多信息：<a href="http://zzk.cnblogs.com/s?w=scriptx" target="_blank">http://zzk.cnblogs.com/s?w=scriptx</a><br>
+<div/>
+</body>
+</html>

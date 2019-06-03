@@ -1,0 +1,137 @@
+body {
+    height: 98%;
+}
+
+span {
+    font-size: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%
+}
+
+.stepheader {
+    width: 98%;
+    height: 35px;
+    margin: 10px auto 0;
+}
+
+.stepcover {
+    width: 98%;
+    height: 20px;
+    margin: 0 auto 4px;
+}
+
+.stepheader>span {
+    float: left;
+}
+
+.step {
+    width: 11.8%;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.finish {
+    background-color: #6AB1FF;
+    border: 1px solid #6AB1FF;
+    color: #FFF;
+}
+
+.doing {
+    background-color: #4FA1FF;
+    border: 1px solid #FFF;
+    color: #FFF;
+    /* transform: scale(1.2); */
+}
+
+.undo {
+    background-color: #FFF;
+    border: 1px solid #C8C8C8;
+    color: #999999;
+}
+
+.room {
+    width: 10%;
+    height: 100%;
+}
+
+.stick {
+    width: 100%;
+    height: 7px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.left-stick {
+    background-color: #4FA1FF;
+}
+
+.right-stick {
+    background-color: #E2E2E2;
+}
+
+.stepcontainer {
+    width: 98%;
+    min-height: 80%;
+    border: 1px solid #999999;
+    margin: 0 auto;
+}
+
+.stepdetail {
+    width: 100%;
+}
+
+.steptime {
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+
+.circle {
+    color: #999999;
+    margin: 0 35px;
+}
+
+.line {
+    width: 1px;
+    height: 40px;
+    background: darkgray;
+    margin: -4px 42.5px;
+}
+
+.stepstatus {
+    height: 20px;
+    line-height: 20px;
+}
+
+.steproom {
+    width: 100%;
+    height: 35px;
+}
+
+.stepcover span,
+.stepdetail span,
+.steproom span {
+    display: inline-block;
+}
+
+.firstdetail {
+    margin-top: 35px;
+}
+
+.tabline {
+    width: 11.5%;
+}
+.active {
+    width: 11.5%;
+}

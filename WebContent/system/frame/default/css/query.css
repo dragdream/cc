@@ -1,0 +1,59 @@
+
+
+{
+    background: none repeat scroll 0 0 #E5E5E5;
+    border-bottom: 1px solid #CCCCCC;
+    height: 30px;
+    overflow: hidden;
+}
+#funcbar_left {
+    position: relative;
+}
+#funcbar_left .second-tabs-container {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+#funcbar_right {
+    float: right;
+    padding: 4 10 2 10px;
+}
+#funcbar_right .search {
+    background: url("../img/search_bg.png") no-repeat scroll left 0 ;
+    display: inline-block !important;
+    float: left;
+    height: 30px;
+    padding-left: 26px;
+    width: 124px !important;
+}
+#funcbar_right .search .search-body {
+    background: url("../img/search_bg.png") no-repeat scroll right -60px ;
+    padding-right: 26px;
+    position: relative;
+}
+#funcbar_right .search .search-body .search-input {
+    background: url("../img/search_bg.png") repeat-x scroll left -30px ;
+    height: 30px;
+}
+#funcbar_right .search .search-body .search-input input {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    height: 14px;
+    margin-top:7px; 
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left: 0;
+    width: 100%;
+}
+#funcbar_right .search .search-clear {
+   /*  background: url("../img/search_bg.png") no-repeat scroll right -90px rgba(0, 0, 0, 0); */
+    background: url(../img/search_bg.png) no-repeat scroll right -90px;
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 16px;
+}
+

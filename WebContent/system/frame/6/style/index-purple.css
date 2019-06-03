@@ -1,0 +1,181 @@
+/*头部样式*/
+#header{ width:100%; height:50px; border-bottom:1px #f0cfec solid; background:#fbebf9;}
+#header .logo{ float:left; width:200px; height:50px; line-height:50px; color:#FFF; position:relative; background:#9c5491; text-align:center;}
+#header .time{margin:0 640px 0 250px; max-width:550px;  line-height:50px; text-align:center; font-size:13px; color:#7d7d7d;}
+#header .header_right{ float:right; width:680px;  height:50px;}
+#header .header_right .search{ width:60px; height:50px; float:left; position:relative;}
+#header .header_right .search span{ width:30px; height:30px; display:block; background:url(../images/purple/operating_button.png) no-repeat left top; text-indent:-9999px; cursor:pointer; margin:10px 0 0 32px;}
+#header .header_right .home{ width:62px; height:50px; border-right:1px #c9c9c9 solid; float:left; position:relative;}
+#header .header_right .home span{ width:30px; height:30px; display:block; background:url(../images/purple/operating_button.png) no-repeat -66px -2px; text-indent:-9999px; cursor:pointer; margin:10px 0 0 13px;}
+#header .header_right .sms{ width:62px; height:50px; float:left; position:relative;}
+#header .header_right .sms span{ width:30px; height:30px; display:block; background:url(../images/purple/operating_button.png) no-repeat -66px -62px; text-indent:-9999px; cursor:pointer; margin:10px 0 0 25px;}
+#header .header_right .search_content{ position:absolute; width:200px; height:30px; left:-120px; top:10px; z-index:11111; display:none;}
+#header .header_right .search_content .text{ width:140px;height:30px; border:none; border-bottom:1px #ae5da1 solid; background:none;}
+#header .header_right .search_content .btn{ width:30px; height:30px; border:none; background:url(../images/purple/operating_button.png) no-repeat left top #f3f3f4; text-indent:-9999px; cursor:pointer;}
+
+
+#header .operating_button{ width:222px; height:50px; border-right:1px #c9c9c9 solid; float:left;}
+#header .operating_button li{ width:30px; height:40px; float:left; margin:10px 0 0 20px; cursor:pointer; position:relative;z-index:111;}
+#header .operating_button li span{ display:block; width:30px; height:30px; text-indent:-9999px;}
+#header .operating_button li.btn1 span{ background:url(../images/purple/operating_button.png) no-repeat left -30px;}
+#header .operating_button li.btn2 span{ background:url(../images/purple/operating_button.png) no-repeat left -60px;}
+#header .operating_button li.btn3 span{ background:url(../images/purple/operating_button.png) no-repeat left -90px;}
+#header .operating_button li.btn4 span{ background:url(../images/purple/operating_button.png) no-repeat left -120px;}
+
+#header .operating_button li .sign_in{ position:absolute; top:40px; left:50%; margin:0 0 0 -115px; z-index:111; background:#fff; width:230px; height:190px; border:1px #c0c0c0 solid; border-radius:5px; display:none;}
+#header .operating_button li .sign_in h2{ text-align:center; border-bottom:1px #c0c0c0 solid; padding-bottom:15px; font-family:"Microsoft YaHei"; color:#ae5da1; font-size:16px; font-weight:bold;}
+#header .operating_button li .sign_in ul{ margin:30px 0 0 18px}
+#header .operating_button li .sign_in ul li{ width:74px; height:74px; display:inline-block; margin:0 10px 0 10px;}
+#header .operating_button li .sign_in ul li.blue{ background-color:#18bbe7;}
+#header .operating_button li .sign_in ul li.purple{ background-color:#ae5da1;}
+#header .operating_button li .sign_in ul li.on{ background-image:url(../images/purple/sign_in.png); background-repeat:no-repeat;}
+#header .operating_button li .skin_peeler{ position:absolute; top:40px; left:50%; margin:0 0 0 -115px; z-index:111; background:#fff; width:230px; height:190px; border:1px #c0c0c0 solid; border-radius:5px; display:none;}
+#header .operating_button li .skin_peeler .timer{overflow:hidden; margin:15px 0 0 5px; height:100px;}
+#header .operating_button li .skin_peeler .timer strong{ display:block; font-size:12px; background:#FFF; font-weight:normal; text-align:center; height:26px;word-spacing:-1px;
+letter-spacing: -1px; text-height:-1px;}
+#header .operating_button li .skin_peeler .timer .time_bj{ float:left; margin:10px 0 0 12px;}
+#header .operating_button li .skin_peeler .timer .time_bj div{ background:#000; padding:10px 5px; overflow:hidden;}
+#header .operating_button li .skin_peeler .timer .time_bj img{ float:left; line-height:55px; margin:0 2px;}
+#header .operating_button li .skin_peeler h3{ width:100%; text-align:center;}
+#header .operating_button li .skin_peeler h3 input{ width:132px; height:30px; background:#ae5da1; border:none; color:#FFF; margin:0 auto; font-size:15px; border-radius:10px;font-family:"Microsoft YaHei";}
+#header .user .user_content{ position:absolute; width:190px; height:100px; background:#FFF;  border:1px #c0c0c0 solid; border-radius:5px; top:55px; left:-65px; display:none;}
+#header .user .user_content ul{ margin:20px 10px 0 10px;}
+#header .user .user_content ol{ margin:10px; border-top:1px #dddddd solid; padding-top:10px;}
+#header .user .user_content li{ line-height:28px;  font-size:14px; color:#000;font-family:"Microsoft YaHei";}
+
+#header .user{ float:left; width:190px; height:50px; border-right:1px #c9c9c9 solid; }
+#header .user .user_avatar{ width:40px; height:40px; border:1px #b5b5b5 solid; overflow:hidden; border-radius:25px; margin:3px 0 0 20px; float:left;}
+#header .user .user_information{ width:110px; height:50px;  float:left; position:relative;}
+#header .user .user_information h3{ line-height:50px; width:150px; height:50px; margin:0px; display:block; font-size:16px; text-indent:12px; font-weight:normal; background:url(../images/purple/arrow.png) no-repeat 75px -74px; cursor:pointer;}
+#header .message{ float:left; width:75px; height:50px;}
+#header .message span{ display:block; width:30px; height:30px; background:url(../images/purple/operating_button.png) no-repeat left -150px; text-indent:-9999px; margin:10px 0 0 25px; cursor:pointer;}
+#header .message span:hover{ background:url(../images/purple/operating_button.png) no-repeat left -180px;}
+#message_box{ width:240px; height:800px; position:fixed; top:50px; right:-240px; border-left:1px #cbc9ca solid; overflow-y:auto; background:#FFF; z-index:111111111; box-shadow: 0px 3px 6px 2px #cececf;}
+
+/*主体部分样式*/
+#main{ width:100%; overflow:hidden;}
+#sidebar{ width:200px; height:600px; background:#ae5da1; position:relative;}
+#sidebar .sidebar_nav{ width:200px; overflow:hidden;}
+#sidebar .sidebar_nav_ul{ width:220px; padding:10px 0; overflow-y:auto;}
+#sidebar .sidebar_nav li{ width:200px; line-height:45px; text-indent:40px; color:#FFF; font-size:14px; cursor:pointer; font-family:"Microsoft YaHei";}
+
+#sidebar .sidebar_nav li.nav_1{ }
+#sidebar .sidebar_nav li.nav_2{ background:url(../images/purple/ico.png) no-repeat -10px -44px;}
+#sidebar .sidebar_nav li.nav_3{ background:url(../images/purple/ico.png) no-repeat -10px -80px;}
+#sidebar .sidebar_nav li.nav_4{ background:url(../images/purple/ico.png) no-repeat -10px -120px;}
+#sidebar .sidebar_nav li.nav_5{ background:url(../images/purple/ico.png) no-repeat -10px -160px;}
+#sidebar .sidebar_nav li.nav_6{ background:url(../images/purple/ico.png) no-repeat -10px -198px;}
+#sidebar .sidebar_nav li.nav_7{ background:url(../images/purple/ico.png) no-repeat -10px -240px;}
+#sidebar .sidebar_nav li.nav_8{ background:url(../images/purple/ico.png) no-repeat -10px -280px;}
+#sidebar .sidebar_nav li.nav_9{ background:url(../images/purple/ico.png) no-repeat -10px -320px;}
+#sidebar .sidebar_nav li.nav_10{ background:url(../images/purple/ico.png) no-repeat -10px -360px;}
+#sidebar .sidebar_nav li.nav_11{ background:url(../images/purple/ico.png) no-repeat -11px -484px;}
+#sidebar .sidebar_nav li.nav_12{ background:url(../images/purple/ico.png) no-repeat -12px -521px;}
+#sidebar .sidebar_nav li.nav_13{ background:url(../images/purple/ico.png) no-repeat -12px -565px;}
+#sidebar .sidebar_nav li.nav_14{ background:url(../images/purple/ico.png) no-repeat -11px -609px;}
+#sidebar .sidebar_nav li.nav_15{ background:url(../images/purple/ico.png) no-repeat -9px -440px;}
+
+#sidebar .sidebar_nav li.on.nav_1{ background:#f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_2{ background:url(../images/purple/ico.png) no-repeat -274px -44px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_3{ background:url(../images/purple/ico.png) no-repeat -274px -80px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_4{ background:url(../images/purple/ico.png) no-repeat -274px -120px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_5{ background:url(../images/purple/ico.png) no-repeat -274px -160px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_6{ background:url(../images/purple/ico.png) no-repeat -274px -198px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_7{ background:url(../images/purple/ico.png) no-repeat -274px -240px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_8{ background:url(../images/purple/ico.png) no-repeat -274px -280px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_9{ background:url(../images/purple/ico.png) no-repeat -274px -320px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_10{ background:url(../images/purple/ico.png) no-repeat -274px -360px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_11{ background:url(../images/purple/ico.png) no-repeat -275px -484px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_12{ background:url(../images/purple/ico.png) no-repeat -276px -521px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_13{ background:url(../images/purple/ico.png) no-repeat -276px -565px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_14{ background:url(../images/purple/ico.png) no-repeat -275px -609px #f3f3f4;}
+#sidebar .sidebar_nav li.on.nav_15{ background:url(../images/purple/ico.png) no-repeat -273px -440px #f3f3f4;}
+#sidebar .sidebar_nav li.on{ background:; color:#ae5da1; font-weight:bold;}
+#sidebar .sidebar_nav li.on a{color:#ae5da1;}
+#sidebar .sidebar_nav li a{ color:#FFF; text-decoration:none;}
+
+#sidebar .sidebar_box .two_menu{ position:absolute; top:5px; right:-480px; width:480px; padding:10px 0 20px 0; border-radius:0 10px 10px 0; box-shadow: 4px 2px 6px 0px #cececf; background:#f3f3f4;  border:1px #dddddd solid; border-left:none; overflow-y:auto; z-index:11111111111; display:none;}
+#sidebar .sidebar_box .two_menu li{font-weight:bold; text-indent:50px; margin:20px 0 0 0; line-height:28px; font-size:12px; background:url(../images/purple/dian.png) no-repeat 30px 11px; color:#ae5da1; font-family:"Microsoft YaHei";}
+#sidebar .sidebar_box .two_menu li a{ color:#5a5a5a; text-decoration:none;}
+#sidebar .sidebar_box .two_menu li a:hover{ color:#ae5da1;}
+#sidebar .sidebar_box .two_menu li h6{ font-size:14px; display:inline-block; text-align:left; text-indent:0px; +text-indent:50px; font-family:"Microsoft YaHei"; font-weight:bold; margin-top:0px;}
+#sidebar .sidebar_box .three_menu { overflow:hidden; padding-left:50px; padding-bottom:2px;}
+#sidebar .sidebar_box .three_menu li{ width:130px; float:left; height:28px; line-height:18px;  text-indent:0px; list-style:none; font-size:12px;  font-weight:normal; padding:0px; margin:5px 0 0 0; background:none;}
+#sidebar .sidebar_box .three_menu li a{ display:block; float:left; padding:5px 15px; margin-left:2px; color:#5a5a5a;}
+#sidebar .sidebar_box .three_menu li a:hover{ border:1px #edbee7 solid; padding:4px 14px; border-radius:5px; color:#5a5a5a;}
+
+#sidebar .sidebar_button{ width:100%; height:40px; border-top:1px #8f3d82 solid; overflow:hidden;}
+#sidebar .sidebar_button .sidebar_spread{ width:60px; height:40px; float:left; border-right:1px #8f3d82 solid;}
+#sidebar .sidebar_button .sidebar_spread span{ display:block; width:40px; height:40px; text-indent:-9999px; background:url(../images/purple/arrow.png) no-repeat left top; cursor:pointer; margin-left:15px;}
+#sidebar .sidebar_button .sidebar_spread.out{ padding-left:18px; width:80px;}
+#sidebar .sidebar_button .sidebar_spread.out span{background:url(../images/purple/arrow.png) no-repeat left -40px;} 
+#sidebar .sidebar_button .sidebar_upward{ width:40px; height:40px; float:left; margin-left:20px;}
+#sidebar .sidebar_button .sidebar_upward span{ display:block; width:40px; height:40px; text-indent:-9999px; background:url(../images/purple/arrow.png) no-repeat -40px top; cursor:pointer;}
+#sidebar .sidebar_button .sidebar_down{ width:40px; height:40px; float:left; margin-left:10px;}
+#sidebar .sidebar_button .sidebar_down span{ display:block; width:40px; height:40px; text-indent:-9999px; background:url(../images/purple/arrow.png) no-repeat -40px -40px; cursor:pointer;}
+
+/*主体中心区右侧域*/
+#main_conetnt{ width:100%;  height:800px;  overflow-y:auto;;background:#fff}
+.desktop{ padding:10px; overflow:hidden;}
+.desktop .desktop_list{ width:47%; margin-left:2%; float:left;}
+.desktop .modular{ border:1px #cdcdcd solid; margin-top:15px;}
+.desktop .modular .modular_hd{ height:36px; line-height:36px; overflow:hidden; background:#f9f9f9;}
+.desktop .modular .modular_hd .toggle{ float:left; width:37px; height:36px; background:url(../images/purple/desktop_ico.png) no-repeat left top; border-right:1px #cdcdcd solid; text-indent:-9999px; cursor:pointer;}
+.desktop .modular .modular_hd .toggle.on{ background:url(../images/purple/desktop_ico.png) no-repeat left -38px;}
+.desktop .modular .modular_hd .delete{ float:right; width:38px; height:36px; background:url(../images/purple/desktop_ico.png) no-repeat left -107px; border-left:1px #cdcdcd solid; text-indent:-9999px; cursor:pointer;}
+.desktop .modular .modular_hd .renovate{ float:right;  width:38px; height:36px; background:url(../images/purple/desktop_ico.png) no-repeat left -71px; text-indent:-9999px; cursor:pointer;}
+.desktop .modular .modular_hd .title{ margin:0 100px 0 50px; font-size:16px; color:#455156; font-family:"Microsoft YaHei";}
+
+
+.desktop .modular .modular_bd{ border-top:1px #cdcdcd solid; overflow:hidden; background:#FFF; padding:12px 15px 8px 15px;} 
+.desktop .modular .modular_bd .time{ color:#959595; font-size:13px;}
+.desktop .modular .modular_bd .more{ height:24px; margin-top:5px; text-indent:-9999px;}
+.desktop .modular .modular_bd .more a{ float:right; display:block; width:30px; height:24px; background:url(../images/purple/desktop_ico.png) no-repeat -2px -148px; text-indent:-9999px; }
+.desktop .modular .modular_bd .news_headlines{ overflow:hidden; margin:0px;}
+.desktop .modular .modular_bd .news_headlines dt{ float:left; width:222px; height:145px; overflow:hidden;}
+.desktop .modular .modular_bd .news_headlines dd{ margin-left:238px;}
+.desktop .modular .modular_bd .news_headlines dd h6{ line-height:30px; background:url(../images/purple/desktop_ico.png) no-repeat -15px -230px; padding-left:12px; margin:0px;}
+.desktop .modular .modular_bd .news_headlines dd h6 a{ font-size:14px; color:#313131;}
+.desktop .modular .modular_bd .news_headlines dd p{ line-height:22px; max-height:88px; overflow:hidden; font-size:13px; color:#898989; padding-left:12px; font-family:"Microsoft YaHei";}
+.desktop .modular .modular_bd .news_headlines dd span.time{ padding-left:12px;}
+
+.desktop .modular .modular_bd .news_list{ overflow:hidden; margin-top:5px; margin-bottom:0px;}
+.desktop .modular .modular_bd .news_list li{ line-height:38px; border-bottom:1px #c3c3c3 dashed; background:url(../images/purple/desktop_ico.png) no-repeat -15px -226px; text-indent:15px;}
+.desktop .modular .modular_bd .news_list li a{ font-size:14px; color:#313131;}
+.desktop .modular .modular_bd .news_list li span.time{ float:right;}
+.desktop .modular .modular_bd .workflow_list{ overflow:hidden; margin-top:5px; margin-bottom:0px;}
+.desktop .modular .modular_bd .workflow_list li{ line-height:38px; border-bottom:1px #c3c3c3 dashed;}
+.desktop .modular .modular_bd .workflow_list li a{ font-size:14px; color:#313131;}
+.desktop .modular .modular_bd .workflow_list li a .red{ color:#F00;}
+.desktop .modular .modular_bd .workflow_list li a .yellow{ color:#f39800;}
+.desktop .modular .modular_bd .workflow_list li a .grey{ color:#313131;}
+.desktop .modular .modular_bd .workflow_list li span.time{ float:right;}
+
+
+.desktop .modular .modular_bd .schedule{ overflow:hidden; height:269px;}
+.desktop .modular .modular_bd .schedule .schedule_content{ margin-left:285px; margin-top:10px;}
+.desktop .modular .modular_bd .schedule .schedule_content h3{ font-size:14px;font-family:"Microsoft YaHei"; font-weight:bold;}
+.desktop .modular .modular_bd .schedule .schedule_content h4{ font-size:50px;font-family:"Microsoft YaHei"; text-indent:20px;}
+.desktop .modular .modular_bd .schedule .schedule_content li{ border-bottom:1px #CCC dashed; line-height:22px; margin:10px 0 0 0; font-size:12px;}
+.desktop .modular .modular_bd .schedule .schedule_content li span.schedule_time{ font-weight:bold; margin-right:10px;}
+.desktop .modular .modular_bd .schedule .schedule_content li span.red{ color:#F00;}
+.desktop .modular .modular_bd .schedule .schedule_content li span.green{ color:#009e96;}
+
+
+
+
+
+/*消息弹层样式*/
+.remind{ width:500px; height:370px; position:fixed; left:50%; top:50%; background:#fbfbfb; margin:-180px 0 0 -250px; box-shadow: 0px 2px 8px 3px #a1a1a1; z-index:111111111;}
+.remind .remind_hd{ height:42px; background:#ae5da1;}
+.remind .remind_hd .have_read{ float:left; width:48px; height:42px; background:url(../images/remind_ico.png) no-repeat -2px -3px; border-right:1px #9c5491 solid; text-indent:-9999px; cursor:pointer;}
+.remind .remind_hd .delete{ float:right; width:48px; height:42px; background:url(../images/remind_ico.png) no-repeat left -84px; border-left:1px #9c5491 solid; text-indent:-9999px; cursor:pointer;}
+.remind .remind_hd .more{ float:right;  width:48px; height:42px; background:url(../images/remind_ico.png) no-repeat -3px -42px; text-indent:-9999px; cursor:pointer;}
+.remind .remind_hd .title{ margin:0 100px 0 50px; line-height:42px; font-size:16px; color:#455156; font-family:"Microsoft YaHei"; text-align:center; color:#FFF;}
+.remind .remind_bd{ height:328px; overflow-y:auto;}
+.remind .remind_bd li{ border-bottom:1px #e5e5e5 solid; padding:6px 15px;}
+.remind .remind_bd li h3{ line-height:18px; font-size:14px; margin-top:10px;}
+.remind .remind_bd li .time{ float:right; font-size:12px; color:orange;}
+.remind .remind_bd li p{ line-height:20px; color:#959595;}
+
+.sign_in_tid{ position:absolute; width:90px; height:50px; padding-top:5px; z-index:11111111; background:url(../images/sign_in_conetnt.png) no-repeat; text-align:center; font-weight:bold; line-height:42px; font-size:14px; color:#FFF; left:-5px; top:48px;}

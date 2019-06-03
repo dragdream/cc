@@ -1,0 +1,60 @@
+.lockScreenPage{
+    display: none;
+    background-color: #465568 !important
+}
+
+.page-fullscreen {
+    z-index: 10060;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.tab-content-padding{
+    padding: 5px 20px 5px 20px;
+}
+
+.tab-close{
+    position: absolute !important;
+    right:4px;
+    top:4px;
+    padding: 0px !important;
+    border: 0 !important;
+}
+
+.page-logo-title{
+    font-size: 20px;
+    line-height: 46px;
+    font-weight: 800;
+    color: #ffffff;
+    text-underline: none;
+}
+
+/* 控制文字过长，自动省略号展示 */
+.custom-text-overflow{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+/* 默认树样式，防止树内容溢出 */
+.treeScroll{
+    overflow-x: auto!important;
+}
+
+/*内联表单换行间距 */
+.form-inline-control{
+    margin-bottom: 15px!important;
+}
+
+/*查询行距*/
+.custom-line-height{
+    height: 5px;
+}

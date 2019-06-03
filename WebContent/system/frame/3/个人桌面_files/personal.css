@@ -1,0 +1,222 @@
+html {
+	overflow: hidden;
+}
+.screen {
+	padding-top: 55px;
+}
+#container {
+	z-index: 1;
+}
+.background {
+	left: 0px; top: 0px; width: 1920px; height: 100%; position: absolute; background-color:#fff;
+}
+#controller table {
+	display: inline-block;
+}
+.controller-r {
+	background: url("images/slidebox/slide_bar_r.png") no-repeat right top; width: 46px; height: 26px;
+}
+.controller-l {
+	background: url("images/slidebox/slide_bar_l.png") no-repeat left top; width: 15px; height: 26px;
+}
+#controller a {
+	background: url("images/slidebox/btn.png") no-repeat top; top: 0px; width: 26px; height: 26px; float: left; display: block;
+}
+#controller a.active {
+	background: url("images/slidebox/btn_active.png") no-repeat top;
+}
+#controller a.cfg {
+	background: url("images/slidebox/btn_cfg.png") no-repeat top; height: 26px; float: right;
+}
+#controller a.cfg:hover {
+	background: url("images/slidebox/btn_cfg_hover.png") no-repeat top;
+}
+.screen ul li {
+	padding: 12px 18px; width: 121px;
+}
+ul.blocks {
+	position: relative;
+}
+.icon-text {
+	font-size: 14px;
+}
+.block {
+	height: 104px; text-align: center; overflow: hidden; float: left; display: block;
+}
+.block .count {
+	top: -6px; width: 40px; height: 40px; text-align: center; right: -5px; color: rgb(255, 255, 255); line-height: 35px; font-family: "΢���ź�"; font-size: 20px; vertical-align: middle; position: absolute; background-image: url("images/count_bg.png"); background-repeat: no-repeat;
+}
+.icon-text {
+	top: 98px; width: 121px; height: 20px; text-align: center; color:#595959; font-family:"Microsoft YaHei"; display: inline-block; position: relative; cursor: pointer;
+}
+li.block .img {
+	margin: 0px auto; width: 121px; height: 124px; text-align: center; line-height: 24px; position: absolute; cursor: pointer;
+}
+li.block .img p {
+	top: 50%; position: static;
+}
+li.block .img p:hover{}
+li.block .img p img {
+	left: -50%; top: -50%; vertical-align: middle; position: static;
+}
+li.block .img p::after {
+	font-size: 1px; visibility: hidden; content: ".";
+}
+.block .count1 {
+	background-position: -16px -41px;
+}
+.block .count2 {
+	background-position: -16px -84px;
+}
+.block .count3 {
+	background-position: -16px -126px;
+}
+.block .count4 {
+	background-position: -16px -168px;
+}
+.block .count5 {
+	background-position: -16px -210px;
+}
+.block .count6 {
+	background-position: -16px -252px;
+}
+.block .count7 {
+	background-position: -16px -294px;
+}
+.block .count8 {
+	background-position: -16px -336px;
+}
+.block .count9 {
+	background-position: -16px -378px;
+}
+.block .count10 {
+	background-position: -16px -420px;
+}
+.tab-header {
+	background: 0px 0px rgb(243, 243, 243);
+}
+.app-set {
+	background: url("images/appbox/bar_btn_appset.png") center; width: 102px; height: 22px; margin-top: 4px; margin-left: 10px; float: left; cursor: pointer;
+}
+.app-set span {
+	display: none;
+}
+.screen-set {
+	background: url("images/appbox/bar_btn_screenset.png") center; width: 102px; height: 22px; margin-top: 4px; margin-bottom: 4px; margin-left: 10px; float: left; cursor: pointer;
+}
+.screen-set span {
+	display: none;
+}
+#portalSettingMsg {
+	width: auto; height: 38px; color: green; line-height: 38px; margin-left: 100px; display: none;
+}
+
+/*!
+ * Hover.css (http://ianlunn.co.uk/)
+ * Version: 1.0.9
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014.
+ */
+/* Default styles for the demo buttons */
+
+
+
+
+
+/* Wobble Vertical */
+
+@-webkit-keyframes block {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes block {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.block img{
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.block img:hover {
+  -webkit-animation-name: block;
+  animation-name: block;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+

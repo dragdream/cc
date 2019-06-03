@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	color: #333;
+}
+li{
+	list-style: none;
+	/* font-size: 12px; */
+	/* line-height: 25px; */
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #dbdbdb;
+	width: 100%;
+	height: 100%;
+	/* position: relative; */
+}
+textarea{
+	padding:8px;
+	resize: none;
+	outline: none;
+}
+.hide{
+	display: none;
+}
+.header{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	height:70px;
+	background-color: #fff;
+	box-shadow: 2px 5px 2px #fff;
+	z-index: 2;
+}
+.header .headerWrap{
+	width: 1000px;
+	margin:0 auto;
+	overflow: hidden;
+	margin-top: 25px;
+}
+.headerWrap .left{
+	float: left;
+	padding-left:35px;
+	background-image: url(../images/icon_logo.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	color:#333333;
+	font-size: 18px;
+	font-style: italic;
+}
+.headerWrap .left .searchInput{
+	padding:5px;
+	margin-left: 10px;
+	border:1px solid #cccccc;
+	padding-right:20px;
+	width: 60%;
+	min-width: 200px;
+	background-image: url(../images/icon_search.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 20px;
+	outline: none;
+}
+.headerWrap .left .searchInput:focus{
+	border:1px solid #0099cc;
+}
+.headerWrap .right{
+	float: right;
+}
+.headerWrap .right .homePage{
+	padding-left:25px;
+	font-size: 14px;
+	background-image: url(../images/icon_homePage.png);
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+.headerWrap .right .userName{
+	margin-left: 30px;
+	padding-left:25px;
+	font-size: 14px;
+	background-image: url(../images/icon_userAvatar.png);
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+.headerWrap .addNew{
+	float: right;
+	margin-left: 50px;
+	cursor: pointer;
+}
+
+.main{
+	padding-top: 95px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.mainContent {
+    width: 600px;
+    z-index: 15;
+    margin-left: 155px;
+    float: left;
+}
+.topicBlock{
+	background-color: #fff;
+	padding:20px;
+	border-radius: 5px;
+}
+.editingComment{
+	/* overflow: hidden; */
+}
+
+.editingComment .avatar{
+	float: left;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.editingComment .editContent{
+	float: left;
+	margin-left: 10px;
+}
+.commentInput{
+	width: 480px;
+	height: 60px;
+	border:1px solid #ccc;
+	outline: none;
+}
+.commentInput:focus{
+	border:1px solid #fa7d3c;
+}
+.insertSpecial{
+	/* overflow: hidden; */
+	margin-top: 5px;
+	position:relative;
+}
+.insertSpecial .emoji{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-image: url(../images/emoji.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.insertSpecial .uploadPic{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-image: url(../images/img.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.commentBtn {
+	width: auto;
+	height: 28px;
+	line-height: 28px;
+	background-color: #ffc09f;
+	text-align: center;
+	color: #fff;
+	font-size:14px;
+	float: right;
+	border-radius: 5px;
+	border:none;
+	outline: none;
+	cursor: pointer;
+	padding: 0px 10px;
+}
+
+.topicTimes{
+	padding:10px 20px;
+	font-size: 12px;
+	color: #696e78;
+	margin-top: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.topicList{
+	background-color: #fff;
+	margin-top: 10px;
+	border-radius: 5px;
+	/* border: 1px solid; */
+	overflow: hidden;
+}
+.topicItem{
+	background: #fff;
+	padding: 10px;
+	overflow: hidden;
+}
+.topicItem:first{
+	padding-top:20px;
+}
+.topicItem .avatar{
+float: left;
+}
+.topicItem .nameAndContent{
+float: left;
+width: 520px;
+line-height: 20px;
+font-size: 12px;
+margin-left: 10px;
+}
+.topicItem .nameAndContent .name{color: #0099cc;cursor: pointer;display: inline-block;}
+.topicItem .nameAndContent .topicContent{
+
+}
+.topicItem .topicInfo{/* float: left; */font-size: 12px;float: right;width: 520px;font-size: 12px;margin-top: 15px;width: 525px;margin-right: 15px;}
+.topicItem .topicInfo .topicTime{
+float: left;
+}
+.topicItem .topicInfo .topicOper{
+float: right;
+}
+.topicItem .topicInfo .topicOper .spanBlock{
+padding: 0 10px;
+cursor: pointer;
+}
+.topicDivid{
+	/* border-bottom: 1px solid #aaa; */
+	float: left;
+	height: 1px;
+	background: #cccccc;
+	width: 100%;
+	margin-top: 10px;
+}
+.topicList .getMore{
+	text-align: center;
+	font-size:12px;
+	line-height: 25px;
+}
+.sideBar{
+	position: absolute;
+	left:765px;
+	top: auto;
+	width: 241px;
+	overflow: hidden;
+	/* margin-left: 765px; */
+	float: left;
+	/* background: #fff; */
+}
+.myInfo{
+	background-color: #fff;
+	border-radius: 5px;
+}
+.myInfoBody li{
+	float: left;
+	border-left: 1px solid #d2d2d2;
+	width: 115px;
+	/* height: 40px; */
+	cursor: pointer;
+}
+.myInfoBody li:first-child{
+	border:none;
+}
+.followNum{
+	text-align: center;
+	margin:0 auto;
+	/* font-weight: bold; */
+	font-size: 16px;
+	line-height: 30px;
+}
+.myInfoBody{
+	overflow: hidden;
+	/* height: 52px; */
+	padding: 5px 0;
+}
+.myInfoBody .infoName{
+	text-align:center;
+	font-size: 13px;
+	line-height: 25px;
+}
+.recentParticipater{
+	background-color: #fff;
+	line-height: 25px;
+	float: left;
+	margin-top: 15px;
+	padding: 10px  0;
+	border-radius: 5px;
+}
+.recentParticipater li{
+	float: left;
+	text-align: center;
+}
+.recentParticipater .avatar{
+	width:48px;
+	height: 48px;
+	border-radius:50%;
+	display: inline-block;
+	overflow: hidden;
+}
+.recentParticipater .personName{
+	width: 80px;
+	font-size: 12px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+
+/* 覆盖首页不必要样式 */
+.blogList .blogItem{
+	margin-top:0;
+}
+
+.mainHeader{
+	width: 850px;
+	height: 120px;
+	position: relative;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-top: 75px;
+	margin-bottom: 10px;
+	margin-left: 155px;
+}
+.mainHeader .bigAvatar{
+	margin-left: 25px;
+    position: absolute;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	float: left;
+	top: -84px;
+}
+.topicTitle{
+    float: left;
+    margin-top: 33px;
+    margin-left: 220px;
+
+}
+.topicTitle .titleName{
+	font-size: 28px;
+	margin-bottom: 5px;
+}
+.titleBtns input{
+	padding: 5px 15px;
+	cursor: pointer;
+}
+.titleBtns .newBlog{
+	background-color: #f86a22;
+	border:1px solid #f86a22;
+	padding-left: 30px;
+	background-image: url(../images/newBlog.png);
+	background-repeat: no-repeat;
+	background-position: 7px center;
+	color: #fff;
+}
+.titleBtns .follow{
+	margin-left: 5px;
+	padding-left: 30px;
+	background-color: #fff;
+	border:1px solid #b0b0b0;
+	background-image: url(../images/follw2.png);
+	background-repeat: no-repeat;
+	background-position: 7px center;
+}

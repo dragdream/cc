@@ -1,0 +1,120 @@
+body{
+	padding:0;
+	margin:0;
+	font-family:Verdana, Arial;
+	font-size:16px;
+	background: url(../images/bg_hexagon.jpg);
+	-webkit-text-size-adjust: none;
+}
+dt,dl,dd,ul,li,form {
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style-type:none;
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+  content:" ";
+  display:block;
+  clear:both;
+  height:0;
+}
+img{
+	border:none;
+}
+a{
+	text-decoration:none
+}
+i.loading.empty {
+	background:none;
+}
+i.loading {
+	display: inline-block;
+	background:url(../images/loading.gif) no-repeat center center;
+	height: 16px;
+	width: 16px;
+	font-style: normal;
+	vertical-align: middle;
+}
+.main-body{
+	background: url(../images/top_banner.png) no-repeat center top;
+	min-width: 1000px;
+}
+.main-body.view-body{
+	background: url(../images/view_bg.jpg) no-repeat center top;
+}
+.main-wrap{
+	 margin:0px auto;
+	 width:1000px;
+}
+.main-container {
+	padding-top: 283px;
+}
+.no-mb {
+	margin-bottom: 0 !important;
+}
+.no-mt {
+	margin-top: 0 !important;
+}
+.no-pd {
+	padding: 0 !important;
+}
+.pd-lr-10 {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.pd-lr-12 {
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+.pd-lr-15 {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.pd-lr-19 {
+	padding-left: 19px !important;
+	padding-right: 19px !important;
+}
+.pd-lr-20 {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.pd-lr-24 {
+	padding-left: 24px !important;
+	padding-right: 24px !important;
+}
+.pd-lr-30 {
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+.pd-b-32 {
+	padding-bottom: 32px !important;
+}
+.pd-b-48 {
+	padding-bottom: 48px !important;
+}
+.mt-15 {
+	margin-top: 15px;
+}
+.mt-region{
+	margin-top: 18px;
+}
+.mt-region-view {
+	margin-top: 60px;
+}
+.min-h-a {
+	min-height: 400px;
+}
+.contrast, .contrast * {
+	background: black !important;
+	color: white !important;
+}
+.view-body .main-wrap{
+	 width:994px;
+}
+.view-body .main-container {
+	padding-top: 37px;
+}

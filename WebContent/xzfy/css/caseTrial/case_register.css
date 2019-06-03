@@ -1,0 +1,222 @@
+/* 来件接待信息*/
+
+.getcase {
+    background: #47A1FF;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    display: block;
+    border: none;
+}
+
+.inputlable {
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    width: 100%;
+    display: inline-block;
+}
+
+.fyinput {
+    height: 28px;
+    border-radius: 0px;
+    width: 80%;
+    display: inline-block;
+    border: 1px solid #bdbcbc;
+    padding: 0;
+}
+
+.fyselect {
+    height: 30px;
+    border-radius: 0px;
+    width: 80%;
+    display: inline-block;
+    border: 1px solid #bdbcbc;
+}
+
+.inputlable:after {
+    content: "*";
+    color: red;
+}
+
+.other-one,
+.other-two {
+    margin-left: 6%；;
+    /* display: inline-block; */
+    display: inline-block;
+    width: 100%;
+    margin-left: 6%;
+}
+
+.recpinfo {
+    width: 90%;
+    border: 1px solid #EFEFEF;
+    margin: 10px auto;
+}
+
+.material-div {
+    width: 90%;
+    border: 1px solid #EFEFEF;
+    margin: 10px auto;
+}
+
+
+/*表格部分*/
+
+.recp-title {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+    background: #F6F6F6;
+    margin: 0;
+}
+
+
+/*表格部分结束*/
+
+table {
+    width: 100%;
+    border: none;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+tr td {
+    border: none;
+}
+
+.td-col4-title {
+    text-align: right;
+    width: 10%;
+}
+
+.td-col4-content {
+    width: 40%;
+}
+
+.td-col2-title {
+    width: 10%;
+    text-align: right;
+}
+
+.td-col2-content {
+    width: 91%;
+}
+
+.rowinput {
+    width: 90%;
+}
+
+
+/* 当事人 */
+
+.partyDiv {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+}
+
+.party-head {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    background: #f3f3f3;
+}
+
+.party-body {
+    padding: 20px;
+}
+
+hr {
+    border: 1px dotted #d8dfe2;
+    margin: 10px 0;
+}
+
+.party-button {
+    width: 140px;
+    height: 30px;
+}
+
+
+/*复议事项*/
+
+.radioUl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radioUl li {
+    height: 30px;
+}
+
+.lilable {
+    display: inline-block;
+    width: 100px;
+    margin-left: 30px;
+    text-align: right;
+}
+
+
+/* 复议材料*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.material {
+    height: 100%;
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+.material tr {
+    height: 40px;
+}
+
+.material-type {
+    background: #DBECFE;
+    text-align: center;
+    width: 10%;
+}
+
+.material-list {
+    width: 90%;
+    background: #F8F8F8;
+}
+
+.matertial-content>button {
+    height: 80%;
+    float: right;
+    margin-right: 10px;
+    border: none;
+    /* margin: 1%; */
+    width: 80px;
+    background: #51A0FD;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.material-title {
+    width: 20%;
+    height: 100%;
+    background: #EDF6FF;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.matertial-content {
+    width: 90%;
+    background: #F8F8F8;
+    position: relative;
+    color: red;
+    margin-left: 20px;
+    position: relative;
+}

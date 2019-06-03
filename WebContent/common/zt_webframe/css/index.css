@@ -1,0 +1,222 @@
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: @screen-sm-min) { }
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: @screen-md-min) { }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: @screen-lg-min) { }
+
+
+
+html,body{
+	overflow: hidden;
+}
+.header{
+	height: 60px;
+	width: 100%;
+	min-width: 1136px;
+	background-color:#0099cb;
+}
+.header .logo{
+	width: 240px;
+	height: 60px;
+	color:#fff;
+
+}
+.active{
+	display: block;
+}
+.header .logo img{
+	display: inline-block;
+	width: 82px;
+	height: 20px;
+	margin:20px;
+	vertical-align: middle;
+}
+.header .logo p{
+	display: inline-block;
+}
+.header .firstMenuContent{
+	height: 60px;
+}
+.header img.home{
+	width: 20px;
+	height: 20px;
+	padding:20px;
+	float: left;
+}
+#firstMenuList{
+	height: 60px;
+	overflow: hidden;
+}
+#firstMenuList .firstMenu{
+	color:#fff;
+	padding: 20px;
+	font-size: 14px;
+	cursor: pointer;
+}
+#firstMenuList .firstMenu img{
+	vertical-align: middle;
+	margin-right:10px;
+}
+.moreApp{
+	padding: 20px;
+	color:#fff;
+}
+.moreApp img{
+	margin-left:7px;
+	vertical-align: middle;
+}
+.menuListRight .search{
+	padding: 20px 10px;
+	float: left;
+}
+.menuListRight{
+	position: absolute;
+	right:0;
+	top: 0;
+}
+.menuListRight ul{
+	padding:20px 0;
+}
+.menuListRight ul li{
+	float: left;
+	margin:0 10px;
+}
+.header img.group{
+	display: inline-block;
+	padding:20px 15px;
+	cursor: pointer;
+	border-left: 1px solid #bec9d9;
+}
+.section .secLeft{
+	width: 257px;
+	background-color: #192f47;
+	position: absolute;
+	top:60px;
+	left: 0;
+	bottom:40px;
+	overflow-y: scroll;
+}
+.section .secLeft .avatar{
+	padding: 0 20px;
+	height: 49px;
+	margin: 0 auto;
+	color:#fff;
+	line-height: 50px;
+	background-color: #014876;
+}
+.section .secLeft .avatar img{
+	vertical-align: middle;
+}
+.section .secLeft .avatar span{
+	margin: 0 10px;
+}
+
+.section .default{
+	background-color:#192f47;
+
+}
+.section .default p{
+	width: 200px;
+	height: 49px;
+	border-bottom: 1px solid #b0b0b0;
+	margin: 0 auto;
+	color:#fff;
+	line-height: 50px;
+}
+.section .default p img{
+	margin-right:20px;
+	vertical-align: middle;
+}
+.section .default ul.defaultContent{
+	width: 200px;
+	margin:0 auto;
+}
+.section .default ul.defaultContent li{
+	width: 100%;
+	height: 40px;
+	color:#fff;
+	line-height: 40px;
+}
+.section .default ul.defaultContent img{
+	margin-right:20px;
+	vertical-align: middle;
+}
+.secLeft .setting{
+	width: 240px;
+	height: 40px;
+	background-color:#4a6290;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.footer .setting .currentIdentity{
+	width: 240px;
+	color:#fff;
+	line-height: 40px;
+	text-indent:18px;
+	background-color: #496290;
+}
+.footer .setting .currentIdentity img{
+	display: inline-block;
+	vertical-align:middle
+}
+.footer .setting .currentIdentity .setIcon{
+	margin-left:50px;
+}
+.footer .setting .currentIdentity .themeIcon{
+	margin-left:20px;
+}
+.footer .setting .leftShow{
+	margin-left:27px;
+	padding: 7px 5px;
+}
+.footer.setting .leftShow:hover{
+	background-color:#192f47;
+}
+.panel-title img{
+	vertical-align: middle;
+	margin-right:20px;
+
+}
+.section .mainContent{
+	position: absolute;
+	top: 60px;
+	left: 240px;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	background-color: #fff;
+}
+.section .mainContent iframe{
+	width: 100%;
+	height: 100%;
+	display: inline;
+}
+.panel{
+	width: 200px;
+	margin:0 auto;
+	text-align: left;
+	line-height: 40px;
+
+}
+.panel-title a{
+	display: inline-block;
+	color: #fff;
+	font-size:12px;
+
+}
+.panel-body p{
+	color:#fff;
+	margin-left:60px;
+}
+
+
+

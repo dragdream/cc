@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="WdatePicker.js"></script>
+	<style>
+		.plugin_panel{
+			width:150px;
+			position:absolute;
+			background:white;
+			z-index:101;
+			border-left:1px solid gray;
+			background:#f0f0f0;
+		}
+		button{
+			border:1px solid gray;
+		}
+		.btn_con{
+			margin-bottom:10px;
+		}
+	</style>
+	<script>
+
+	</script>
+</head>
+<body style="margin:0px">
+	<input id="d12" type="text" onclick="return false;window.event.cancelBubble=true;"/> 
+     <img onclick="WdatePicker({el:$dp.$('d12'),dateFmt:'HH时mm分ss秒'})" src="skin/datePicker.gif" _fcksavedurl="skin/datePicker.gif" width="16" height="22" align="absmiddle"> 
+
+</body>
+</html>

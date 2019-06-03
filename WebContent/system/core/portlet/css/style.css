@@ -1,0 +1,35 @@
+div .portlet-ul{
+	margin-left:0px;
+	border-bottom:1px #dddddd solid; 
+	
+}
+
+div .portlet-ul li a{
+	font-size:14px;
+	padding-bottom:4px;
+	padding-top:4px;
+	height:17px;
+	line-height:17px;
+}
+
+.warning-null{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	
+}
+.tab-content .content-portlet-ul{
+	padding-top: 0px; 
+	padding-right: 0px; 
+	padding-bottom: 0px;
+	 padding-left: 0px; 
+	 margin-top: 0px; 
+	 margin-right: 0px; 
+	 margin-bottom: 0px;
+	 margin-left: 0px;
+	 
+}
+
+
+

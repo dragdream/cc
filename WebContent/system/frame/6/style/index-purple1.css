@@ -1,0 +1,75 @@
+.modal_backdrop_fade_in{
+	background-color:#000;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	top:0px ; left:0px; 
+	right:0px ; bottom:0px;
+	z-index:2000;
+	position:fixed;
+	display:none;
+}
+.top_floor_div{  
+	opacity:1;
+	position:fixed;
+	top:0px ; left:0px; 
+	right:0px ; bottom:0px;
+	z-index:2001;display:block;
+      /* filter:alpha(opacity=50);  
+      -moz-opacity:0.5;  
+      -khtml-opacity: 0.5;  
+      */
+    display:none;
+}   
+.data_div{
+	position: relative;
+	background-color: #FFF;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	outline: 0px none;
+	box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+	width:550px;
+	height:368px;
+	margin:60px auto;
+}
+
+.top_floor_div .gsb_cloud_logo{
+	background:url(../images/purple/gsb_cloud_logo.png) no-repeat center center;
+ 	width:240;
+	height: 110px; 
+}
+.cloud_logo{
+	margin: 25px;
+}
+.cloud_logo span{
+	font-size: 18px;
+	color:303030;
+	
+}
+.cloud_logo_bottom{
+	margin-top:35px;
+}
+.cloud_logo_button{
+	
+	text-align:center;
+	margin:0 auto;
+	width:230px;
+	background-color: #4665a8;
+	height:35px;
+	line-height:35px;
+	font-size:14px;color:#fff;
+	cursor:pointer;
+	/* Gecko browsers */
+	-moz-border-radius: 8px;
+	 
+	/* Webkit browsers */
+	-webkit-border-radius: 8px;
+	 
+	/* W3C syntax */
+	border-radius: 5px;
+}
+#header .operating_button li.btn1 span{ background:url(../images/purple/operating_button_gsb.png) no-repeat left center}
+
+input.BigInput{
+	border:1px solid #4665a8; 
+}

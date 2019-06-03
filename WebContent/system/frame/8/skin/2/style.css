@@ -1,0 +1,57 @@
+/* 
+* @author Liupeng
+* @readme 主框架样式
+* @update 2013/3/27 16:02:14
+*/
+@import url(global.css);
+.header{background:url('./images/header_bg.png') repeat-x;}
+.header_logo{background:transparent url('./images/header_logo_bg.png') no-repeat left top;}
+
+.header_nav, .header_widget{background:url('./images/header_nav_left.png') no-repeat left top;}
+.header_nav ul, .header_widget ul{background:url('./images/header_nav_bg.png') repeat-x left bottom;}
+.header_nav li, .header_widget li{background:url('./images/header_nav_li.png') no-repeat right center;}
+.header_nav li.active a{background:url('./images/nav_hover.png') no-repeat left center;}
+.header_nav li.last{background:url('./images/header_nav_right.png') no-repeat right center;}
+.header_nav li.last_no_bg{background:none;}
+.header_sub_panel{background:#ffffff url('./images/nav_main_bg.jpg') left top repeat-x;border-color:#76ac32;}
+
+.header_menu_list ul {background:url('./images/header_nav_menu_bottom.png') no-repeat left bottom;}
+.header_menu_list ul li{background:url('./images/header_nav_menu_bg.png') repeat-y;}
+.header_menu_list ul li a:hover, .header_menu_list ul li.active a{color: #c00000;background-color: #ffffff;}
+
+.header_menu span.menu{background:url('./images/header_nav_menu.png') no-repeat;}
+.header_menu_panel{background:#ffffff url('./images/header_nav_menu_panel_bg.png') left bottom repeat-x;}
+
+.header_sub_panel a, .header_menu_panel a {color: #76ac32;}
+
+.header .tabs li{background:url('./images/label_li.png') repeat-x;border-right: 1px solid #297011;}
+.header .tabs li a.close{background:url('./images/tabs_close.png') 0px center no-repeat;}
+.header .tabs li a.close:hover{background:url('./images/tabs_close.png') -16px center no-repeat;}
+
+/* 左侧 个人信息、消息提醒 按钮组 */
+.c_column1 .avatar {background: url('./images/avatar_cover.jpg') no-repeat;}
+
+/* 左侧 toolbar 按钮组 */
+.c_column1 .toolbar li a.tb_theme {background: url('./images/toolbar_theme.png') no-repeat center center;}
+.c_column1 .toolbar li a.tb_settings {background: url('./images/toolbar_settings.png') no-repeat center center;}
+.c_column1 .toolbar li a.tb_logout {background: url('./images/toolbar_logout.png') no-repeat center center;}
+
+.c_column3 .orglist_main .head{background:transparent url('./images/list_main_top.png') no-repeat 0 0;}
+.c_column3 .orglist_main .body .tabs a{background:transparent url('./images/list_tab_bg.jpg') repeat-x 0 0;}
+.c_column3 .orglist_main .body .tabs a.active{background:transparent url('./images/list_tab_bg_hover.jpg') repeat-x 0 0;}
+
+
+/* frame.css修改的样式 */
+.c_column3 .orglist_left_expbtn .expbtn_click {background-color: #76ac32;}
+.footer{background: #5d9d2b !important;}
+#c_funcarea a.nllink{color: #76ac32;}
+/**注销**/
+.quit{background: url('./images/quit.png') no-repeat center center;}
+/**控制面板**/
+.set{background: url('./images/set.png') no-repeat center center;}
+/**skin**/
+.skin{background: url('./images/skin.png') no-repeat center center;}
+/**提醒**/
+.voice{background: url('./images/voice.png') no-repeat center center;}
+/**时间**/
+.shizhong{background: url('./images/time.png') no-repeat center center;}

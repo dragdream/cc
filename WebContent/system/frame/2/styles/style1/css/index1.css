@@ -1,0 +1,221 @@
+html, body {
+  font: normal 12px verdana;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  height: 100%;
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+a {
+  outline-style:none;
+}
+
+a:link,a:visited,a:hover,a:active {
+  text-decoration: none;
+}
+
+
+
+.ui-layout-west #start_menu {
+    background: url("../img/start_menu.png") no-repeat scroll center 0 transparent;
+    display: block;
+    height: 36px;
+    width: 80px;
+    margin-top:6px;
+    z-index:1;
+}
+#rightHeaderBar #taskbar_left #start_menu:hover, #rightHeaderBar #taskbar_left #start_menu.active {
+    background-position: center -40px;
+}
+
+
+
+
+.popover2
+{
+  	 position: absolute;
+	 /*  top: 0;
+	  left: 0; */
+	  z-index: 1010;
+	  display: none;
+	  max-width: 276px;
+	  padding: 1px;
+	  text-align: left;
+	  white-space: normal;
+	  background-color: #ffffff;
+	  border: 1px solid #cccccc;
+	  border: 1px solid rgba(0, 0, 0, 0.2);
+	  border-radius: 6px;
+	  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	  background-clip: padding-box;
+}
+
+.popover2.top {
+  margin-top: -10px;
+}
+
+.popover2.right {
+  margin-left: 10px;
+}
+
+.popover2.bottom {
+  margin-top: 10px;
+}
+
+.popover2.left {
+  margin-left: -10px;
+}
+
+.popover2-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+
+.popover2-content {
+  padding: 9px 14px;
+}
+
+.popover2 .arrow,
+.popover2 .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.popover2 .arrow {
+  border-width: 11px;
+}
+
+.popover2 .arrow:after {
+  border-width: 10px;
+  content: "";
+}
+
+.popover2.top .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999999;
+/*    border-top-color: rgba(249, 249, 249 , 0.25);  */
+
+  border-top-color: rgb(249, 249, 249);
+  border-bottom-width: 0;
+}
+
+
+
+.popover2.top .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  border-top-color: #ffffff;
+  border-bottom-width: 0;
+  content: " ";
+}
+	
+.tee_tab_header{
+	background:none;
+	height:35px;
+}
+.tee_tab{
+	border:0px;
+	height:38px;
+	background:#00609b;
+	background-repeat: repeat-x;
+	font-size:12px;
+	float:left;
+	cursor:pointer;
+	text-align:center;
+	padding:0px;
+	margin-left:10px;
+	margin-top:8px;
+	color:#edf7fd;
+	width:auto;
+	padding-left:15px;
+	padding-right:15px;
+	border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	-webkit-border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	-webkit-border-top-right-radius:5px;
+	
+}
+.tee_tab:hover{
+	background:#edf7fd;
+	background-image:url(../../imgs/tabs_bg_select.png);
+	background-repeat: repeat-x;
+	color:#00609b;
+}
+.tee_tab_select{
+	background:#edf7fd;
+	background-image:url(../../imgs/tabs_bg_select.png);
+	background-repeat: repeat-x;
+	color:#00609b;
+	border-color:#00609b;
+	border-left:1px solid #00609b;
+	border-top:1px solid #00609b;
+	border-right:1px solid #00609b;
+	font-weight:bold;
+}
+.tee_tab_pointer_left{
+	z-index:100;
+	height:20px;
+	line-height:20px;
+	width:24px;
+	padding-top:12px;
+	color:white;
+	cursor:pointer;
+	
+}
+.tee_tab_pointer_right{
+	z-index:100;
+	height:20px;
+	line-height:20px;
+	width:24px;
+	padding-top:12px;
+	color:white;
+	cursor:pointer;
+}
+
+
+/* 主界面背景样式 */
+#south-table table {
+	background-color:#0177bf;
+}
+#north-table{
+	background-color:#0177bf;
+}
+#center{
+	background:#0177bf;
+}
+
+/* 弹出层-frame样式   组织机构、短信息、更多查询*/
+.frame-info{
+	display:none;
+	border:1px solid #0177bf;
+	border-left:4px solid #0177bf;
+}
+
+.south-center-padding{
+	background:#edf7fd;
+	padding:0px 0px 0px 0px;
+}
+
+/*菜单定义*/
+.menu-bg , .list-group-item{
+	background-color:rgb(249, 249, 249);
+}
+a.active.list-group-item , a.active.list-group-item:hover , a.active.list-group-item:focus{
+	background-color:#0177bf;
+}

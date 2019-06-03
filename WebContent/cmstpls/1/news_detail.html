@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="keywords" content="某某 政府 官网 官方 网站"/>
+<meta http-equiv="description" content="某某市人民政府"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>某某市人民政府</title>
+
+<link rel="stylesheet" type="text/css" href="<@Rootpath src="r/cms/www/cn/style/css.css"/>"></LINK>
+<link rel="stylesheet" type="text/css" href="<@Rootpath src="r/cms/www/cn/style/main.css"/>"></LINK>
+<script src="<@Rootpath src="r/cms/jquery.js"/>" type="text/javascript"></script>
+<script src="<@Rootpath src="r/cms/front.js"/>" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	Cms.siteFlow("", location.href, document.referrer);
+});
+</script>
+</head>
+<body>
+	<script src="<@Rootpath src="r/cms/www/cn/js/less.version.js"/>" type="text/javascript"></script>
+	<script src="<@Rootpath src="r/cms/www/cn/js/ischrome.js"/>" type="text/javascript"></script>
+	<div class="main-body">
+<div class="top-bar">
+	<div class="bar">
+		<div class="main-wrap clearfix">
+			<div class="four-links">
+				<a target="_blank">某某省人民政府</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市人民政府</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市人大</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市政协</a>
+			</div>
+			<div class="version-links">
+				<a  target="_blank" style="color:#DD736C;">公务邮箱</a>
+				<span class="link-sep"></span>
+				<a id="accessible" href="javascript:;">无障碍阅读</a>
+				<span class="link-sep"></span>
+				<a id="chinese" data-default="简体" data-changed="繁體" href="javascript:;">繁體</a>
+				<span class="link-sep"></span>
+				<a >English</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="<@Rootpath src="r/cms/www/cn/js/chinese.js"/>" type="text/javascript"></script>
+<script src="<@Rootpath src="r/cms/www/cn/js/accessible.js"/>" type="text/javascript"></script>
+<script type="text/javascript">
+//简繁体转换
+initChinese(document.querySelector("#chinese"), ["title"]);
+//无障碍
+initAccessible(document.querySelector(".main-body"), document.querySelector("#accessible"));
+</script>
+		<div class="main-wrap main-container">
+<div class="main-nav">
+	<@Site>
+  		 <a class="node" href="<@Out name="REL_PATH" />">首页</a>
+	</@Site>
+	<@Channel>
+		 	 <#assign curChannelId=this.channelId />
+		</@Channel>
+	<@Channels type="TOP">
+		<a class="node <#if this.channelId==curChannelId>focus</#if>" href="<@Out name="REL_PATH" />" ><@Out name="chnlName" /></a>
+	</@Channels>
+	<form action="" method="get" class="search-bar" onsubmit="return search_submit(this)">
+		<input type="text" name="q">
+		<input type="submit" value="">
+		<em>查询间隔10秒</em>
+	</form>
+	<script type="text/javascript">
+	var search_submit = function(form){
+		var input = form.querySelector("input[name=q]");
+		var value = input.value.replace(/(^\s*)|(\s*$)/g, "");
+		if(value) {
+			//每10秒可以查询一次
+			if(jQuery.cookie("s")){
+				var em = form.querySelector("em");
+				em.style.display = "block";
+				setTimeout(function(){
+					em.style.display = "none";
+				}, 2000);
+				return false;
+			} else {
+				input.value = value;
+				var date = new Date();
+				date.setTime(date.getTime() + 10000);
+				jQuery.cookie("s", value, {expires:date});
+				return true;
+			}
+		} else {
+			return false;
+		}
+	}
+	</script>
+</div>
+<div class="tile-region mt-region">
+	<div class="tile-group full">
+		<div class="tile full auto-height color-panel">
+			<div class="wrap">
+				<div class="box-tile">
+					<div class="box-title">
+						<div class="location">
+<@Location >
+<span><a href="<@Out name='url'/>"><@Out name='name'/></a></span>
+</@Location>
+<span>正文</span>
+						</div>
+					</div>
+<@Document>
+<div class="news_content_wrap">
+	<div class="news_content_head">
+		<div class="news_content_title">
+			<@Out name="docTitle" />
+		</div>
+		<div class="news_content_date">
+			发布时间：<@Out name="writeTime" dateFormat="yyyy年MM月dd日"/> &nbsp; 来源：<@Out name="source"/>
+		</div>
+	</div>
+	<div class="news_content_body">
+		<div class="news_content_content"> <@Out name="htmlContent"/> </div>
+		<div class="news_content_attachments">
+		</div>
+	</div>
+	<div class="news_content_other clearfix">
+		<div class="news-content-function">
+			<span onclick="window.print();">打印此文</span>
+			<span onclick="window.close();">关闭窗口</span>
+		</div>
+	</div>
+</div>				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+</@Document>
+		<div class="copyright">
+			<div class="main-wrap">
+				<table cellpadding=0 cellspacing=0 border=0 width="100%" style="table-layout:fixed;">
+					<tr>
+						<td align="right">
+							
+						</td>
+						<td width=640>
+														<a target="_blank">关于我们</a>
+							|
+							<a target="_blank">郑重声明</a>
+							|
+							<a target="_blank">网站地图</a>
+							|
+							<a>意见反馈</a>
+							|
+							<a target="_blank">旧版网站</a>
+							<br/>建议使用：1024*768分辨率，IE8及以上浏览器 某某市人民政府地址：某某市某某路1002号 邮编：100825
+							<br/>某某市人民政府版权所有 某ICP备62110213号
+						</td>
+						<td align="left"><a target="_blank"><img src="<@Rootpath src="r/cms/www/cn/images/110.png"/>" /></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

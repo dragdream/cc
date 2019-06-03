@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+window.UEDITOR_HOME_URL = "./";
+</script>
+<script src="ueditor.config.js"></script>
+<script src="ueditor.all.js"></script>
+</head>
+<body>
+<TEXTAREA id=myEditor name=后台取值的key>这里写你的初始化内容</TEXTAREA>  
+<SCRIPT type=text/javascript>  
+    var editor = new UE.ui.Editor();  
+    editor.render("myEditor");  
+    //1.2.4以后可以使用一下代码实例化编辑器 
+    //UE.getEditor('myEditor') 
+</SCRIPT>
+</body>
+</html>

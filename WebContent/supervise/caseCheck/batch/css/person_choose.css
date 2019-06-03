@@ -1,0 +1,140 @@
+.panel-header {
+    height: 40px;
+    width: 100% !important;
+}
+
+.main-panel-header {
+    height: 40px;
+    width: 100% !important;
+    background-color: #4290db;
+}
+
+#main-panel {
+    width: 100% !important;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.panel-title {
+    font-size: 18px;
+    color: white;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+#choosed-peopole-panel {
+    width: 100% !important;
+    height: 465px;
+}
+
+#auto-group-panel {
+    width: 100% !important;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#group-info-panel {
+    width: 100% !important;
+    height: auto;
+}
+
+#btn-choose-people {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #4290db;
+}
+
+#main-panel .panel-title {
+    color: #777;
+}
+
+.panel-tool {
+    width: 110px;
+    height: 30px;
+    margin-top: -15px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.pagination table {
+    float: right;
+    margin-right: 30px;
+}
+
+.pagination-info {
+    float: left;
+    margin: 0 3%;
+}
+#btn_alldelete {
+    background-color: red;
+    float: right;
+    margin-right: 3%;
+}
+.body{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.padding-top{
+    padding-top: 10px;
+}
+.padding-bottom{
+    padding-bottom: 10px;
+}
+.div-datagrid{
+    width: 100%;
+    height:420px;
+    padding: 2% 2% 1% 2%;
+}
+.div-datagrid2{
+    width: 100%;
+    height: 200px;
+    padding: 1% 4% 1% 4%;
+}
+.horizon-center{
+    margin-left: 50%;
+}
+#div_group{
+    height:auto;
+    padding:3%;
+}
+.accordion .accordion-header{
+    background: #868686;
+    height: 40px;
+}
+.accordion .accordion-header-selected {
+    background: #868686;
+    height: 40px;
+}
+.accordion .accordion-body {
+    border-width: 0px 1px 1px 1px;
+    border-color: #868686;
+}
+.accordion .panel-last > .accordion-body {
+    border-bottom-color: #868686;
+}
+#main-panel .panel-title {
+    color: white;
+}
+.accordion-collapse {
+    background: url('accordion_arrows.png') no-repeat 0 0;
+}
+.accordion-expand {
+    background: url('accordion_arrows.png') no-repeat -16px 0;
+}
+.btn-member-delete{
+    background: red;
+    color: white;
+    height: 25px;
+    width: 60px;
+}
+.btn-member-delete-disable{
+    background: #797979;
+    color: white;
+    height: 25px;
+    width: 60px;
+}

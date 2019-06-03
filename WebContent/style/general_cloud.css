@@ -1,0 +1,57 @@
+/*通用样式表*/
+* { padding:0; margin:0;}
+html,body { height:100%; width:100%; background-color:#3f5fa6; font-family:"Microsoft YaHei";}
+.clear { clear:both; overflow:hidden; height:0;}
+li {list-style-type:none;}
+a {text-decoration:none; font-family:"Microsoft YaHei";}
+a:hover { text-decoration:underline;}
+
+#main{ width:368; height:419px;  position:absolute; left:50%; top:50%; margin:-220px 0 0 -200px;}
+#login{width:368px; height:419px; background:#fff; border-radius:8px; overflow:hidden;}
+#login h2{ text-align:center; margin-top:35px;
+	color:#3759a3;
+	font-size:48px;
+	word-spacing:8px; 
+	letter-spacing: 5px;}
+#login ul{ width:308px; min-height:140px; background:#fff; margin:0px auto; border-radius:18px; overflow:hidden;}
+#login ul li{ width:255px; height:32px; margin:0 auto; margin-top:15px; border-bottom:1px solid #999999;}
+#login ul li.user_name{ background:url(../images/ico_cloud_user.png) no-repeat left center #fff; overflow:hidden; margin-top:20px;}
+#login ul li.user_name input{ margin-left:36px; height:30px; width:215px; margin-top:1px; background:none; border:none;}
+#login ul li.password{ background:url(../images/ico_cloud_pwd.png) no-repeat left center #fff; overflow:hidden;}
+#login ul li.password .pass{ margin-left:36px; height:30px; width:185px; margin-top:1px; background:none; border:none; float:left;}
+#login ul li.password .sbt{ width:28px; height:28px; margin-top:2px; background:url(../images/ico.png) no-repeat 2px -83px; float:left; text-indent:-999px; border:none; cursor:pointer;}
+#login ul li.verifyCode{ background:url(../images/ico.png) no-repeat 8px -120px #fff; overflow:hidden;}
+#login ul li.verifyCode input{ margin-left:36px; height:30px; width:140px; margin-top:1px; background:none; border:none; float:left;}
+#login .login_top{
+	height: 50px;
+	background-color: #7193dd;
+	
+}
+#login ul .submit{ 
+	margin: 50px 10px 10px 10px;
+	text-align: center;
+}
+#login ul .submit .sbt{
+		-moz-border-radius: 8px;
+	/* Webkit browsers */
+	-webkit-border-radius: 8px;
+	 
+	/* W3C syntax */
+	border-radius: 5px;
+	border:none; cursor:pointer;
+	width:260px;
+	height:35px;
+	line-height: 35px;
+	color:#fff;
+	font-size: 14px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #4665a8;
+}
+
+#login ul li.verifyCode .sbt{ width:28px; height:28px; margin-top:2px; background:url(../images/ico.png) no-repeat 2px -83px; float:left; text-indent:-999px; border:none; cursor:pointer;}
+
+
+#login ul li.register { margin-top:10px; line-height:32px;}
+#login ul li.register a{ color:#FFF; font-size:14px; margin-right:10px;}
+#main h3{ text-align:center; font-size:15px; color:#def2fa; font-weight:normal; margin-top:20px; line-height:20px;}

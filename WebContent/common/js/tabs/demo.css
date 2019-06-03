@@ -1,0 +1,30 @@
+.tee_tab{
+	border:0px;
+	height:38px;
+	width:120px;
+	background:none;
+	background-repeat: repeat-x;
+	font-size:12px;
+	float:left;
+	cursor:pointer;
+	line-height:25px;
+	text-align:center;
+	padding:0px;
+}
+.tee_tab:hover{
+	background:#e2e2e2;
+}
+.tee_tab_select{
+	background:#e2e2e2;
+	font-weight:bold;
+}
+.tee_tab_pointer_left{
+	z-index:100;
+	height:28px;
+	width:24px;
+}
+.tee_tab_pointer_right{
+	z-index:100;
+	height:28px;
+	width:24px;
+}

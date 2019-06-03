@@ -1,0 +1,6 @@
+.picexplore_panel {
+	left: 0px; top: 0px; width: 0px; overflow: hidden; position: absolute; z-index: 2147483647; background-image: url("shadow.png");
+}
+.picexplore_img {
+	left: 0px; top: 0px; position: absolute; z-index: 2147483647; cursor: url(grabhand.cur), move;
+}

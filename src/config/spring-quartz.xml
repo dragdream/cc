@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+">
+
+<!-- 日志任务 -->
+<bean id="teeLogTimer" class="com.tianee.oa.quartzjob.TeeLogTimer" />	
+<bean id="teeLogTimerJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject">
+     <ref bean="teeLogTimer"/>
+    </property>
+    <property name="targetMethod">
+     <value>doTimmer</value>
+    </property> 
+    <property name="concurrent">  
+     <value>false</value>  
+ 	</property>
+</bean>
+<bean id="teeLogTimerJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+  <property name="jobDetail">
+    <ref bean="teeLogTimerJob"/>
+  </property>
+  <property name="cronExpression">
+   <value>59 59 23 L * ?</value>
+  </property>
+</bean>
+ 
+ 
+<!-- 任务调度集合，由Spring代理 -->
+<bean id="doScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+  <property name="triggers">
+    <list>
+     <ref local="teeLogTimerJobTrigger"/>  
+    </list>
+  </property>
+</bean>
+
+</beans>

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="res/jquery.js"></script>
+<script src="res/svg.js"></script>
+<script src="flowdesigner.js"></script>
+<script src="../popupmenu/popupmenu.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="res/style.css" />
+<link rel="stylesheet" type="text/css" href="../popupmenu/res/style.css" />
+<script>
+var maxPrcsId=1;
+var designer;
+var startNode;
+var endNode;
+window.onload=function(){
+	var paper = Raphael(notepad);
+	designer = new FlowDesigner(paper);
+
+	startNode = designer.drawStart(359,0,"start");
+	endNode = designer.drawEnd(359,336,"end");
+
+	//设置开始节点菜单
+	startNode.mousedown(function(event){
+		if(event.which!=3){
+			return;
+		}
+		$(this).popupEmbedMenu([{text:'基本信息',title:''},
+		                      	{text:'添加普通节点',title:'',func:addSimpleNode},
+		                      	{text:'添加并发节点',title:'',func:addParallelNode}]);
+	});
+	
+	//全局移动监听器
+	var movedListener = function(nodes,event){
+		designer.repaint();//重绘
+		designer.doLineTo();//根据连线规则绘制连线
+	}
+	
+	//添加监听器
+	designer.setMovedListener(movedListener);
+}
+
+/**
+ * 添加并发节点
+ */
+function addParallelNode(node){
+	var x = node.position().left;
+	var y = node.position().top+node.height()+30;
+	var parallelNode = designer.drawParallelNode(x,y,"node_"+maxPrcsId,"并发节点"+(maxPrcsId),"并发节点"+(maxPrcsId));
+	node.addNextNode(parallelNode);
+	designer.doLineTo();
+	maxPrcsId++;
+
+	parallelNode.mousedown(function(event){
+		if(event.which!=3){
+			return;
+		}
+		$(this).popupEmbedMenu([{text:'基本信息',title:''},
+		     	 	            {text:'添加普通节点',title:'',func:addSimpleNode},
+		    		            {text:'删除该节点',title:'',func:remove}]);
+	});
+	
+}
+
+/**
+ * 添加普通节点
+ */
+function addSimpleNode(node){
+	var x = node.position().left;
+	var y = node.position().top+node.height()+30;
+	var simpleNode = designer.drawSimpleNode(x,y,"node_"+maxPrcsId,"序号:"+maxPrcsId,"普通节点"+(maxPrcsId));
+	node.addNextNode(simpleNode);
+	designer.doLineTo();
+	maxPrcsId++;
+	
+	simpleNode.mousedown(function(event){
+		if(event.which!=3){
+			return;
+		}
+		var menuItems = new Array();
+		menuItems.push({text:'基本信息',title:''});
+		menuItems.push({text:'添加普通节点',title:'',func:addSimpleNode});
+
+		//从该节点往上查找并发步骤及聚合步骤
+		var patternNode = searchFirstPatternedNode($(this));
+		if(patternNode){
+			if(patternNode.attr('parallel')==''){//并发节点
+				menuItems.push({text:'添加聚合节点',title:'',func:addAggregationNode});
+			}else if(patternNode.attr('aggregation')==''){//聚合节点
+				menuItems.push({text:'添加并发节点',title:'',func:addParallelNode});
+				menuItems.push({text:'指向结束',title:'',func:toEnd});
+			}
+		}else{
+			menuItems.push({text:'添加并发节点',title:'',func:addParallelNode});
+			menuItems.push({text:'指向结束',title:'',func:toEnd});
+		}
+		menuItems.push({text:'删除该节点',title:'',func:remove});
+		
+		$(this).popupEmbedMenu(menuItems);
+	});
+}
+
+/**
+ * 搜索第一个匹配里程碑节点（主要搜索聚合节点和并发节点）
+ */
+function searchFirstPatternedNode(node){
+	var prevNodes = node.getPrevNodes();
+	if(!prevNodes || prevNodes==null){
+		return undefined;
+	}else if(prevNodes.length==0){
+		return undefined;
+	}
+	for(var i=0;i<prevNodes.length;i++){
+		var tmp = prevNodes[i];
+		if(tmp.attr('aggregation')=='' || tmp.attr('parallel')==''){
+			return tmp;
+		}else{
+			return searchFirstPatternedNode(tmp);
+		}
+	}
+}
+
+/**
+ * 添加聚合节点
+ */
+function addAggregationNode(node){
+	var x = node.position().left;
+	var y = node.position().top+node.height()+30;
+	var aggregationNode = designer.drawAggregationNode(x,y,"node_"+maxPrcsId,"聚合节点"+(maxPrcsId),"聚合节点"+(maxPrcsId));
+	node.addNextNode(aggregationNode);
+	designer.doLineTo();
+	maxPrcsId++;
+
+	aggregationNode.mousedown(function(event){
+		if(event.which!=3){
+			return;
+		}
+		$(this).popupEmbedMenu([{text:'基本信息',title:''},
+	 	                      	{text:'添加普通节点',title:'',func:addSimpleNode},
+		                      	{text:'添加并发节点',title:'',func:addParallelNode},
+		                      	{text:'指向结束',title:'',func:toEnd},
+		                      	{text:'删除',title:'',func:remove}]);
+	});
+}
+
+/**
+ * 删除节点
+ */
+function remove(node){
+	designer.removeNode(node);
+	designer.repaint();
+	designer.doLineTo();
+}
+
+/**
+ * 指向结束节点
+ */
+function toEnd(node){
+	node.addNextNode(endNode);
+	designer.repaint();
+	designer.doLineTo();
+}
+</script>
+</head>
+<body style="margin:0px;" oncontextmenu="return false">
+	<div  id="notepad" style="height:800px;width:800px;border:1px solid black"></div>
+</body>
+</html>

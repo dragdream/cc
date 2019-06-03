@@ -1,0 +1,14 @@
+/**组织机构发送邮件*/
+div .orgSendEmail {
+	width:40px;
+	line-height:30px;
+	background:#fff url("imgs/email.gif") no-repeat;
+	padding-left:5px;
+}
+/**组织机构发送短信*/
+div .orgSendSms{
+	padding-left:5px;
+	width:40px;
+	line-height:30px;
+	background:#fff url("imgs/sms.gif") no-repeat;
+}

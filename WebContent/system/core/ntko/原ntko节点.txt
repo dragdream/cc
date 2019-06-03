@@ -1,0 +1,20 @@
+<object  id="TANGER_OCX" classid="clsid:C9BC4DFF-4248-4a3c-8A49-63A7D317F404" codebase="/system/core/ntko/OfficeControl.cab#version=5,0,2,8" width="99%" height="600">
+
+<param name="IsNoCopy" value="0">
+<param name="FileSave" value="1">
+<param name="FileSaveAs" value="1">
+
+<param name="wmode" value="transparent">
+<param name="BorderStyle" value="1">
+<param name="BorderColor" value="14402205">
+<param name="TitlebarColor" value="14402205">
+<param name="TitlebarTextColor" value="0">
+<param name="MakerCaption" value="北京中安腾鹏科技有限公司">
+<param name="MakerKey" value="E765588F5C5571A6D6F7F957F914FA7279F2743C">
+<param name="ProductCaption" value="WebOffice文档控件"> 
+<param name="ProductKey" value="2357D08A8147A6D383211888E4A857203B352A42">
+<param name="IsShowToolMenu" value="-1">
+<param name="IsHiddenOpenURL" value="0">
+<param name="IsUseUTF8URL" value="1">
+<SPAN STYLE="color:red"><br>不能装载文档控件，请设置好IE安全级别为中或中低，不支持非IE内核的浏览器。</SPAN>
+</object>

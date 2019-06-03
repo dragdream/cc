@@ -1,0 +1,87 @@
+/***************投资者关系***************/
+/*当前位置*/
+.layer_nav{ height:46px; line-height:46px; border-bottom:1px dashed #D7D7D7;}
+.layer_nav .layer_nav_con{ float:right;background:url(../images/list/layer_nav.jpg) no-repeat left center; padding-left:15px;}
+.layer_nav a{ color:#4F4F4F; font-size:13px; }
+.layer_nav a:hover{color:#1D53A9; text-decoration:none;}
+.layer_nav span{color:#1D53A9;font-size:13px; }
+
+.investor{ padding-bottom:50px; float:left; margin-top:20px;}
+.investorL{ width:225px; height:auto; float:left;}
+.investorL h2{ background:url(../images/list/investor_h2.jpg) no-repeat left top; width:225px; height:116px; text-align:center;font-size:25px; font-family:"Microsoft YaHei"; color:#052175; line-height:100px;} 
+.investorL h2 span{ color:#009fe9;}
+.investorL .investor_ul li{ width:185px; height:50px; line-height:50px;border-bottom:1px solid #efefef; margin-left:10px; }
+.investorL .investor_ul li a{font-size:16px;font-family:"Microsoft YaHei";color:#262626; background:url(../images/list/efefef_li.jpg) no-repeat left center; padding-left:15px; margin-left:20px;}
+.investorL .investor_ul li span{display:inline-block; width:160px; height:35px; line-height:35px; margin-left:13px;margin-top:8px;+margin-top:0px;}
+.investorL .investor_ul li span.on{background:#009fe9;}
+.investorL .investor_ul li span.on a{color:#fff; font-weight:bold; background:url(../images/list/efefef_lia.png) no-repeat left center;}
+
+/*****股票行情*****/
+.investorR{ float:left;width:742px;_display:inline; padding-left:25px;border-left:1px solid #d8d8d8;}
+.investorR h2{font-family:"Microsoft YaHei"; color:#052175; font-size:21px; line-height:24px; font-weight:bold; margin:40px 0px 23px 0px;}
+.investorR h2 img{ float:left; margin-right:5px;}
+.investorR h2 span{ color:#009fe9}
+
+/*****上市公告*****/
+.investorR_ul ul{ margin-top:15px;}
+.investorR_ul ul li{border-bottom:1px dashed #D7D7D7; overflow:hidden; line-height:22px; padding:12px 0px 8px 0;}
+.investorR_ul ul li a{ display:inline-block; width:635px; line-height:22px;color:#666666; font-size:14px;}
+.investorR_ul ul li span{ float:right; font-size:13px; text-align:right; }
+.investorR_ul ul li strong{ float:left; font-weight:normal; padding-right:5px;}
+
+/*页码*/
+.news_page{ text-align:center; margin-top:40px; width:100%; float:left;}
+.news_page a{padding:5px 10px; +padding:4px 10px; border:1px solid #E0E0E0; color:#2D87DF; background:#fff; border-radius:5px; text-align:center; line-height:27px;}
+.news_page a:hover{ background:#2F84DE;color:#fff;}
+.news_page .pre{ font-size:12px;color:#CDCBCC;background:url(../images/list/group_pre.jpg) no-repeat 4px center; padding-left:15px;}
+.news_page .last{ background:url(../images/list/group_last.jpg) no-repeat 54px center; color:#2D85DE; padding-right:15px;}
+.news_page .before{ background:url(../images/list/group_last_r.jpg) no-repeat 2px center;}
+.news_page .next{background:url(../images/list/group_pre_r.jpg) no-repeat 54px center; margin-right:7px; }
+
+/*****公司治理*****/
+.companyL{ width:453px; float:left;}
+.companyul{ width:453px; float:left; margin-top:25px;}
+.companyul li{border-bottom:1px dashed #D7D7D7; overflow:hidden; line-height:22px; padding:12px 0px 8px 0;}
+.companyul li a{ display:inline-block; width:435px;line-height:22px;color:#666666; font-size:14px; float:left;}
+.companyul li strong{ float:left; font-weight:normal; padding-right:5px;}
+.companyR{ float:right; width:260px;}
+.companyR li{ position:relative; margin:10px 0px; width:260px; height:86px;}
+.companyR li span{ color:#fff; text-align:center; line-height:23px; position:absolute; left:0px; bottom:0px; display:block; width:260px; height:23px; background:url(../images/bj_1.png) repeat;}
+
+/*****研究报告*****/
+.report{ width:740px;border-left:1px solid #999;border-top:1px solid #999;}
+.report thead td{ border-right:1px solid #969696; text-align:center; font-size:16px; padding:20px 0px; font-weight:bold;font-family:"Microsoft YaHei"; font-size:16px; }
+.report thead .border_right{ border-right:1px solid #969696; }
+.report td{ padding:13px 0px; text-align:center; border-right:1px solid #969696; border-bottom:1px solid #969696; font-size:13px;}
+.report td a{font-size:13px; color:#000;}
+
+/*****投资者保护宣传*****/
+.protect{ width:740px; overflow:hidden;float:right;}
+.protect .hd{ height:43px; background:url(../images/dynamic_bj.jpg) no-repeat;line-height:43px; border:1px #dadde0 solid;}
+.protect .hd span{ float:right; width:42px; overflow:hidden; padding-right:10px; padding-top:1px;}
+.protect .hd span a{ color:#009fe9; display:block;width:25px; float:right; background:url(../images/more.jpg) no-repeat right center; padding-right:10px;}
+.protect .hd li{ float:left; position:relative; width:116px; height:45px; line-height:44px; text-align:center; font-size:17px; font-family:"Microsoft YaHei"; cursor:pointer; color:#0e0e0e; left:-1px; top:-1px;}
+.protect .hd li.on{ background:url(../images/nav_bj2.jpg) no-repeat; color:#009fe9; font-size:17px; width:116px;}
+.protect .hd .message{ width:166px; text-align:center;}
+.protect .hd .message.on{ background:url(../images/nav_bj3.jpg) no-repeat; color:#009fe9; font-size:17px; width:166px;}
+
+.protect .hd ul li a{ text-decoration:none; color:black; font-family:"Microsoft YaHei";}
+.protect .hd ul li.on a:visited{ text-decoration:none; color:#009fe9;}
+.protect .hd ul li.on a:hover{ text-decoration:none; color:#009fe9;}
+.protect .hd ul li.on a:active { text-decoration:none; color:#009fe9;}
+
+.protect .bd ul{ margin-top:5px;}
+.protect .bd li{height:44px;line-height:48px; border-bottom:1px #d6d6d6 dashed; color:#919191; font-size:13px; padding-left:3px; overflow:hidden;}
+.protect .bd li span{ float:right;}
+.protect .bd li a{ color:#666; font-size:14px; padding-left:5px;}
+
+
+
+/***************新闻报道***************/
+/****兵工新闻****/
+.pic_news h2 a{color: #009FE9;display: block;width: 25px;float: right;background:url(../images/list/more.jpg) no-repeat scroll right center transparent;
+padding-right: 10px;font-size: 12px;font-weight: normal;}
+.pic_news{ margin-top:30px;}
+.pic_news .picList{ width:100%; overflow:hidden;}
+.pic_news .picList li{ float:left; margin:5px; _display:inline;width:175px; }
+.pic_news .picList li span{ display:block; line-height:30px; color:#666;}

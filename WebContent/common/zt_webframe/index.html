@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页登录</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/init.css">
+	<script type="text/javascript" src = 'js/jquery.min.js'></script>
+	<script type="text/javascript" src = 'js/bootstrap.min.js'></script>
+
+
+	<!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+	<div class="header">
+		<div class="logo fl"><img src="imgs/index/logo.png">OA协同办公V5.0</div>
+		<div class="fl clearfix firstMenuContent">
+			<img class = 'home' src="imgs/index/home.png" title="桌面">
+			<ul id = 'firstMenuList' class = 'clearfix fl'>
+				<!-- 这里是第一级列表 -->
+			</ul>
+			<span class = 'moreApp fl'>更多应用<img src="imgs/index/xialasanjiao.png"></span>
+			<div class = 'fl menuListRight'>
+				<span class="search "><img src="imgs/index/search.png"></span>
+				<ul class = 'clearfix fl'>
+					<li><img src="imgs/index/alert.png"></li>
+					<li><img src="imgs/index/sign.png"></li>
+					<li><img src="imgs/index/switch.png"></li>
+				</ul>
+				<img class = 'group fl' src="imgs/index/group.png">
+
+			</div>
+		</div>
+
+	</div><!-- header结束 -->
+
+	<div class="section">
+		<div class="secLeft">
+			<div class="avatar">
+				<img class = 'avatarIcon' src="imgs/index/avatar.png" ><span>王小明</span>
+				<img class = 'shareIcon' src="imgs/index/share.png">
+
+			</div>
+
+			<div class="secMenuListContent"><!-- 左侧的二级菜单 -->
+				<ul id = 'secMenuList' class="panel-group">
+					<div class="default"><!-- 默认显示的桌面 -->
+						<p><img src="imgs/index/xialasanjiao.png">桌面</p>
+						<ul class = 'defaultContent'>
+							<li><img src="imgs/index/page.png">个人门户</li>
+							<li><img src="imgs/index/page.png">公司门户</li>
+							<li><img src="imgs/index/page.png">管理门户</li>
+						</ul>
+					</div>
+				</ul>
+
+
+			</div>
+
+		</div>
+
+		<div class="mainContent">
+			<iframe src="" frameborder="0">
+
+			</iframe>
+		</div><!-- section结束 -->
+
+		</div>
+		<div class="footer">
+				<div class="setting">
+					<p class = 'currentIdentity'>系统管理员<img class = 'setIcon' src="imgs/index/set.png"><img class = 'themeIcon' src="imgs/index/pageStyle.png"><img class = 'leftShow' src="imgs/index/leftShow.png"></p>
+				</div>
+		</div>
+	<script type="text/javascript" src = 'js/jquery.min.js'></script>
+	<script type="text/javascript">
+	$.ajax({
+		type:'get',
+		url:"/teeMenuGroup/getPrivSysMenu.action",
+		beforeSend: function(XMLHttpRequest){
+		},
+		success: function(data, textStatus){
+			var json = JSON.parse(data);
+			renderFirstMenu(json);
+			renderSecondMenu(json);
+		},
+		complete: function(XMLHttpRequest, textStatus){
+			console.log('获取文件成功！');
+		},
+		error: function(){
+				alert('获取文件失败！');
+		}
+	})
+
+	var windowWidth = $(window).width();
+	// alert(windowWidth);
+	function renderFirstMenu(data){
+		var str = '';
+		for(var i =0;i<data.rtData.length;i++){
+			if(data.rtData[i].menuId.length == 3){
+					str = '<li class="firstMenu fl">'+
+										'<img src="imgs/icon/2/' + data.rtData[i].icon + '">'+
+											data.rtData[i].menuName +
+								'</li>';
+					$("#firstMenuList").append(str);
+					if(windowWidth >= 1900){
+						if($('#firstMenuList li').length == 6 ){break;};
+					}else if(windowWidth >= 1300){
+						if($('#firstMenuList li').length == 4 ){break;};
+					}
+
+			}
+		}
+
+	};
+
+	function renderSecondMenu(data){//具有折叠功能二级菜单
+		var str2 = '';
+		$('#secMenuList').html('');
+		for(var i = 0,l=data.rtData.length;i<l;i++){
+			if(data.rtData[i].menuId.length == 6){
+				var secondMenuId = data.rtData[i].menuId.substring(0,6);
+				str2 = '<div class="panel panel-default">' +
+									'<div class="panel-heading">' +
+										'<p class="panel-title">' +
+
+												'<a data-toggle="collapse" data-parent="#secMensuList" href="#secMenu' + data.rtData[i].menuId + '"menuCode="' + data.rtData[i].menuCode + '"> ' + '<img src="imgs/icon/2/' + data.rtData[i].icon + '">' + data.rtData[i].menuName +
+												 '</a>' +
+										'</p>' +
+									  '</div>' +
+	 									'<div id="thirdMenuList' + 'class="panel-collapse collapse in">' +
+											'<div class="panel-body"' + 'menuCode="' + data.rtData[i].menuCode + '"id = "thirdMenu' + secondMenuId + '">'
+
+
+											'</div>' +
+										'</div>'+
+								'</div>';
+				$("#secMenuList").append(str2);
+			}else if(data.rtData[i].menuId.length == 9){
+				var secondMenuId = data.rtData[i].menuId.substring(0,6);
+				var str3 = '<p>' + data.rtData[i].menuName + '</p>';
+
+				$("#thirdMenu"+secondMenuId).append(str3);
+			}
+		}
+	}
+
+	</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.panel-heading').on('click',function(){
+			alert('d');
+			$(this).parent().find('#thirdMenuList').toggleSlide();
+		})
+		})
+
+	</script>
+</body>
+</html>

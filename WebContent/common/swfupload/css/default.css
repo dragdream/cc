@@ -1,0 +1,226 @@
+/* -----------------------------------------------
+	www.swfupload.org
+	Description: Common Screen Stylesheet for SWFUpload Demos
+	Updated on:  May 1, 2008
+----------------------------------------------- */
+
+
+/* ----------------------------------------------- 
+	GLOBAL RESET 
+   ----------------------------------------------- */
+
+caption{
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after { 
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+/* ----------------------------------------------- 
+	BASIC ELEMENTS
+   ----------------------------------------------- */
+   
+   
+
+
+code {
+	display: block;
+	background:#edffb8 none repeat scroll 0%;
+	border-color:#b2da3a;
+	border-style:solid;
+	border-width:1px 0;
+	font-size: 1em;
+	margin: 1em 0pt;
+	overflow:auto;
+	padding: 0.3em 0.4em;
+	white-space:pre;
+}
+
+
+div.fieldset {
+	border:  1px solid #afe14c;
+	margin: 10px 0;
+	padding: 20px 10px;
+}
+div.fieldset span.legend {
+	position: relative;
+	background-color: #FFF;
+	padding: 3px;
+	top: -30px;
+	font: 700 14px Arial, Helvetica, sans-serif;
+	color: #73b304;
+}
+
+div.flash {
+	width: 375px;
+	margin: 10px 5px;
+	border-color: #D9E4FF;
+
+	-moz-border-radius-topleft : 5px;
+	-webkit-border-top-left-radius : 5px;
+    -moz-border-radius-topright : 5px;
+    -webkit-border-top-right-radius : 5px;
+    -moz-border-radius-bottomleft : 5px;
+    -webkit-border-bottom-left-radius : 5px;
+    -moz-border-radius-bottomright : 5px;
+    -webkit-border-bottom-right-radius : 5px;
+
+}
+
+#btnSubmit { margin: 0 0 0 155px ; }
+
+.progressWrapper {
+	width: 357px;
+	overflow: hidden;
+}
+
+.progressContainer {
+	margin: 5px;
+	padding: 4px;
+	border: solid 1px #E8E8E8;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+/* Message */
+.message {
+	margin: 1em 0;
+	padding: 10px 20px;
+	border: solid 1px #FFDD99;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+/* Error */
+.red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+/* Current */
+.green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+/* Complete */
+.blue {
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+
+.progressName {
+	font-size: 8pt;
+	font-weight: 700;
+	color: #555;
+	width: 323px;
+	height: 25px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError {
+	font-size: 0;
+	width: 0%;
+	height: 2px;
+	background-color: blue;
+	margin-top: 2px;
+}
+
+.progressBarComplete {
+	width: 100%;
+	background-color: green;
+	visibility: hidden;
+}
+
+.progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+
+.progressBarStatus {
+	margin-top: 2px;
+	width: 337px;
+	font-size: 7pt;
+	font-family: Arial;
+	text-align: left;
+	white-space: nowrap;
+}
+
+a.progressCancel {
+	font-size: 0;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background-image: url(../images/cancelbutton.gif);
+	background-repeat: no-repeat;
+	background-position: -14px 0px;
+	float: right;
+}
+
+a.progressCancel:hover {
+	background-position: 0px 0px;
+}
+
+
+/* -- SWFUpload Object Styles ------------------------------- */
+.swfupload {
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+
+.add_swfupload{
+	overflow:hidden;
+	width:88px;
+	height:20px;
+	cursor:pointer;
+	position:relative;
+}
+.swfupload{
+	cursor:pointer;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:transparent;
+	z-index:5;
+	opacity:0;
+	filter:alpha(opacity=0);
+	width:100%;
+	height:100%;
+}
+
+a.addfile {
+	POSITION: relative; 
+	PADDING-LEFT: 12px;
+	BACKGROUND: url(/common/styles/style1/img/org_select.png) no-repeat 0px 4px; 
+	COLOR: #207bd6; 
+	TEXT-DECORATION: none;
+	position:relative;
+}
+A.addfile:hover {
+	BACKGROUND-POSITION: 0px -16px; 
+	COLOR: #9aa9b8; 
+	TEXT-DECORATION: underline
+}
+INPUT.addfile {
+	POSITION: absolute;
+	top:0xp;
+	bottom:0px;
+	 FILTER: alpha(opacity=0); 
+	 WIDTH: 67px; CURSOR: pointer; 
+	 LEFT: -5px; opacity: 0
+}
+
+#这是浮动div组建 用的div样式 2013-10-07 zhp
+.attach_name:link,.attach_name:hover,.attach_name:active,.attach_name:visited{color:#0D3A73;}
+.attach_div{width:110px;border:#cccccc 1px solid;position:absolute;padding:0px;z-index:10001;background:#FFFFFF;}
+.attach_div a{display:block !important;padding:0px 10px;height:25px;line-height:25px;text-decoration:none;color:#393939;}
+.attach_div a:hover{background:#5d99da;color:#fff;text-decoration:none;}

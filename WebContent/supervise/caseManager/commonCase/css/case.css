@@ -1,0 +1,463 @@
+/* .tabs {
+  list-style-type: none;
+  height: 26px;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 4px;
+  width: 50000px;
+  border-style: solid;
+  border-width: 0 0 0px 0;
+  background-color: #5cb5fd;
+}
+.tabs li a.tabs-inner {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  white-space: nowrap;
+  border-width: 0px;
+  border-style: solid;
+  -moz-border-radius: 0px 0px 0 0;
+  -webkit-border-radius: 0px 0px 0 0;
+  border-radius: 0px 0px 0 0;
+}
+.tabs-header {
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-width: 0;
+  position: relative;
+  padding: 0;
+  padding-top: 0px;
+  overflow: hidden;
+}
+
+.tabs-panels {
+  margin: 0px;
+  padding: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-top-width: 0;
+  overflow: hidden;
+  border-color: #5cb5fd;
+}
+.tabs li.tabs-selected a.tabs-inner {
+  background-color: #fff;
+  color: #777;
+}
+.tabs li a.tabs-inner {
+  color: #ffffff;
+  background-color: #5cb5fd;
+}
+ */
+/* .datagrid-body{ overflow:hidden; } */
+#common_case_index_look_div table td{
+    vertical-align: top;
+    padding-top: 10px!important;
+}
+
+/* #common_case_add_revoke_form table td{
+    vertical-align: top;
+    padding-top: 10px!important;
+} */
+
+#common_case_add_revoke_form table tr{
+    border:none!important;
+}
+
+/* #common_case_add_revokePunish_form table td{
+    vertical-align: top;
+    padding-top: 10px!important;
+} */
+
+#common_case_add_revokePunish_form table tr{
+    border:none!important;
+}
+
+/* #common_case_add_end_form table td{
+    vertical-align: top;
+    padding-top: 10px!important;
+} */
+
+#common_case_add_end_form table tr{
+     border:none!important;
+}
+
+.common-line-height{
+    height: 3px!important;
+}
+
+.panel-header{
+    background-color: #cce5fd;
+}
+.tabs-header-border{
+    border-style:none!important;
+}
+
+.case-textarea{
+    font-size:14px!important;
+    font-family: MicroSoft YaHei!important; 
+    overflow-y:visible!important; 
+    resize: vertical!important;
+    padding: 0px 4px!important;
+}
+/** 棣栭〉鏍峰紡 **/
+.case-common-td-index1{
+    width: 80px!important; 
+    text-align: right!important;
+    height:35px!important;
+}
+
+.case-common-td-index2{
+    width: 255px!important; 
+    text-align: left!important;
+    height:35px!important;
+}
+
+.case-common-td-index3{
+    width: 130px!important; 
+    text-align: right!important;
+    height:35px!important;
+}
+
+.case-common-td-index4{
+    width: 505px!important; 
+    text-align: left!important;
+    height:35px!important;
+}
+
+.case-common-td-index5{
+    text-align: right!important; 
+    padding-right: 5px!important;
+    width: 140px!important;
+    height:35px!important;
+}
+
+.case-common-td-index6{
+    width: 35px!important; 
+    text-align: center!important;
+    height:35px!important;
+}
+
+.case-common-td-index7{
+    width: 110px!important; 
+    text-align: left!important;
+    height:35px!important;
+}
+
+
+.case-common-td-index8{
+    width: 305px!important; 
+    text-align: left!important;
+    height:35px!important;
+}
+
+.case-common-td-index9{
+    text-align: right!important; 
+    width: 130px!important;
+    height:35px!important;
+}
+
+.case-common-td-index10{
+    text-align: left!important; 
+    width: 120px!important;
+    height:35px!important;
+}
+
+.case-common-td-index11{
+    text-align: right!important; 
+    width: 80px!important;
+    height:35px!important;
+}
+
+
+/** filing td 锟斤拷式锟斤拷锟斤拷锟� 12% **/
+.case-common-td-class1{
+    text-align: right!important; 
+    width: 109px!important;
+    height: 40px!important;
+}
+
+/** filing td 锟斤拷式锟斤拷锟斤拷锟� 38% **/
+.case-common-td-class2{
+    text-align: left!important; 
+    width: 345px!important;
+    height: 40px!important;
+}
+
+/** filing td 锟斤拷式锟斤拷锟斤拷锟� 13% **/
+.case-common-td-class3{
+    text-align: left!important; 
+    width: 118px!important;
+    height: 40px!important;
+}
+
+/** filing td 锟斤拷式锟斤拷锟斤拷锟� 88% **/
+.case-common-td-class4{
+    text-align: left!important; 
+    width: 790px!important;
+    height: 40px!important;
+}
+
+/** filing td 锟斤拷式锟斤拷锟斤拷锟� 30% **/
+.case-common-td-class5{
+    text-align: right!important; 
+    width: 225px!important;
+    height: 40px!important;
+}
+
+/** filing td 锟斤拷式锟斤拷锟斤拷锟� 30% **/
+.case-common-td-class6{
+    text-align: left!important; 
+    width: 225px!important;
+    height: 40px!important;
+}
+
+/** filing td 锟斤拷式锟斤拷锟斤拷锟� 18% **/
+.case-common-td-class7{
+    text-align: right!important; 
+    width: 180px!important;
+    height: 40px!important;
+}
+
+/** filing td 锟斤拷式锟斤拷锟斤拷锟� 19% **/
+.case-common-td-class8{
+    text-align: left!important; 
+    width: 250px!important;
+    height: 40px!important;
+}
+/** research td 锟斤拷式 **/
+.case-common-td-class9{
+    text-align: right!important; 
+    width: 150px!important;
+    height: 40px!important;
+}
+
+/** research td 锟斤拷式 **/
+.case-common-td-class10{
+    text-align: right!important; 
+    width: 170px!important;
+    height: 40px!important;
+}
+/** research td 锟斤拷式 **/
+.case-common-td-class11{
+    text-align: left!important; 
+    width: 130px!important;
+    height: 40px!important;
+}
+
+.case-common-td-class12{
+    text-align: left!important; 
+    width: 60px!important;
+    height: 40px!important;
+}
+
+/** research td 锟斤拷式 **/
+.case-common-td-class13{
+    text-align: right!important; 
+    width: 130px!important;
+    height: 40px!important;
+}
+
+
+/** research td 锟斤拷式 **/
+.case-common-td-class14{
+    text-align: left!important; 
+    width: 670px!important;
+    height: 40px!important;
+}
+/** research panel 锟斤拷式 **/
+.case-common-panel-body{
+    height: auto !important;
+}
+
+.case-common-panel-body1{
+    height: 160px !important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class15{
+    text-align: right!important; 
+    width: 150px!important;
+    height: 40px!important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class16{
+    text-align: left!important;
+        width: 150px!important;
+    margin-right:5px!important;
+    min-height: 40px!important;   
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class17{
+    text-align: left!important; 
+    width: 60px!important;
+    height: 40px!important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class18{
+    text-align: left!important; 
+    width: 130px!important;
+    height: 40px!important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class19{
+    text-align: right!important; 
+    width: 130px!important;
+    height: 40px!important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class20{
+    text-align: left!important; 
+    width: 570px!important;
+    height: 40px!important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class21{
+    text-align: right!important; 
+    width: 140px!important;
+    height: 40px!important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class22{
+    text-align: left!important; 
+    width: 150px!important;
+    height: 40px!important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class23{
+    text-align: left!important; 
+    width: 170px!important;
+    height: 40px!important;
+}
+
+/** correct td 锟斤拷式 **/
+.case-common-td-class24{
+    text-align: center!important; 
+    width: 40px!important;
+    height: 40px!important;
+}
+/** correct td 锟斤拷式 **/
+.case-common-td-class25{
+    text-align: right!important; 
+    width: 170px!important;
+    height: 40px!important;
+}
+
+/** correct td 锟斤拷式 **/
+.case-common-td-class26{
+    text-align: left!important; 
+    width: 230px!important;
+    height: 40px!important;
+}
+
+/** correct td 锟斤拷式 **/
+.case-common-td-class27{
+    text-align: right!important; 
+    width: 230px!important;
+    height: 40px!important;
+}
+
+/** correct td 锟斤拷式 **/
+.case-common-td-class28{
+    text-align: right!important; 
+    width: 100px!important;
+    height: 40px!important;
+}
+
+/** correct td 锟斤拷式 **/
+.case-common-td-class29{
+    text-align: left!important; 
+    width: 530px!important;
+    height: 40px!important;
+}
+
+/** present td 锟斤拷式 **/
+.case-common-td-class30{
+    text-align: left!important; 
+    width: 70px!important;
+    height: 40px!important;
+}
+
+/** present td 锟斤拷式 **/
+.case-common-td-class31{
+    text-align: left!important; 
+    width: 150px!important;
+    height: 40px!important;
+}
+/** present td 锟斤拷式 **/
+.case-common-td-class32{
+    text-align: right!important; 
+    width: 120px!important;
+    height: 40px!important;
+}
+/** present td 锟斤拷式 **/
+.case-common-td-class33{
+    text-align: left!important; 
+    width: 120px!important;
+    height: 40px!important;
+}
+/** present td 锟斤拷式 **/
+.case-common-td-class34{
+    text-align: right!important; 
+    width: 60px!important;
+    height: 40px!important;
+}
+
+/** present td 锟斤拷式 **/
+.case-common-td-class35{
+    text-align: left!important; 
+    width: 410px!important;
+    height: 40px!important;
+}
+
+/** present td 锟斤拷式 **/
+.case-common-td-class36{
+    text-align: left!important; 
+    width: 325px!important;
+    height: 40px!important;
+}
+
+/** present td 锟斤拷式 **/
+.case-common-td-class37{
+    text-align: right!important; 
+    width: 85px!important;
+    height: 40px!important;
+}
+/** execute td 锟斤拷式 **/
+.case-common-td-class38{
+    text-align: right!important; 
+    width: 140px!important;
+    height: 40px!important;
+}
+/** execute td 锟斤拷式 **/
+.case-common-td-class39{
+    text-align: left!important; 
+    width: 140px!important;
+    height: 40px!important;
+}
+
+/** execute td 锟斤拷式 **/
+.case-common-td-class40{
+    text-align: left!important; 
+    width: 700px!important;
+    height: 40px!important;
+}
+/** execute td 锟斤拷式 **/
+.case-common-td-class41{
+    text-align: right!important; 
+    width: 96px!important;
+    height: 40px!important;
+}
+/** execute td 锟斤拷式 **/
+.case-common-td-class42{
+    text-align: left!important; 
+    width: 120px!important;
+    height: 40px!important;
+}
+
+.datebox-calendar-inner {
+    height: 190px;
+}
+

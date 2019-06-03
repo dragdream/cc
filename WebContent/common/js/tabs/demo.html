@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css1/style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="res/jquery.js"></script>
+<script>
+(function($){
+	$.addTab=function(c1,c2,opts){
+		var _c1 = $("#"+c1);
+		var _c2 = $("#"+c2);
+
+		if(opts.active==undefined){
+			opts.active = true;
+		}
+		
+		var exist = tabsExist(_c1,opts);
+		if(exist){
+			return;
+		}
+
+		renderTab(_c1,_c2,opts);
+		renderComplete(_c1,_c2);
+		initOutofBoundaryListener(_c1);
+		initInnerContentWidth(_c1);
+	};
+
+	function renderTab(c1,c2,opts){
+		var title = opts.title;
+		var url = opts.url;
+		var active = opts.active;
+		
+		var outerTabContainer = c1[0].outerTabContainer;
+		if(!outerTabContainer){
+			var left = $("<div style='float:left;' class='tee_tab_pointer_left'>←</div>");
+			var right = $("<div style='float:right;' class='tee_tab_pointer_right'>→</div>");
+			c1[0].left = left[0];
+			c1[0].right = right[0];
+			var center = $("<div style='overflow:hidden'></div>");
+			
+			c1.append(left).append(right).append(center);
+
+			outerTabContainer = $("<div style='width:5000px;'></div>");
+			c1[0].outerTabContainer = outerTabContainer[0];
+			center.append(outerTabContainer);
+
+			//注册按钮事件
+			left.click(function(){
+				var innerContentWidth = c1[0].innerContentWidth;
+				var delta = center.width();
+				var scrollLeftDelta = center.scrollLeft()-delta;
+				scrollLeftDelta = scrollLeftDelta<=0?0:scrollLeftDelta;
+				center.animate({scrollLeft:scrollLeftDelta},1000);
+			});
+			
+			right.click(function(){
+				var innerContentWidth = c1[0].innerContentWidth;
+				var delta = center.width();
+				var scrollLeftDelta = center.scrollLeft()+delta;
+				scrollLeftDelta = scrollLeftDelta>=delta?delta+20:scrollLeftDelta;
+				center.animate({scrollLeft:scrollLeftDelta},1000);
+			});
+		}
+
+		var tab = $("<div class='tee_tab'>"+title+"</div>");
+		tab[0].url = url;
+		tab[0].title = title;
+		tab[0].active = active;
+
+		var tabContent = $("<iframe style='height:100%;width:100%;dispaly:none;' frameborder=0></iframe>");
+		tab[0].tabContent = tabContent[0];
+
+		c2.append(tabContent);
+		$(outerTabContainer).append(tab);
+
+		tab.click(function(){
+			canceling(c1);
+			activing(tab);
+		});
+
+		
+		if(active){
+			$($(tab)[0].tabContent).attr("src",$(tab)[0].url);
+			activing(tab);
+		}
+	}
+	
+	function activing(tab){
+		$($(tab)[0].tabContent).show();
+		if(!$(tab)[0].active){
+			$($(tab)[0].tabContent).attr("src",$(tab)[0].url);
+		}
+		$(tab).addClass("tee_tab_select");
+		$(tab)[0].active = true;
+	}
+
+	function canceling(c1){
+		$(c1[0].outerTabContainer).children().each(function(i,obj){
+			$(obj.tabContent).hide();
+			$(obj).removeClass("tee_tab_select");
+		});
+	}
+	
+	function renderComplete(c1,c2){
+		var lastActivedTab;
+		$(c1[0].outerTabContainer).children().each(function(i,obj){
+			if(obj.active){
+				lastActivedTab = $(obj);
+			}
+			$(obj.tabContent).hide();
+		});
+		if(lastActivedTab){
+			$(lastActivedTab[0].tabContent).show();
+		}
+	}
+
+	function initOutofBoundaryListener(c1){
+		if(!c1[0].listener){
+			
+			$(window).resize(function(){
+				floatCtrlButtonDetach(c1);
+			});
+			floatCtrlButtonDetach(c1);
+			
+			c1[0].listener = true;
+		}
+	}
+
+	function floatCtrlButtonDetach(c1){
+		var outerTabContainer = $(c1[0].outerTabContainer);
+		var contentDelta = 0;
+		var left = $(c1[0].left);
+		var right = $(c1[0].right);
+
+		contentDelta = c1[0].innerContentWidth;
+		
+		if(contentDelta>c1.outerWidth()){
+			left.show();
+			right.show();
+		}else{
+			left.hide();
+			right.hide();
+		}
+	}
+
+	function initInnerContentWidth(c1){
+		var outerTabContainer = $(c1[0].outerTabContainer);
+		var contentDelta = 0;
+		outerTabContainer.children().each(function(i,obj){
+			contentDelta += N($(obj).outerWidth())+N($(obj).css("marginLeft"))+N($(obj).css("marginRight"));
+		});
+		c1[0].innerContentWidth = contentDelta;
+	}
+
+	function N(val){
+		try{
+			var o = parseInt(val);
+			return (o+0)==o?o:-1;
+		}catch(e){
+			return -1;
+		}
+	}
+	
+	//该标签是否存在
+	function tabsExist(_c1,opts){
+		var exist = false;
+		$(_c1[0].outerTabContainer).children().each(function(i,obj){
+			if(obj.title==opts.title){
+				exist = true;
+			}
+		});
+		return exist;
+	}
+	
+	
+})(jQuery);
+
+$(document).ready(function(){
+	
+	$.addTab("tabs","tabs-content",{title:"百度",url:"http://www.baidu.com",active:true});
+	$.addTab("tabs","tabs-content",{title:"搜狐",url:"http://www.sohu.com",active:false});
+	$.addTab("tabs","tabs-content",{title:"新浪",url:"http://www.sina.com",active:false});
+	$.addTab("tabs","tabs-content",{title:"谷歌",url:"4",active:false});
+	$.addTab("tabs","tabs-content",{title:"搜狗",url:"5",active:false});
+	$.addTab("tabs","tabs-content",{title:"腾讯",url:"6",active:false});
+	
+});
+</script>
+<style>
+.tee_tab{
+	padding-left:9px;
+	padding-right:9px;
+	padding-top:9px;
+	padding-bottom:5px;
+	border:1px solid #d3d3d3;
+	border-bottom:0px;
+	margin-right:5px;
+	background:#f1f1f1;
+	font-size:12px;
+	float:left;
+	cursor:pointer;
+}
+.tee_tab:hover{
+	background:#e2e2e2;
+}
+.tee_tab_select{
+	background:#e2e2e2;
+	font-weight:bold;
+}
+.tee_tab_pointer_left{
+	z-index:100;
+	background:white;
+	height:28px;
+	width:24px;
+}
+.tee_tab_pointer_right{
+	z-index:100;
+	background:white;
+	height:28px;
+	width:24px;
+}
+</style>
+</head>
+<body style="margin:0px">
+
+<div id="tabs" style=""></div>
+<div id="tabs-content" style="height:400px;" fit="true"></div>
+
+</body>
+</html>

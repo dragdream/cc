@@ -1,0 +1,132 @@
+#left {
+    padding-left: 20px;
+    vertical-align: top;
+    width: 268px;
+}
+#left_top {
+   
+}
+#netdisk_top {
+    height: 79px; 
+}
+#top_menu {
+    height: 30px;
+    width: 268px;
+    border:1px solid #ccc;
+    border-bottom:2px solid #efefef;
+}
+#top_menu .left {
+    float: left;
+    background-color:#fff;
+    height: 30px;
+    text-align: center;
+    width: 50%;
+}
+#top_menu .right {
+    float: right;
+    background-color:#fff;
+    height: 30px;
+    text-align: center;
+    width: 50%;
+}
+#top_menu a {
+    display: block;
+    font-size: 14px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+#top_menu a span {
+    color: #383838;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+#top_menu a.active {
+  	background-color:#e7f1ff;
+  	border-bottom:2px solid #72c3fe;
+}
+#top_menu a.active span {
+    color: #383838 !important;
+    font-weight: bold; 
+}
+#tree_container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom:1px solid #ccc;
+    overflow: auto;
+    padding: 10px;
+}
+
+#tree_container iframe {
+}
+.capacity {
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+#center {
+    width: 16px;
+}
+#right {
+    height: 100%;
+    vertical-align: top;
+}
+
+.scroll-left {
+  background: url("../img/hscroll_arrow.png") no-repeat scroll 0 center transparent;
+  cursor: pointer;
+  width: 16px;
+}
+
+.scroll-left:hover {
+  background-position: -32px center;
+}
+
+.scroll-right {
+  background: url("../img/hscroll_arrow.png") no-repeat scroll -16px center transparent;
+  cursor: pointer;
+  width: 16px;
+}
+
+.scroll-right:hover {
+  background-position: -48px center;
+}
+
+
+/**** 底部边线,在文件柜等地方用到 ****/
+
+.BlockBottom2 {
+    border: 0 none;
+    overflow-y: hidden;
+    width: 100%;
+    height: 5px;
+}
+.BlockBottom2 td {
+    background: url("../img/block_top2_bg.png") no-repeat scroll transparent;
+    font-size: 1px;
+}
+.BlockBottom2 td.left {
+    background-position: left -15px;
+    width: 5px;
+    margin: 0;
+    padding: 0;
+}
+.BlockBottom2 td.center {
+    background-position: left -20px;
+    background-repeat: repeat-x;
+}
+.BlockBottom2 td.right {
+    background-position: right -25px;
+    width: 3px;
+}
+
+
+
+
+
+
+
+

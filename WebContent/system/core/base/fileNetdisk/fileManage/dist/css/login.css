@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+	background:transparent;
+}
+.wrapBg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.logo{
+	position: absolute;
+	left: 35%;
+	top: 40%;
+}
+.logo{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.loginBlock_word{
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width:25.93%;
+	background:#fff;
+	filter:alpha(opacity=20);
+	opacity: 0.2;
+	text-align: center;
+}
+.loginBlock_word .scanMode{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.loginBlock_word .text1{
+	margin-top:255px;
+	display: inline-block;
+}
+.loginBlock_word .text2{
+	margin-top:30px;
+	display: inline-block;
+}
+.loginForm{
+	margin-top:90px;
+	width: 100%;
+	text-align:center;
+}
+.loginForm ul{
+	width: 100%;
+}
+.loginForm ul li{
+	width: 100%;
+}
+.userNameLi,.passwordLi{
+	margin:0 auto;
+	text-align: center;
+}
+.userNameLi .userName,.passwordLi .password{
+	height: 45px;
+	width:240px;
+	padding-left:30px;
+	font-size:12px;
+	line-height:45px;
+	background-image: url(../images/userName.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.downloadBlock {
+	width:245px;
+	margin:0 auto;
+}
+.downloadBlock li.pcLi {
+	float: left;
+}
+.downloadBlock li.pcLi {
+	display: block;
+	margin:0 auto;
+}
+.downloadBlock li.pcLi {
+	float: right;
+}

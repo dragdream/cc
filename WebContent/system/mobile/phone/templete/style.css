@@ -1,0 +1,74 @@
+*{padding:0px;margin:0px;}
+body{
+   background:#c4c4c4 url('imgs/login_bg.jpg') center top no-repeat;
+   font-size:14px;
+   color:#304a80;
+   background-size: 320px 480px;
+   -o-background-size: 320px 480px;
+   -moz-background-size: 320px 480px;
+   -webkit-background-size: 320px 480px;
+   
+   font-family:inherit;vertical-align:baseline;
+    font:14px "微软雅黑", helvetica, Arial, Sans-Serif;
+}
+#logo{
+    margin-top:80px;	  
+ 	background: url('imgs/login_top.png') center top no-repeat;
+	background-size:209px 32px;
+	-webkit-background-size: 209px 32px;
+	-moz-background-size: 209px 32px;
+	-o-background-size: 209px 32px; 
+} 
+
+
+
+#form{
+   margin:0px auto;
+   margin-top:15px;
+   padding-top:122px;
+   width:240px;
+}
+#form_input{
+   padding-left:60px;
+}
+#form_input div{
+   height:32px;
+}
+#form_submit{
+   margin:0px auto;
+   margin-top:25px;
+   margin-bottom:20px;
+   width:193px;
+   height:40px;
+}
+#msg{
+   margin:0px auto;
+   line-height:20px;
+   text-align:center;
+   color:#f00;
+}
+
+.pwd{
+	margin-top:15px;
+}
+input.text{
+   border:0px #cccccc solid;
+   padding:0px 5px;
+   width:128px;
+   height:20px;
+   line-height:20px;
+   font-size:14px;
+	background:transparent;
+	outline:none;
+	color: #727272;
+}
+input.submit{
+   width:195px;
+   height:40px;
+   background:url("imgs/login_btn.png") center top no-repeat;   
+   background-size:195px 40px;
+   -o-background-size:195px 40px;
+   -webkit-background-size:195px 40px;
+   border:0px;
+   cursor:pointer;
+}

@@ -1,0 +1,13 @@
+/** 查看页面td样式 */
+.lookInfo-lowHeight-table td{
+    vertical-align: top;
+    padding-top: 10px!important;
+    height: 40px;
+}
+
+/** 查看页面数据项名称样式 */
+.font-bold-label-td{
+    text-indent: 5px;
+    text-align: right!important;
+    font-weight: 600;
+}

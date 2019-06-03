@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- zt_webframe框架引入 jquery -->
+    <script src="../../../common/jquery-easyui-1.6.11/jquery.min.js"></script>
+    <!-- zt_webframe框架引入 css样式 -->
+    <link rel="stylesheet" type="text/css" href="../../../common/zt_webframe/css/init1.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/zt_webframe/css/package1.css">
+
+    <!-- zt_webframe框架引入 核心库 -->
+    <script type="text/javascript" src='../../../common/jquery-easyui-1.6.11/jquery.easyui.min.js'></script>
+    <script type="text/javascript" src='../../../common/zt_webframe/js/jquery.datagrid.extend.js'></script>
+    <script type="text/javascript" src='../../../common/jquery-easyui-1.6.11/locale/easyui-lang-zh_CN.js'></script>
+    <!-- 其他工具库类 -->
+    <script src="../../../common/js/tools.js"></script>
+    <script src="../../../common/js/sys.js"></script>
+    <script src="../../../common/js/sysUtil.js"></script>
+    <script src="../../../common/js/src/orgselect.js"></script>
+    <script type="text/javascript" src="../../../common/js/easyuiTools.js"></script>
+    <!--artTemplate模板引擎引入-->
+    <script type="text/javascript" src="../../common/js/artTemplate/template-web.js"></script>
+    <script type="text/javascript" src="js/batch_add_3person_choose.js"></script>
+    <!-- zt_webframe框架引入 css样式 -->
+    <link rel="stylesheet" type="text/css" href="../../../common/jquery-easyui-1.6.11/themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/jquery-easyui-1.6.11/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/css/supervise.css"/>
+    <link rel="stylesheet" type="text/css" href="css/person_choose.css">
+    <title>抽选人员</title>
+</head>
+
+<body onload="doInit()" class="body">
+<div id="main-panel" class="easyui-panel" title="抽选人员" headerCls="main-panel-header" data-options="tools:'#tt'">
+    <div id="choosed-peopole-panel" class="easyui-panel" title="已选人员">
+        <div class="padding-top">
+            <button id="btn_alldelete" class="easyui-linkbutton" onclick="">
+                <i class="fa fa-trash-o"></i>&nbsp;批量删除
+            </button>
+        </div>
+        <div class="div-datagrid">
+            <table id="choosed_people_datagrid" fit="true"></table>
+        </div>
+
+    </div>
+    <div id="auto-group-panel">
+        <button id="btn_auto-group" class="easyui-linkbutton horizon-center" onclick="listGroup()">
+            <i class="fa fa-check"></i>&nbsp;自动分组
+        </button>
+    </div>
+    <div id="group-info-panel" class="easyui-panel" title="分组情况">
+        <script id="people-groups" type="text/html">
+            <div id="div_group" class="easyui-accordion" data-options="multiple:true">
+                {{each groups group i}}
+                {{if group!=null}}
+                <div id="{{'group'+(i+1)}}"
+                     title="{{'第'+(i+1)+'组'+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                     +'组长：'+group.groupLeader+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                     +'人员数量:'+group.personNumber}}">
+                    <div id="{{'div_group_datagrid'+(i+1)}}" class="div-datagrid2">
+                        <table id="{{'group_datagrid'+(i+1)}}" fit="true"></table>
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </script>
+    </div>
+</div>
+
+</div>
+
+<div id="tt">
+    <a id="btn-choose-people" href="javascript:void(0)" class="easyui-linkbutton" onclick="">
+        <i class="fa fa-plus"></i>&nbsp;抽选人员
+    </a>
+</div>
+</body>
+</html>

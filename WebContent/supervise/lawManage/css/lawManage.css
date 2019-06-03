@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+.law-baseInfo-tr{
+	border:none!important;
+}
+
+.law-typeInfo-tr{
+	border:none!important;
+}
+
+.custom-text-overflow{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.table-td-full-width{
+    width: 100%!important;
+}
+
+.medium-width-td{
+	width: 120px;
+	height: 30px;
+}
+
+.large-width-td{
+	width: 180px;
+	height: 30px;
+}
+
+.text-right{
+	text-indent: 5px;
+	text-align: right!important;
+}
+
+.small-width-label-td{
+	width: 40px;
+	height: 30px;
+	text-indent: 5px;
+	vertical-align: middle;
+	text-align: right!important;
+}
+
+.short-width-td{
+	width: 65px;
+	height: 20px;
+	text-align: center!important;
+}
+
+.short-width-label-td{
+	width: 65px;
+	height: 20px;
+	text-indent: 5px;
+	vertical-align: middle;
+	text-align: right!important;
+}
+
+.small-width-input{
+	width: 40px;
+}
+
+.red-star-flag-span{
+	color: red;
+	font-weight: bold;
+	vertical-align: middle;
+}

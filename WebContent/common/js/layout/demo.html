@@ -1,0 +1,33 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css1/style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="res/jquery.js"></script>
+<script type="text/javascript" src="layout.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#layout").layout({auto:true});
+		//$("#west").layout("toggle");
+		//$("#north").layout("close",80);
+		//$("#east").layout("close",80);
+		//$("#south").layout("close",200);
+	});
+</script>
+</head>
+<body style="margin:0px">
+<div id="layout">
+	<div layout="north" id="north" min=20 height=170 style="height:170px;background:yellow">
+		<a href="javascript:$('#west').layout('toggle');">切换左侧west的收缩状态</a>&nbsp;&nbsp;
+		<a href="javascript:$('#north').layout('toggle');">切换上侧north的收缩状态</a>&nbsp;&nbsp;
+		<a href="javascript:$('#south').layout('toggle');">切换下侧south的收缩状态</a>&nbsp;&nbsp;
+		<a href="javascript:$('#east').layout('toggle');">切换右测east的收缩状态</a>
+	</div>
+	<div layout="east" id="east" min=20 width=170 style="width:170px;background:blue"></div>
+	<div layout="south" id="south" min=20 height=170 style="height:170px;background:green"></div>
+	<div layout="center">
+		<div layout="west" id="west" min=20 width=100 style="width:100px;background:red;"></div>
+		<div layout="center" style="background:pink;"></div>
+	</div>
+</div>
+</body>
+</html>

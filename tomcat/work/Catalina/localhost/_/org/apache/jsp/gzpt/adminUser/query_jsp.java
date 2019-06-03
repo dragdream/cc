@@ -1,0 +1,568 @@
+package org.apache.jsp.gzpt.adminUser;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import com.tianee.webframe.util.servlet.TeeCookieUtils;
+import java.util.*;
+import com.tianee.oa.oaconst.TeeConst;
+import com.tianee.oa.core.org.bean.TeePerson;
+import com.tianee.webframe.util.str.TeeUtility;
+import com.tianee.webframe.util.date.TeeDateUtil;
+import com.tianee.webframe.util.global.TeeSysProps;
+import com.tianee.webframe.util.str.TeeStringUtil;
+import com.tianee.oa.core.org.service.TeePersonService;
+import com.tianee.oa.oaconst.TeeModelIdConst;
+import com.tianee.webframe.util.servlet.TeeCookieUtils;
+
+public final class query_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List _jspx_dependants;
+
+  static {
+    _jspx_dependants = new java.util.ArrayList(3);
+    _jspx_dependants.add("/header/header2.0.jsp");
+    _jspx_dependants.add("/header/easyui2.0.jsp");
+    _jspx_dependants.add("/header/ztree.jsp");
+  }
+
+  private javax.el.ExpressionFactory _el_expressionfactory;
+  private org.apache.AnnotationProcessor _jsp_annotationprocessor;
+
+  public Object getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
+    _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
+  }
+
+  public void _jspDestroy() {
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+
+    try {
+      response.setContentType("text/html; charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n");
+      out.write("<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n");
+      out.write("<head>\r\n");
+      out.write("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\r\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\t\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+
+String contextPath = request.getContextPath();
+String basePath = request.getScheme() + "://"
+		+ request.getServerName() + ":" + request.getServerPort()
+		+ contextPath + "/";
+//获取主题的索引号
+int styleIndex = 1;
+Integer styleInSession = (Integer) request.getSession().getAttribute("STYLE_TYPE_INDEX");
+if (styleInSession != null) {
+	styleIndex = styleInSession;
+}
+String stylePath = contextPath + "/common/styles";
+String imgPath = stylePath + "/style" + styleIndex + "/img";
+String cssPath = stylePath + "/style" + styleIndex + "/css";
+String systemImagePath = contextPath+"/common/images";
+
+//第二套风格
+int STYLE_TYPE_INDEX_2 = TeeStringUtil.getInteger( request.getSession().getAttribute("STYLE_TYPE_INDEX_2"), 1);
+String cssPathSecond = contextPath + "/system/frame/2/styles/style" + STYLE_TYPE_INDEX_2 + "/css";
+String imgPathSecond = contextPath + "/system/frame/2/styles/style" + STYLE_TYPE_INDEX_2 + "/img";
+
+
+String loginOutText = TeeSysProps.getString("LOGIN_OUT_TEXT");
+String ieTitle = TeeSysProps.getString("IE_TITLE");
+String secUserMem = TeeSysProps.getString("SEC_USER_MEM");
+
+Cookie cookie = TeeCookieUtils.getCookie(request, "skin_new");
+String skinNew = "1";
+if(cookie!=null){
+	skinNew = cookie.getValue();
+}
+
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!-- zt_webframe框架引入 jquery -->\r\n");
+      out.write("<script src=\"");
+      out.print(contextPath );
+      out.write("/common/jquery-easyui-1.6.11/jquery.min.js\"></script>\r\n");
+      out.write("\r\n");
+      out.write("<!-- zt_webframe框架引入 核心库 -->\r\n");
+      out.write("<script src=\"");
+      out.print(contextPath );
+      out.write("/common/zt_webframe/js/package.js\"></script>\r\n");
+      out.write("<script src=\"");
+      out.print(contextPath );
+      out.write("/common/js/sys2.0.js?v=2\"></script>\r\n");
+      out.write("<script src=\"");
+      out.print(contextPath );
+      out.write("/common/js/sysUtil.js\"></script>\r\n");
+      out.write("<script src=\"");
+      out.print(contextPath );
+      out.write("/common/js/src/orgselect.js\"></script>\r\n");
+      out.write("<!--\r\n");
+      out.write("\r\n");
+      out.write("//-->\r\n");
+      out.write("<!-- zt_webframe框架引入 css样式 -->\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+      out.print(request.getContextPath());
+      out.write("/common/zt_webframe/css/init");
+      out.print(skinNew );
+      out.write(".css\">\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+      out.print(request.getContextPath());
+      out.write("/common/zt_webframe/css/package");
+      out.print(skinNew );
+      out.write(".css\">\r\n");
+      out.write("\r\n");
+      out.write("<script src=\"");
+      out.print(contextPath );
+      out.write("/common/js/tools2.0.js?v=1\"></script>\r\n");
+      out.write("<script src=\"");
+      out.print(contextPath );
+      out.write("/common/js/TeeMenu.js\"></script>\r\n");
+      out.write("\r\n");
+      out.write("<script type=\"text/javascript\">\r\n");
+      out.write("/** 变量定义 **/\r\n");
+      out.write("var contextPath = \"");
+      out.print(contextPath );
+      out.write("\";\r\n");
+      out.write("var systemImagePath = contextPath+\"/common/images\";\r\n");
+      out.write("var uploadFlashUrl = \"");
+      out.print(contextPath );
+      out.write("/common/swfupload/swfupload.swf\";\r\n");
+      out.write("var commonUploadUrl = \"");
+      out.print(contextPath );
+      out.write("/attachmentController/commonUpload.action;jsessionid=");
+      out.print(session.getId());
+      out.write("\";\r\n");
+      out.write("var xparent;\r\n");
+      out.write("var stylePath = \"");
+      out.print(stylePath);
+      out.write("\";\r\n");
+      out.write("if(window.dialogArguments){\r\n");
+      out.write("\txparent = window.dialogArguments;\r\n");
+      out.write("}else if(window.opener){\r\n");
+      out.write("\txparent = opener;\r\n");
+      out.write("}else{\r\n");
+      out.write("\txparent = window;\r\n");
+      out.write("}\r\n");
+      out.write("window.UEDITOR_HOME_URL = \"");
+      out.print(contextPath);
+      out.write("/common/ueditor/\";\r\n");
+      out.write("$.browser = {};\r\n");
+      out.write("$.browser.mozilla = /firefox/.test(navigator.userAgent.toLowerCase());\r\n");
+      out.write("$.browser.webkit = /webkit/.test(navigator.userAgent.toLowerCase());\r\n");
+      out.write("$.browser.opera = /opera/.test(navigator.userAgent.toLowerCase());\r\n");
+      out.write("$.browser.msie = /msie/.test(navigator.userAgent.toLowerCase());\r\n");
+      out.write("</script>\r\n");
+      out.write('\r');
+      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!-- zt_webframe框架引入 核心库 -->\r\n");
+      out.write("<script type=\"text/javascript\" src = '");
+      out.print(request.getContextPath() );
+      out.write("/common/jquery-easyui-1.6.11/jquery.easyui.min.js'></script>\r\n");
+      out.write("<script type=\"text/javascript\" src = '");
+      out.print(request.getContextPath() );
+      out.write("/common/zt_webframe/js/jquery.datagrid.extend.js'></script>\r\n");
+      out.write("<script type=\"text/javascript\" src = '");
+      out.print(request.getContextPath() );
+      out.write("/common/jquery-easyui-1.6.11/locale/easyui-lang-zh_CN.js'></script>\r\n");
+      out.write("\r\n");
+
+Cookie __cookie = TeeCookieUtils.getCookie(request, "skin_new");
+String __skinNew = "1";
+if(__cookie!=null){
+	__skinNew = __cookie.getValue();
+}
+
+      out.write("\r\n");
+      out.write("<!-- zt_webframe框架引入 css样式 -->\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
+      out.print(request.getContextPath());
+      out.write("/common/jquery-easyui-1.6.11/themes/metro/easyui.css\">\r\n");
+      out.write('\r');
+      out.write('\n');
+      out.write("\r\n");
+      out.write("<!-- zTree库 -->\r\n");
+      out.write("<link rel=\"stylesheet\" href=\"");
+      out.print(request.getContextPath() );
+      out.write("/common/jquery/ztree/css/zTreeStyle/zTreeStyle.css\" type=\"text/css\"/>\r\n");
+      out.write("<script type=\"text/javascript\" src=\"");
+      out.print(request.getContextPath() );
+      out.write("/common/jquery/ztree/js/jquery.ztree.core-3.5.js\"></script>\r\n");
+      out.write("<script type=\"text/javascript\" src=\"");
+      out.print(request.getContextPath() );
+      out.write("/common/jquery/ztree/js/jquery.ztree.excheck-3.5.js\"></script>\r\n");
+      out.write("<script type=\"text/javascript\" src=\"");
+      out.print(request.getContextPath() );
+      out.write("/common/jquery/ztree/js/jquery.ztree.exedit-3.5.js\"></script>\r\n");
+      out.write("<script type=\"text/javascript\" src=\"");
+      out.print(request.getContextPath() );
+      out.write("/common/js/ZTreeSync.js\"></script>\r\n");
+      out.write("\r\n");
+      out.write("<title>人员查询</title>\r\n");
+      out.write("<script type=\"text/javascript\" src=\"");
+      out.print(contextPath );
+      out.write("/system/core/person/js/person.js\"></script>\r\n");
+      out.write("\r\n");
+      out.write("<script type=\"text/javascript\">\r\n");
+      out.write("function doInit(){\r\n");
+      out.write("\t//获取角色\r\n");
+      out.write("\tselectUserPrivList('userRoleStr','1');\r\n");
+      out.write("\t//部门\r\n");
+      out.write("\tgetDeptParent();\r\n");
+      out.write("}\r\n");
+      out.write("\r\n");
+      out.write("/**\r\n");
+      out.write(" * 导出\r\n");
+      out.write(" */\r\n");
+      out.write("function extDept(){\r\n");
+      out.write("\t\r\n");
+      out.write("\t\r\n");
+      out.write(" \t// var pars = Form.serialize($('form1'));\r\n");
+      out.write(" \tvar para =  tools.formToJson($(\"#form1\")) ;\r\n");
+      out.write(" \tvar param=tools.jsonObj2String(para);\r\n");
+      out.write(" \t");
+      out.write("\r\n");
+      out.write(" \t$(\"#exportIframe\").attr(\"src\",contextPath+\"/orgImportExport/exportToCsv.action?param=\"+param);\r\n");
+      out.write("}\r\n");
+      out.write("/**\r\n");
+      out.write(" * 查询中\r\n");
+      out.write(" */\r\n");
+      out.write("function doQuery(){\r\n");
+      out.write("\t\r\n");
+      out.write("\tvar url = \"");
+      out.print(contextPath );
+      out.write("/adminPerson/queryPerson.action\";\r\n");
+      out.write("\tvar para =  tools.formToJson($(\"#form1\")) ;\r\n");
+      out.write("\tvar jsonObj = tools.requestJsonRs(url , para);\r\n");
+      out.write("\t\r\n");
+      out.write("\tif(jsonObj.rtState){\r\n");
+      out.write("\t\t$(\"#personList\").empty();//清空\r\n");
+      out.write("\t\t$(\"#fromSearch\").hide();//隐藏查询条件\r\n");
+      out.write("\t\t$(\"#personList\").show();//显示人员列表\r\n");
+      out.write("\t\tvar dataList = jsonObj.rtData;\r\n");
+      out.write("\t\tif(dataList.length > 0){\r\n");
+      out.write("\t\t\tvar tableStr = \"<table width='90%' class='TableBlock_page' align='center'>\"\r\n");
+      out.write("\t\t    \t + \"<tbody id='tbody'>\";\r\n");
+      out.write("\t\t  \r\n");
+      out.write("\t\t    \t tableStr = tableStr + \"<tr class='TableData' style='line-height:35px;border-bottom:1px solid #f2f2f2;border-bottom:2px solid #b0deff!important;background-color: #f8f8f8;'>\"\r\n");
+      out.write("\t\t\t      \t + \"<td width='40' align='center'>主部门</td>\"\r\n");
+      out.write("\t\t\t      \t +\"<td nowrap align='center'>用户名</td>\"\r\n");
+      out.write("\t\t\t     \t +\"<td nowrap align='center'>用户姓名</td>\"\r\n");
+      out.write("\t\t\t     \t +\"<td nowrap align='center'>性别</td>\"\r\n");
+      out.write("\t\t\t      \t +\"<td nowrap align='center'>主角色</td>\"\r\n");
+      out.write("\t\t\t      \t +\"<td nowrap align='center'>管理范围</td>\"\r\n");
+      out.write("\t\t\t      \t +\"<td nowrap align='center'>操作</td>\"\r\n");
+      out.write("\t\t\t         +\"</tr>\";\r\n");
+      out.write("\t\t\tfor(var i = 0;i<dataList.length ; i++){\r\n");
+      out.write("\t\t\t\tvar person = dataList[i];\r\n");
+      out.write("\t\t\t\tvar uuid = person.uuid;\r\n");
+      out.write("\t\t\t\tvar postPriv = person.postPriv;\r\n");
+      out.write("\t\t\t\tvar postPrivStr =\"\";\r\n");
+      out.write("\t\t\t\tvar sexStr = \"男\";\r\n");
+      out.write("\t\t\t\tif(person.sex == '1'){\r\n");
+      out.write("\t\t\t\t\tsexStr = \"女\";\r\n");
+      out.write("\t\t\t\t}\r\n");
+      out.write("\t\t\t\tvar fontStr = \"\";\r\n");
+      out.write("\t\t\t\tif(person.notLogin && person.notLogin == '1'){\r\n");
+      out.write("\t\t\t\t\tfontStr = \"gray\";\r\n");
+      out.write("\t\t\t\t}else if(person.passwordIsNUll == '1'){\r\n");
+      out.write("\t\t\t\t\tfontStr = \"red\";\r\n");
+      out.write("\t\t\t\t}\r\n");
+      out.write("\t\t\t\tif( postPriv == '1'){\r\n");
+      out.write("\t\t\t\t\tpostPrivStr =  \"全体\";\r\n");
+      out.write("\t\t\t\t}else if(postPriv == '2'){\r\n");
+      out.write("\t\t\t\t\tpostPrivStr = \"指定部门\";\r\n");
+      out.write("\t\t\t\t}else{\r\n");
+      out.write("\t\t\t\t\tpostPrivStr = \"本部门\";\r\n");
+      out.write("\t\t\t\t}\t\r\n");
+      out.write("\t\t\t\tvar deptName = \"\";\r\n");
+      out.write("\t\t\t\tif(person.deptIdName){\r\n");
+      out.write("\t\t\t\t\tdeptName = person.deptIdName\r\n");
+      out.write("\t\t\t\t}\r\n");
+      out.write("\t\t\t\ttableStr = tableStr +\"<tr class='TableData' style='line-height:25px;'>\"\r\n");
+      out.write("\t\t\t\t      \t + \"<td width='140' align='center'><font color='\" + fontStr + \"'>\"+ deptName +\"</font></td>\"\r\n");
+      out.write("\t\t\t\t      \t +\"<td nowrap align='center'><font color='\" + fontStr + \"'>\" + person.userId + \"</font></td>\"\r\n");
+      out.write("\t\t\t\t     \t +\"<td nowrap align='center'><font color='\" + fontStr + \"'>\" + person.userName + \"</font></td>\"\r\n");
+      out.write("\t\t\t\t     \t +\"<td nowrap align='center'><font color='\" + fontStr + \"'>\" + sexStr + \"</font></td>\"\r\n");
+      out.write("\t\t\t\t      \t +\"<td nowrap align='center'><font color='\" + fontStr + \"'>\" + person.userRoleStrName + \"</font></td>\"\r\n");
+      out.write("\t\t\t\t      \t +\"<td nowrap align='center'><font color='\" + fontStr + \"'>\" + postPrivStr + \"</font></td>\"\r\n");
+      out.write("\t\t\t\t      \t +\"<td nowrap align='center'>\"\r\n");
+      out.write("\t\t\t\t      \t +\"<a href='#' onclick='deletePerson(\\\"\" + uuid + \"\\\",this);'> 离职 </a>\"\r\n");
+      out.write("\t\t\t\t      \t +\"&nbsp;&nbsp;<a href='#' onclick='toAddUpdatePerson(\\\"\" + uuid + \"\\\");'> 编辑 </a>\"\r\n");
+      out.write("\t\t\t\t      \t +\"&nbsp;&nbsp;<a href='javascript:void(0);' onclick='clearPassword(\\\"\" + uuid + \"\\\");'>清空密码 </a>\"\r\n");
+      out.write("\t\t\t\t      \t +\"</td>\"\r\n");
+      out.write("\t\t\t\t         +\"</tr>\";\r\n");
+      out.write("\t\t\t\t\r\n");
+      out.write("\t\t\r\n");
+      out.write("\t\t\t}\r\n");
+      out.write("\t\t\ttableStr = tableStr + \"</tbody></table>\";\r\n");
+      out.write("\t\t\t$(\"#personList\").append(tableStr);\t\r\n");
+      out.write("\t\t}else{\r\n");
+      out.write("\t\t \tmessageMsg(\"没有查询到相关人员\", \"personList\" ,'' ,280);\r\n");
+      out.write("\t\t}\r\n");
+      out.write("\t\tvar buttonStr =  \"<center style=\\\"padding-top:10px;\\\"><input style='width:45px;height:25px;' type='button' class='btn-win-white' value='返回' onclick='window.location.reload();'/></center>\";\r\n");
+      out.write("\t \t$(\"#personList\").append(buttonStr);\r\n");
+      out.write("\t}else{\r\n");
+      out.write("\t\t$.MsgBox.Alert_auto(jsonObj.rtMsg);\r\n");
+      out.write("\t}\r\n");
+      out.write("}\r\n");
+      out.write("\r\n");
+      out.write("/**\r\n");
+      out.write(" * 批量删除人员\r\n");
+      out.write(" */\r\n");
+      out.write("function deletePerson(uuid,obj){\r\n");
+      out.write("\t$.MsgBox.Confirm (\"提示\", \"确定要将所选中人员更改为离职状态吗？\",function(){\r\n");
+      out.write("\t\tvar url = contextPath +  \"/personManager/updateDelPersonByUuids.action?uuids=\" + uuid;\r\n");
+      out.write("\t\tvar para = {};\r\n");
+      out.write("\t\tvar jsonRs = tools.requestJsonRs(url,para);\r\n");
+      out.write("\t\tif(jsonRs.rtState){\r\n");
+      out.write("\t\t\t$.MsgBox.Alert_auto(\"操作成功！\",function(){\r\n");
+      out.write("\t\t\t\t\r\n");
+      out.write("\t\t\t$(obj).parent().parent().remove();\r\n");
+      out.write("\t\t\t});\r\n");
+      out.write("\t\t}else{\r\n");
+      out.write("\t\t\t$.MsgBox.Alert_auto(jsonRs.rtMsg);\r\n");
+      out.write("\t\t}\r\n");
+      out.write("\t});\r\n");
+      out.write("}\r\n");
+      out.write("\r\n");
+      out.write("/**\r\n");
+      out.write(" * 获取部门\r\n");
+      out.write(" */\r\n");
+      out.write("function getDeptParent(){\r\n");
+      out.write("\tvar url =  \"");
+      out.print(contextPath );
+      out.write("/deptManager/getDeptTreeAll.action\";\r\n");
+      out.write("\t\tvar config = {\r\n");
+      out.write("\t\t\t\tzTreeId:\"deptIdZTree\",\r\n");
+      out.write("\t\t\t\trequestURL:url,\r\n");
+      out.write("\t           \tonClickFunc:onclickDept,\r\n");
+      out.write("\t\t\t\tasync:false\r\n");
+      out.write("\t\t\t};\r\n");
+      out.write("\t\tzTreeObj = ZTreeTool.config(config);\r\n");
+      out.write("\t\tsetTimeout('setDeptParentSelct()',500);\r\n");
+      out.write("} \r\n");
+      out.write("/**\r\n");
+      out.write(" * 初始化后选中节点,上级部门\r\n");
+      out.write(" */\r\n");
+      out.write("function setDeptParentSelct(){\r\n");
+      out.write("\tZTreeObj = $.fn.zTree.getZTreeObj(ZTreeTool.zTreeId);\r\n");
+      out.write("    if(ZTreeObj == null){\r\n");
+      out.write("    \tsetTimeout('setDeptParentSelct()',500);\r\n");
+      out.write("    }else{\r\n");
+      out.write("    \tZTreeObj.expandAll(true);\r\n");
+      out.write("    \t var node = ZTreeObj.getNodeByParam(\"id\",$(\"#deptId\").val(),null);\r\n");
+      out.write("    \t    if(node){\r\n");
+      out.write("    \t    \tZTreeObj.selectNode(node);\r\n");
+      out.write("    \t  }\r\n");
+      out.write("    }  \r\n");
+      out.write("    ZTreeTool.inputBindZtree(ZTreeTool.zTreeId,'deptId','');\r\n");
+      out.write("}\r\n");
+      out.write("\r\n");
+      out.write("//点击树执行事件\r\n");
+      out.write("function onclickDept (event, treeId, treeNode) {\r\n");
+      out.write("\t$(\"#deptIdName\").val(treeNode.name);\r\n");
+      out.write("\t$(\"#deptId\").val(treeNode.id);\r\n");
+      out.write("\tZTreeTool.hideZtreeMenu();\r\n");
+      out.write("}\r\n");
+      out.write("</script>\r\n");
+      out.write("</head>\r\n");
+      out.write("<body onload=\"doInit()\" style=\"padding: 10px;overflow-x:hidden;margin-left: 5px;\">\r\n");
+      out.write("<div id=\"fromSearch\">\r\n");
+      out.write("\r\n");
+      out.write("<form action=\"\" method=\"post\" name=\"form1\" id=\"form1\">\r\n");
+      out.write("  <table class=\"TableBlock_page\" width=\"90%\" align=\"center\">\r\n");
+      out.write("   <tr>\r\n");
+      out.write("    <td nowrap colspan=\"2\" style='vertical-align: middle;font-family: MicroSoft YaHei;font-size: 14px;'><img src=\"");
+      out.print(contextPath );
+      out.write("/common/zt_webframe/imgs/common_img/icon_yhcx.png\">&nbsp;&nbsp; <span>用户查询</span></td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("   <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\" width=\"150px;\">用户名：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("        <input type=\"text\" name=\"userId\" id=\"userId\" class=\"BigInput\" size=\"20\" newMaxLength=\"20\">&nbsp;\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("  <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">真实姓名：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("        <input type=\"text\" name=\"userName\" id=\"userName\" class=\"BigInput\" size=\"10\" newMaxLength=\"10\">&nbsp;\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write(" <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">别名：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("        <input type=\"text\" name=\"byname\" id=\"byname\" class=\"BigInput\" size=\"10\" newMaxLength=\"10\">&nbsp;\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("   <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">性别：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("        <select style=\"height: 25px;\" name=\"sex\" id=\"sex\" class=\"BigSelect\">\r\n");
+      out.write("        <option value=\"\"></option>\r\n");
+      out.write("        <option value=\"0\">男</option>\r\n");
+      out.write("        <option value=\"1\">女</option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("     <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">主部门：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("       <!--  <select name=\"deptId\" id=\"deptId\" class=\"BigSelect\">\r\n");
+      out.write("        <option value=\"\"></option>\r\n");
+      out.write("        </select> -->\r\n");
+      out.write("\t\t<input id=\"deptId\" name=\"deptId\"  type=\"text\" style=\"display:none;\"/>\r\n");
+      out.write("\t\t<input type=\"text\" id=\"deptName\" name=\"deptName\" style=\"font-family:MicroSoft YaHei;\"/>\r\n");
+      out.write("\t\t <span class='addSpan'>\r\n");
+      out.write("\t\t         \t<img src=\"");
+      out.print(contextPath );
+      out.write("/common/zt_webframe/imgs/xtgl/zzjggl/yhgl/add.png\" onclick=\"selectSingleDept(['deptId','deptName'],'1')\" value=\"选择\"/>\r\n");
+      out.write("\t\t\t        <img src=\"");
+      out.print(contextPath );
+      out.write("/common/zt_webframe/imgs/xtgl/zzjggl/yhgl/clear.png\"  onclick=\"clearData('deptId','deptName')\" value=\"清空\"/>\r\n");
+      out.write("\t\t </span>\r\n");
+      out.write("\t\t<!-- <ul id=\"deptIdZTree\" class=\"ztree\" style=\"margin-top:0; width:247px; display:none;\"></ul> -->\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("   <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">主角色：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("        <select style=\"height: 25px;\" name=\"userRoleStr\" id=\"userRoleStr\" class=\"BigSelect\">\r\n");
+      out.write("           <option value=''></option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("   <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\" >管理范围：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("        <select style=\"height: 25px;\" name=\"postDeptStr\" id=\"postDeptStr\" class=\"BigSelect\">\r\n");
+      out.write("          <option value=\"\"></option>\r\n");
+      out.write("          <option value=\"0\">本部门</option>\r\n");
+      out.write("          <option value=\"1\">全体</option>\r\n");
+      out.write("          <option value=\"2\">指定部门</option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("    <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">是否允许登录OA系统：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("    \t  <select style=\"height: 25px;\" name=\"notLogin\" id=\"notLogin\" class=\"BigSelect\">\r\n");
+      out.write("          <option value=\"\"></option>\r\n");
+      out.write("          <option value=\"0\">允许</option>\r\n");
+      out.write("          <option value=\"1\">禁止</option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("      </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("  <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">是否允许查看用户列表：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("    \t  <select style=\"height: 25px;\" name=\"notViewUser\" id=\"notViewUser\" class=\"BigSelect\">\r\n");
+      out.write("          <option value=\"\"></option>\r\n");
+      out.write("          <option value=\"0\">允许</option>\r\n");
+      out.write("          <option value=\"1\">禁止</option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("     </td>\r\n");
+      out.write("   </tr>\r\n");
+      out.write("   <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">是否允许显示桌面：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("    \t  <select style=\"height: 25px;\" name=\"notViewTable\" id=\"notViewTable\" class=\"BigSelect\">\r\n");
+      out.write("          <option value=\"\"></option>\r\n");
+      out.write("          <option value=\"0\">允许</option>\r\n");
+      out.write("          <option value=\"1\">禁止</option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr> \r\n");
+      out.write("   <!-- <tr>\r\n");
+      out.write("    <td nowrap class=\"TableData\">考勤排班类型：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("        <select name=\"dutyType\" id=\"dutyType\" class=\"BigSelect\">\r\n");
+      out.write("        <option value=\"\"></option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr> -->\r\n");
+      out.write("  <!--  <tr style=\"display:none\">\r\n");
+      out.write("    <td nowrap class=\"TableData\" width=\"120\">按最后登录时间排序：</td>\r\n");
+      out.write("    <td nowrap class=\"TableData\">\r\n");
+      out.write("        <select name=\"lastVisitTime\" id=\"lastVisitTime\" class=\"BigSelect\">\r\n");
+      out.write("          <option value=\"\"></option>\r\n");
+      out.write("          <option value=\"desc\">降序</option>\r\n");
+      out.write("          <option value=\"asc\">升序</option>\r\n");
+      out.write("        </select>\r\n");
+      out.write("    </td>\r\n");
+      out.write("   </tr> -->\r\n");
+      out.write("   <tr>\r\n");
+      out.write("    <td nowrap colspan=\"2\" align=\"center\" style=\"text-align: center;\">\r\n");
+      out.write("        <input style=\"width: 45px;height: 25px;\" type=\"button\" value=\"查询\" class=\"btn-win-white\" onclick=\"doQuery();\" title=\"查询用户\" name=\"button\">&nbsp;&nbsp;\r\n");
+      out.write("        <input  style=\"width: 45px;height: 25px;\" type=\"button\" value=\"导出\" class=\"btn-win-white\" onClick=\"extDept();\" title=\"导出用户信息\" name=\"button\">\r\n");
+      out.write("    </td>\r\n");
+      out.write("  </table>\r\n");
+      out.write("</form>\r\n");
+      out.write("<br>\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("<div id=\"personList\" style=\"display:none;\">\r\n");
+      out.write("</div>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write(" <iframe id=\"exportIframe\" style=\"display:none\"></iframe>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          try { out.clearBuffer(); } catch (java.io.IOException e) {}
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else log(t.getMessage(), t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

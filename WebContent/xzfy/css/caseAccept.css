@@ -1,0 +1,114 @@
+.main-left {
+    width: 100px;
+    display: inline-block;
+}
+
+.main-right {
+    width: 90%;
+    height: 95%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.lanky-tab {
+    width: 73px;
+    height: 35px;
+    margin-top: 14px;
+    border: solid 1px burlywood;
+}
+
+.head {
+    width: 100%;
+    height: 51px;
+    line-height: 51px;
+    font-size: 18px;
+    background-color: #F7F7F7;
+}
+
+.content {
+    width: 100%;
+}
+
+.lanky-star {
+    color: red;
+    font-weight: bold;
+}
+
+.lanky-tr {
+    height: 35px;
+    font-size: 18px;
+    color: #343434;
+    background-color: #F7F7F7;
+}
+
+.lanky-th {
+    line-height: 35px;
+    font-size: 18px;
+    color: #3376C3;
+}
+
+.lanky-item {
+    width: 10%;
+    margin: 0 auto;
+    text-indent: 10px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.lanky-td {
+    width: 15%;
+    text-align: left;
+}
+
+.lanky-info {
+    border: 1px solid #cfcfcf;
+    background-color: #F7F7F7;
+}
+
+.lanky-p {
+    height: 70px;
+}
+
+table {
+    width: 100%;
+}
+
+table td,
+table th {
+    border: none;
+}
+
+table {
+    /* border-top: 1px solid #cfcfcf;
+    border-left: 1px solid #cfcfcf; */
+    border: 1px solid #cfcfcf;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+}
+
+table td {
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    text-indent: 5px;
+}
+
+p {
+    word-wrap: break-word;
+    overflow: auto
+}
+
+input {
+    vertical-align: inherit;
+}
+
+.lanky-input {
+    height: 99%;
+    width: 96%;
+    vertical-align: inherit;
+}
+
+.stage-file {
+    width: 96%;
+    height: 35px;
+}

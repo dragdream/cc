@@ -1,0 +1,106 @@
+.common-overflow-hidden{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.common-line-height {
+    height: 3px!important;
+}
+
+.common-textarea {
+    font-size:14px!important;
+    font-family: MicroSoft YaHei!important; 
+    overflow-y:visible!important; 
+    resize: vertical!important;
+    padding: 0px 4px!important;
+}
+
+.common-table-td-full-width {
+    width: 100%!important;
+}
+
+.common-tr-border{
+    border:none!important;
+}
+
+.required{
+    color:red;font-weight:bold;
+}
+
+.validatebox-invalid{
+    border:solid 1px red;
+}
+
+.common-red{
+    color: red;
+}
+
+.common-blue{
+    color: #00A4FF;
+}
+
+.common-green{
+    color: green;
+}
+
+.common-yellow{
+    color: #e8a63c;
+}
+
+.tabs-header{border-style:none;}
+
+.helplay-tip {
+    
+    outline: none;
+    opacity: 1;
+    z-index: 9900000; 
+    position: absolute; 
+    border: 1px solid #FFC30E; 
+    padding: 5px; 
+    background-color: #FFFBB8; 
+    text-align: left; 
+    color: #000; 
+    width: 150px; 
+    font-size: 14px; 
+    font-family: arial, sans-serif;
+} 
+.tagbox{
+	display:inline-block;
+	width:100%;
+}
+
+/** 综合查询已选条件样式 */
+.tagbox-label{
+    margin: -3px 2px 4px 4px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    background-color: #f5f5f5;
+    height: 26px; 
+    line-height: 26px;
+    padding-left:8px;
+}
+
+.panel-header{
+    background-color: #cce5fd;
+}
+.datagrid-btable .datagrid-cell{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#showOrHide {color:#1276E5; cursor: pointer;}
+#showOrHide i {font-size:18px;color:#49A6FC;}
+#outwarp{height:37px;width:100%;}
+#optionCom{position:relative;width:100%;text-align:left;margin-bottom:8px;padding-top:5px;height:30px;}
+.isshow{border:1px solid #ccc;background-color: #fff;padding:3px 5px;cursor: pointer;display:inline-block;}
+.tip{font-size:13px; margin-left:10px;color:#BEBEBE;}
+.optional{font-size:18px;margin-right:5px;font-weight:lighter;color:#0682E6;}
+.panList{padding-top:20px;position: absolute;top:35px;z-index:999;display:inline-block;display: none;height:250px;text-align: left;border:1px solid #ccc;background-color: #fff;}
+.panList li{height:30px;line-height: 30px;font-size: 14px;padding-left:10px;float:left;margin-left:20px;width:160px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.panList li:hover{cursor: pointer;color: rgb(173, 14, 14);}
+.panList li i{float:right;font-size:16px;color:lightgreen;display:block;height:30px;line-height: 30px;}
+#panListBack{position:absolute;top:0px;left:0px;width:100%;height:100%;background-color:rgba(0,0,0,0);z-index:998;}

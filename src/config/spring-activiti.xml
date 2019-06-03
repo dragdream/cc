@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- activiti5集成spring配置 -->
+	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+		<property name="dataSource" ref="dataSource" />
+		<property name="transactionManager" ref="transactionManager" />
+		<!-- 设置数据库schema的更新方式 -->  
+		<property name="databaseSchemaUpdate" value="true" />
+		<!-- 是否启动jobExecutor --> 
+		<property name="jobExecutorActivate" value="false"/>
+		
+		<!--历史信息级别可以配置成以下几种:
+			none: 忽略所有历史存档。这是流程执行时性能最好的状态，但没有任何历史信息可用。
+			activity: 保存所有流程实例信息和活动实例信息。 在流程实例结束时, 最后一个流程实例中的最新的变量值将赋值给历史变量。 不会保存过程中的详细信息。
+			audit: 这个是默认值. 它保存所有流程实例信息, 活动信息, 保证所有的变量和提交的表单属性保持同步 这样所有用户交互信息都是可追溯的，可以用来审计。
+			full: 这个是最高级别的历史信息存档，同样也是最慢的。 这个级别存储发生在审核以及所有其它细节的信息, 主要是更新流程变量。
+		-->
+    <property name="history" value="audit"/>
+        
+		<!--配置部署缓存-->
+    <property name="processDefinitionCacheLimit" value="10"/>
+        
+		<!--配置邮件-->
+		<!--<property name="mailServerHost" value="mail.my-corp.com" />-->
+		<!--<property name="mailServerPort" value="5025" />-->
+        
+        <!-- 生成流程图的字体 -->
+<!--        <property name="activityFontName" value="${diagram.activityFontName}"/>-->
+<!--        <property name="labelFontName" value="${diagram.labelFontName}"/>-->
+
+        <!-- 缓存支持
+        <property name="processDefinitionCache">
+            <bean class="me.kafeitu.demo.activiti.util.cache.DistributedCache" />
+        </property>-->
+        
+		<!--自动部署-->
+<!--		<property name="deploymentResources">  -->
+<!--	        <list>  -->
+<!--	            <value>classpath*:/deployments/*</value>  -->
+<!--	            <value>classpath*:/form.leave/*</value>  -->
+<!--	        </list>  -->
+<!--    	</property>-->
+		
+		<!--自定义用户管理-->
+<!--		<property name="customSessionFactories">  -->
+<!--	        <list>  -->
+<!--	            <bean class=".activiti.override.CustomUserEntityManagerFactory" />  -->
+<!--	            <bean class=".activiti.override.CustomGroupEntityManagerFactory" />  -->
+<!--	        </list>  -->
+<!--     	</property>-->
+     	
+     	<!-- 自定义表单字段类型 -->  
+<!--	    <property name="customFormTypes">  -->
+<!--	        <list>  -->
+<!--	            <bean class="me.kafeitu.demo.activiti.activiti.form.UsersFormType" />  -->
+<!--	        </list>  -->
+<!--	    </property> -->
+	    
+	</bean>
+
+	<bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+		<property name="processEngineConfiguration" ref="processEngineConfiguration" />
+	</bean>
+
+	<bean id="repositoryService" factory-bean="processEngine" factory-method="getRepositoryService"/>
+	<bean id="runtimeService" factory-bean="processEngine" factory-method="getRuntimeService"/>
+	<bean id="formService" factory-bean="processEngine" factory-method="getFormService"/>
+	<bean id="identityService" factory-bean="processEngine" factory-method="getIdentityService"/>
+	<bean id="taskService" factory-bean="processEngine" factory-method="getTaskService"/>
+	<bean id="historyService" factory-bean="processEngine" factory-method="getHistoryService"/>
+	<bean id="managementService" factory-bean="processEngine" factory-method="getManagementService"/>
+
+</beans>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+
+
+<!-- Created by SVGDeveloper 1.0 -->
+<svg width="800" height="480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<script>
+	function create_a(evt){
+	 alert("aaa");
+	}
+	</script>
+	<defs>
+		<linearGradient id="linearGradient">
+			<stop offset="0%" stop-color="rgb(0,128,128)" stop-opacity="1" />
+			<stop offset="10%" stop-color="rgb(0,255,255)" stop-opacity="1" />
+			<stop offset="50%" stop-color="rgb(255,255,255)" stop-opacity="1" />
+			<stop offset="90%" stop-color="rgb(0,255,255)" stop-opacity="0.75" />
+			<stop offset="100%" stop-color="rgb(0,192,192)" stop-opacity="1" />
+		</linearGradient>
+		<pattern id="Mesh" width="100" height="100" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+			<g>
+				<defs>
+					<linearGradient id="blue_Light" x1="0%" y1="100%" x2="0%" y2="0%" gradientUnits="objectBoundingBox" spreadMethod="pad">
+						<stop offset="0" stop-color="#c0ffff" stop-opacity="1" />
+						<stop offset="0.5" stop-color="#000080" />
+						<stop offset="1" stop-color="#c0ffff" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="blue_Dark" x1="0%" y1="100%" x2="0%" y2="0%" gradientUnits="objectBoundingBox" spreadMethod="pad">
+						<stop offset="0" stop-color="#000080" stop-opacity="1" />
+						<stop offset="0.5" stop-color="#c0ffff" />
+						<stop offset="1" stop-color="#000080" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+				<path id="LDL" stroke="none" fill="url(#blue_Light)" fill-opacity="1" d="M11.7899 38.6043 C14.8813 26.7425 28.1047 10.1709 49.8879 10.1709 C71.6709 10.1709 85.3606 27.9304 87.8407 38.6104 C87.8407 38.6104 93.2809 40.3555 99.867 40.3231 L99.867 0 L-0.425 0 L-0.425 40.3231 C6.13032 40.227 11.7899 38.6043 11.7899 38.6043 zM-0.42483 60.4626 L-0.42483 100 L99.7417 100 L99.7836 60.4176 C93.0028 60.3915 87.7366 62.1923 87.7366 62.1923 C83.6131 74.4504 72.0165 89.7037 50.0543 89.7037 C28.0921 89.7037 15.9939 75.1814 11.8718 62.3174 C11.8718 62.3174 6.23366 60.4607 -0.425 60.4627 z" />
+				<path id="DLD" stroke="none" fill="url(#blue_Dark)" fill-opacity="1" d="M61.8929 12.1344 C71.2717 39.2707 93.2809 40.5459 99.7836 40.3962 L99.7836 60.4044 C93.2809 60.4055 70.8966 62.0053 62.143 87.6409 C54.2648 90.2672 45.1358 89.6419 37.6328 87.6409 C30.0047 66.2571 14.098 61.0297 -0.40799 60.4044 L-0.433 40.3962 C6.19475 40.3962 28.504 39.1457 37.8829 12.0094 C44.7608 9.50835 55.3902 9.3833 61.8929 12.1345 z" />
+			</g>
+		</pattern>
+		<pattern id="Jade" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+			<g>
+				<polygon stroke="#b2d4b2" stroke-width="1" stroke-opacity="1" stroke-miterlimit="10" fill="#b2d4b2" fill-opacity="1" points="0,0 100,0 100,100 0,100" />
+				<circle stroke="#d1e1d1" stroke-width="5" stroke-opacity="1" stroke-miterlimit="10" fill="none" fill-opacity="1" cx="50" cy="50" r="50" transform="matrix(1 0 0 1 -50 49.9)" />
+				<circle stroke="#d1e1d1" stroke-width="5" stroke-opacity="1" stroke-miterlimit="10" fill="none" fill-opacity="1" cx="50" cy="50" r="50" transform="matrix(1 0 0 1 49.9 49.9)" />
+				<circle stroke="#d1e1d1" stroke-width="5" stroke-opacity="1" stroke-miterlimit="10" fill="none" fill-opacity="1" cx="50" cy="50" r="50" transform="matrix(1 0 0 1 49.7 -49.8)" />
+				<circle stroke="#d1e1d1" stroke-width="5" stroke-opacity="1" stroke-miterlimit="10" fill="none" fill-opacity="1" cx="50" cy="50" r="50" transform="matrix(1 0 0 1 -49.9 -49.9)" />
+				<circle stroke="#d1e1d1" stroke-width="5" stroke-opacity="1" stroke-miterlimit="10" fill="none" fill-opacity="1" cx="52" cy="52" r="50" transform="matrix(1 0 0 1 -1.8 -2.4)" />
+			</g>
+		</pattern>
+		<pattern id="Mesh1" width="100" height="100" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+			<g>
+				<defs>
+					<linearGradient id="blue_Light" x1="0%" y1="100%" x2="0%" y2="0%" gradientUnits="objectBoundingBox" spreadMethod="pad">
+						<stop offset="0" stop-color="#c0ffff" stop-opacity="1" />
+						<stop offset="0.5" stop-color="#000080" />
+						<stop offset="1" stop-color="#c0ffff" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="blue_Dark" x1="0%" y1="100%" x2="0%" y2="0%" gradientUnits="objectBoundingBox" spreadMethod="pad">
+						<stop offset="0" stop-color="#000080" stop-opacity="1" />
+						<stop offset="0.5" stop-color="#c0ffff" />
+						<stop offset="1" stop-color="#000080" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+				<path id="LDL" stroke="none" fill="url(#blue_Light)" fill-opacity="1" d="M11.7899 38.6043 C14.8813 26.7425 28.1047 10.1709 49.8879 10.1709 C71.6709 10.1709 85.3606 27.9304 87.8407 38.6104 C87.8407 38.6104 93.2809 40.3555 99.867 40.3231 L99.867 0 L-0.425 0 L-0.425 40.3231 C6.13032 40.227 11.7899 38.6043 11.7899 38.6043 zM-0.42483 60.4626 L-0.42483 100 L99.7417 100 L99.7836 60.4176 C93.0028 60.3915 87.7366 62.1923 87.7366 62.1923 C83.6131 74.4504 72.0165 89.7037 50.0543 89.7037 C28.0921 89.7037 15.9939 75.1814 11.8718 62.3174 C11.8718 62.3174 6.23366 60.4607 -0.425 60.4627 z" />
+				<path id="DLD" stroke="none" fill="url(#blue_Dark)" fill-opacity="1" d="M61.8929 12.1344 C71.2717 39.2707 93.2809 40.5459 99.7836 40.3962 L99.7836 60.4044 C93.2809 60.4055 70.8966 62.0053 62.143 87.6409 C54.2648 90.2672 45.1358 89.6419 37.6328 87.6409 C30.0047 66.2571 14.098 61.0297 -0.40799 60.4044 L-0.433 40.3962 C6.19475 40.3962 28.504 39.1457 37.8829 12.0094 C44.7608 9.50835 55.3902 9.3833 61.8929 12.1345 z" />
+			</g>
+		</pattern>
+		<linearGradient id="linearGradient1">
+			<stop offset="1%" stop-color="rgb(168,178,216)" stop-opacity="1" />
+			<stop offset="18%" stop-color="rgb(0,0,128)" stop-opacity="1" />
+			<stop offset="48%" stop-color="rgb(214,218,238)" stop-opacity="1" />
+			<stop offset="83%" stop-color="rgb(192,192,255)" stop-opacity="1" />
+			<stop offset="99%" stop-color="rgb(0,0,128)" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="linearGradient2">
+			<stop offset="1%" stop-color="rgb(168,178,216)" stop-opacity="1" />
+			<stop offset="18%" stop-color="rgb(0,0,128)" stop-opacity="1" />
+			<stop offset="48%" stop-color="rgb(214,218,238)" stop-opacity="1" />
+			<stop offset="83%" stop-color="rgb(192,192,255)" stop-opacity="1" />
+			<stop offset="99%" stop-color="rgb(0,0,128)" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="linearGradient3">
+			<stop offset="1%" stop-color="rgb(168,178,216)" stop-opacity="1" />
+			<stop offset="18%" stop-color="rgb(0,0,128)" stop-opacity="1" />
+			<stop offset="48%" stop-color="rgb(214,218,238)" stop-opacity="1" />
+			<stop offset="83%" stop-color="rgb(192,192,255)" stop-opacity="1" />
+			<stop offset="99%" stop-color="rgb(0,0,128)" stop-opacity="1" />
+		</linearGradient>
+	</defs>
+		
+	<path id="山西省" d="M433 173C433 173 430 176 430 176L428 178L426 180L424 182L420 184L420 187L419 189L419 191L419 194L417 195L416 197L415 200L416 202L416 204L416 206L416 210L415 212C414 213 413 214 413 214L412 216L412 224C413 225 414 226 414 226L414 228L414 230L414 232L414 234L414 236L414 238L414 240L415 241L417 242C418 242 420 242 420 242L423 240L426 239C428 239 430 238 430 238C432 238 433 237 433 237C433 237 433 236 434 236C435 235 436 235 436 235C436 235 437 234 438 234C440 234 442 234 442 234C443 234 444 233 444 233C445 232 447 231 447 231L450 230L450 228C451 227 451 227 451 226C452 226 452 225 452 224C452 223 452 222 452 222L452 220L449 216L449 215C450 214 451 213 451 213C452 212 453 212 453 212C453 211 454 210 454 210L454 208L455 205C455 205 454 203 454 202L453 200L450 198L448 196L448 193L448 190L450 189L452 188C453 187 455 186 455 186C455 186 455 185 456 185C456 184 457 182 457 182L455 179L453 176L451 174C449 174 451 172 451 172L452 170L452 168L450 168C448 169 447 170 447 170L445 171C444 172 440 172 440 172L436 172z" fill="#FFFFCC" stroke="#000000" stroke-opacity="1" onclick="create_a(evt)" transform="matrix(2.96,0,0,2.946,-1158.693,-443.918)" stroke-width="0.25" stroke-dasharray="4,4" xmlns="http://www.w3.org/2000/svg" />
+<text  id="山西省" x="148" y="250" xml:space="preserve" font-family="微软雅黑" font-size="12" fill="#FF0000" stroke="none" stroke-opacity="0" baseline-shift="baseline" transform="matrix(1,0,0,1,-51,-84)" xmlns="http://www.w3.org/2000/svg">sjdklfjasldfjsd</text>
+	</svg>

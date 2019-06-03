@@ -1,0 +1,81 @@
+a:link {
+	color: rgb(17, 17, 17); text-decoration: none;
+}
+a:visited {
+	color: rgb(17, 17, 17); text-decoration: none;
+}
+a:hover {
+	color: rgb(17, 17, 17); text-decoration: none;
+}
+a:hover {
+	color: rgb(200, 0, 0); text-decoration: underline;
+}
+.wrap {
+	margin: 0px auto; width: 1000px; overflow: hidden; clear: both; position: relative; z-index: 1;
+}
+.main {
+	overflow: hidden; margin-right: 20px; float: left; display: inline;
+}
+.side {
+	overflow: hidden; margin-right: 20px; float: left; display: inline;
+}
+.middle {
+	overflow: hidden; margin-right: 20px; float: left; display: inline;
+}
+.side-right {
+	float: right;
+}
+.main-right {
+	float: right;
+}
+.float-l {
+	float: left;
+}
+.float-r {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.visible {
+	overflow: visible;
+}
+.inline {
+	display: inline;
+}
+.hide {
+	display: none;
+}
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.noborder {
+	border: currentColor; border-image: none;
+}
+.nomargin {
+	margin: 0px;
+}
+.nobg {
+	background: none;
+}
+.margin-t-10 {
+	margin-top: 10px;
+}
+.margin-r-10 {
+	margin-right: 10px;
+}
+.margin-b-10 {
+	margin-bottom: 10px;
+}
+.margin-l-10 {
+	margin-left: 10px;
+}
+.positioned {
+	position: relative; z-index: 2;
+}

@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+.wf .xlist_tb{
+	border-collapse:collapse;
+}
+.wf .xlist_tb td{
+	border:1px solid gray;
+	text-align:center;
+	padding:5px;
+}
+.wf .xlist_tb thead td{
+	font-size:14px;
+	font-weight:bold;
+	background:#f0f0f0;
+	padding:6px;
+	color:#3e3b36;
+}
+.wf .xlist_add_btn{
+background-image:url('add.png');
+height:18px;
+width:18px;
+cursor:pointer;
+}
+.wf .xlist_delete_btn{
+background-image:url('delete.png');
+cursor:pointer;
+height:18px;
+width:18px;
+}
+.wf .readonly{
+	background:#f0f0f0;
+	border:1px solid #bcbcbc;
+}
+#center-container{
+font-size:12px;
+}

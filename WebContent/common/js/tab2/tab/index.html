@@ -1,0 +1,46 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+    <link rel="stylesheet" href="style/tab.css"/>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="js/tab.js"></script>
+    <script>
+        $(function() {
+            tab.init();
+        });
+    </script>
+</head>
+<body>
+    <!-- 宽度随意设置, 400可以改 -->
+    <div id="taskbar_center" style="width: 400px;">
+            <a href="javascript:;" id="tabs_left_scroll" class=""></a>
+    <div id="tabs_container">
+            <div class="js_ctnr"></div>
+    </div>
+    <a href="javascript:;" id="tabs_right_scroll" class=""></a>
+    </div>
+
+    <br/>
+    <div id="test">
+        <a id="add" href="javascript:;">add</a>
+        <div id="msg">
+
+        </div>
+    </div>
+    <script>
+        var index = 0;
+        $('#add').click(function() {
+            tab.add('id' + index, '菜单' + index);
+            index++;
+        });
+
+        tab.on('tabactive', function(id) {
+            $('#msg').append('<p>菜单: ' + id + ' 激活</p>');
+        });
+
+        tab.on('tabremove', function(id) {
+            $('#msg').append('<p>菜单: ' + id + ' 移除</p>');
+        });
+    </script>
+</body>
+</html>

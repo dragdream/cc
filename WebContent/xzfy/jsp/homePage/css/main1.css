@@ -1,0 +1,235 @@
+ul, ol { list-style-type: none;padding-left:5px;margin-left:0px; }
+
+.one 
+{ 
+display:block; 
+overflow:hidden; 
+height:1px; 
+margin:0 4px; 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5; 
+background:#f2f2f5; 
+} 
+.two 
+{ 
+display:block; 
+overflow:hidden; 
+height:1px;/*绾跨殑楂樺害涓�px*/ 
+margin:0 3px;/*璺濈澶栧眰DIV鐨勫乏鍙宠竟璺濆悇3px*/ 
+border-left:1px solid #f2f2f5;/*鍙樉绀虹嚎鐨勫乏杈圭殑1px*/ 
+border-right:1px solid #f2f2f5;/*鍙樉绀虹嚎鐨勫彸杈圭殑1px*/ 
+background:#f2f2f5;/*閰嶅悎鍐呭眰Div鐨勯鑹插彉鍖栵紝*/ 
+} 
+.three 
+{ 
+display:block; 
+overflow:hidden; 
+height:1px; 
+margin:0 2px; 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5; 
+background:#f2f2f5; 
+} 
+.four 
+{ 
+display:block; 
+overflow:hidden; 
+height:1px; 
+margin:0 1px; 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5; 
+background:#f2f2f5; 
+} 
+
+.content
+{ 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5; 
+} 
+.header 
+{ 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5;
+border-bottom:1px solid  #f2f2f5;
+background:#fff; 
+}
+
+.list{ position:absolute; left:0; top:0; position:relative; height:470px; padding:20px 0 0 10px;}
+.list p{ position:absolute; width:140px; height:30px; left:50%; bottom:0; margin-left:-70px;}
+.list p span{ margin-right:10px; cursor:pointer; background:url(../images/bullet_white.png) left top no-repeat; float:left; width:24px; height:24px;}
+.list p span.span{ background:url(../images/bullet_green.png) left top no-repeat;}
+.list .list_div{ cursor:pointer; width:100%;}
+.list_div_left{ width:15px; height:220px; position:absolute; left:0; top:0; z-index:3; background:url(../images/list_div_left.jpg) left top no-repeat; margin-left:0px;}
+.list_div_center{ width:99%; position:absolute; left:7px; top:0; z-index:2; height:204px; background:url(../images/list_div_center.jpg) left top repeat-x;}
+.list_div_right{ width:15px; position:absolute; right:-6px; top:0; z-index:3; height:204px; background:url(../images/list_div_right.jpg) left top no-repeat; margin-right:0;}
+.list_div_box{ position:relative; height:204px; margin-right:1%; margin-bottom:20px;}
+.list_div_title{ margin:7px 15px 0 10px;}
+.list_div_title h3 img{ margin-right:10px; margin-top:3px;}
+.list_div_tab span{ display:inline-block; margin-right:10px; font-size:14px; color:#555; border:1px solid #88ACCF; border-bottom:none; padding:5px 6px; border-radius:6px 6px 0 0; background:#D5E8FA;}
+.list_div_tab .spanColor{ color:#2C4B54; background:#FFF; border:1px solid #61A3BE; border-bottom:none; margin-top:0px; padding-bottom:6px;}
+.list_div_tab{ position:absolute; top:10px; left:50px;}
+.list_div_title a{ line-height:28px; color:#468c00;}
+.list_div_content{ margin:8px 15px 0 10px; line-height:26px; min-height:130px;overflow:hidden}
+.list_div_content li a{ color:#2c4b55; font-size:12px; width:65%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.list_div_content li i{ font-style:normal;  font-size:12px; color:#777;}
+
+.fl { float: left; }
+.fr { float: right; }
+
+
+
+body{
+	margin:5px;
+}
+.column {
+  float: left;
+  padding-bottom: 20px;
+}
+
+.portlet {
+  background:#fff;
+  margin: 0 1em 1em 0;
+  padding:0;
+}
+
+.portlet-header {
+  position: relative;
+}
+
+.portlet-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -8px;
+}
+
+.portlet-content {
+  padding: 0px;
+}
+
+.portlet-placeholder {
+  border: 1px dotted black;
+  margin:10px;
+  height: 50px;
+}
+
+.desktop .modular{border:1px solid #e2e2e2; }
+.desktop .modular .modular_hd{ height:36px; line-height:36px; overflow:hidden;}
+.desktop .modular .modular_hd:hover{ cursor:move;}
+.desktop .modular .modular_hd .toggle{ float:left; width:37px; height:36px; background:url(../images/desktop_ico.png) no-repeat left top; text-indent:-9999px; cursor:pointer;}
+.desktop .modular .modular_hd .toggle.on{ background:url(../images/desktop_ico.png) no-repeat left -38px;}
+.desktop .modular .modular_hd .delete{ float:right; width:38px; height:36px; background:url(../images/desktop_ico.png) no-repeat left -105px; text-indent:-9999px; cursor:pointer;}
+.desktop .modular .modular_hd .renovate{ float:right;  width:38px; height:36px; background:url(../images/desktop_ico.png) no-repeat left -75px; text-indent:-9999px; cursor:pointer;}
+.desktop .modular .modular_hd .more{ float:right;  width:38px; height:36px; background:url(../images/desktop_ico.png) no-repeat left -135px; text-indent:-9999px; cursor:pointer;}
+.desktop .modular .modular_hd .title{ margin:0 100px 0 15px; font-size:14px; color:#7b7b7b; font-family:"Microsoft YaHei";font-weight:bold;/* background-image:url(images/modular_title.jpg); */background-repeat:no-repeat;color:#fff;background-position:left center;background-size:180px 28px;}
+
+
+.desktop .modular .modular_bd{overflow:hidden; background:#FFF; padding:8px 15px 8px 15px;min-height:150px}
+.desktop .modular .modular_bd .time{ color:#959595; font-size:13px;}
+.desktop .modular .modular_bd .more{ height:24px; margin-top:5px; text-indent:-9999px;}
+.desktop .modular .modular_bd .more a{ float:right; display:block; width:30px; height:24px; background:url(../images/desktop_ico.png) no-repeat -2px -148px; text-indent:-9999px; }
+.desktop .modular .modular_bd .news_headlines{ overflow:hidden; margin:0px;}
+.desktop .modular .modular_bd .news_headlines dt{ float:left; width:222px; height:145px; overflow:hidden;}
+.desktop .modular .modular_bd .news_headlines dd{ margin-left:238px;}
+.desktop .modular .modular_bd .news_headlines dd h6{ line-height:30px; background:url(../images/desktop_ico.png) no-repeat -15px -230px; padding-left:12px; margin:0px;}
+.desktop .modular .modular_bd .news_headlines dd h6 a{ font-size:14px; color:#313131;}
+.desktop .modular .modular_bd .news_headlines dd p{ line-height:22px; max-height:88px; overflow:hidden; font-size:12px; color:#898989; padding-left:12px; font-family:"Microsoft YaHei";}
+.desktop .modular .modular_bd .news_headlines dd span.time{ padding-left:12px;}
+
+.desktop .modular .modular_bd .news_list{ overflow:hidden; margin-top:5px; margin-bottom:0px;font-family:"Microsoft YaHei";}
+.desktop .modular .modular_bd .news_list li{ line-height:30px; border-bottom:1px #c3c3c3 dashed; background:url(images/desktop_ico.png) no-repeat -15px -226px; text-indent:15px;}
+.desktop .modular .modular_bd .news_list li a{ font-size:12px; color:#000;}
+.desktop .modular .modular_bd .news_list li span.time{ float:right;font-family:"Microsoft YaHei";font-size:12px;color:#777}
+.desktop .modular .modular_bd .workflow_list{ overflow:hidden; margin-top:5px; margin-bottom:0px;}
+.desktop .modular .modular_bd .workflow_list li{ line-height:38px; border-bottom:1px #c3c3c3 dashed;}
+.desktop .modular .modular_bd .workflow_list li a{ font-size:14px; color:#313131;}
+.desktop .modular .modular_bd .workflow_list li a .red{ color:#F00;}
+.desktop .modular .modular_bd .workflow_list li a .yellow{ color:#f39800;}
+.desktop .modular .modular_bd .workflow_list li a .grey{ color:#313131;}
+.desktop .modular .modular_bd .workflow_list li span.time{ float:right;}
+
+
+.desktop .modular .modular_bd .schedule{ overflow:hidden; height:281px;}
+.desktop .modular .modular_bd .schedule .schedule_content{ margin-left:285px; margin-top:10px;}
+.desktop .modular .modular_bd .schedule .schedule_content h3{ font-size:14px;font-family:"Microsoft YaHei"; font-weight:bold;}
+.desktop .modular .modular_bd .schedule .schedule_content h4{ font-size:30px;font-family:"Microsoft YaHei"; text-indent:20px;}
+.desktop .modular .modular_bd .schedule .schedule_content li{ border-bottom:1px #CCC dashed; line-height:22px; margin:10px 0 0 0; font-size:12px;}
+.desktop .modular .modular_bd .schedule .schedule_content li span.schedule_time{ font-weight:bold; margin-right:10px;}
+.desktop .modular .modular_bd .schedule .schedule_content li span.red{ color:#F00;}
+.desktop .modular .modular_bd .schedule .schedule_content li span.green{ color:#009e96;}
+.list_div_content{padding:0px;margin:0px}
+.list_div_content .clearfix{padding-bottom:5px;background:url(images/desktop_ico.png) no-repeat -15px -230px; padding-left:12px;}
+.list_div_content li a{ color:#000; font-size:12px; width:65%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;font-family:"Microsoft YaHei";}
+.list_div_content li i{ font-style:normal;  font-size:12px; color:#777;font-family:"Microsoft YaHei";}
+#dp_list{font-size:12px;height:185px;overflow-x:hidden;overflow-y:auto;width:1000px}
+#picnewsdiv{min-height:280px}
+
+ .div1{
+    	margin-bottom:5px;background-color:#2388da;height:35px;width:150px;text-align:center;line-height:35px; color:white ;font-weight: bolder;
+ 		opacity:0.5;cursor:pointer;border-radius:5px;font-size:14px;font-family:微软雅黑;
+ 		filter:alpha(opacity=50)
+ 	}
+ 	.div1:hover{
+ 		opacity:1;
+ 		filter:alpha(opacity=100)
+ 	}
+   .div2{
+    margin-bottom:5px;background-color:	#ad183c;height:35px;width:150px;text-align:center;line-height:35px; color:white ;font-weight: bolder;
+    opacity:0.5;cursor:pointer;border-radius:5px;font-size:14px;font-family:微软雅黑;
+    filter:alpha(opacity=50)
+ }
+ .div2:hover{
+ 		opacity:1;
+ 		filter:alpha(opacity=100)
+ 	}
+   .div3{
+    margin-bottom:5px;background-color: #ff8d12;height:35px;width:150px;text-align:center;line-height:35px; color:white ;font-weight: bolder;
+    opacity:0.5;cursor:pointer;border-radius:5px;font-size:14px;font-family:微软雅黑;
+    filter:alpha(opacity=50)
+ }
+ .div3:hover{
+ 		opacity:1;filter:alpha(opacity=100)
+ 	}
+   .div4{
+    margin-bottom:5px;background-color: #42a42b;height:35px;width:150px;text-align:center;line-height:35px; color:white ;font-weight: bolder;
+    opacity:0.5;cursor:pointer;border-radius:5px;font-size:14px;font-family:微软雅黑;
+    filter:alpha(opacity=50)
+ }
+ .div4:hover{
+ 		opacity:1;filter:alpha(opacity=100)
+ 	}
+	.tabMenuClass{
+		margin:5px;
+	}
+.tabMenuClass li{
+		float:left;
+		margin:5px 0;
+		color:#000;
+
+	}
+.tabContentClass li{
+	float:left;
+	display:none;
+	font-size:12px;
+	font-family:"microsoft yahei";
+}
+.tabActive{
+	color:#007eff;
+}
+.modularBg{
+	height: 38px;
+	width: 28px;
+	float: left;
+	display: inline-block;
+	background-image: url(../images/modularBg.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.modularTitle{
+	background: #1d9cdf;
+    padding: 0 10px;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 5px;
+}

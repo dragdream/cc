@@ -1,0 +1,144 @@
+<%@page import="java.text.SimpleDateFormat"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>部门预算管理</title>
+<%@ include file="/header/header.jsp" %>
+<%@ include file="/header/easyui.jsp" %>
+<%@ include file="/header/ztree.jsp" %>
+<script type="text/javascript" src="<%=contextPath%>/system/subsys/budget/deptBudget/js/deptBudget.js"></script>
+
+<script type="text/javascript">
+function doInit(){
+	getInfoList();
+	getDeptList();
+}
+
+var datagrid;
+function getInfoList(){
+	datagrid = $('#datagrid').datagrid({
+		url:contextPath+"/deptBudgetController/getManageInfoList.action",
+		pagination:true,
+		singleSelect:false,
+		toolbar:'#toolbar',//工具条对象
+		checkbox:true,
+		border:false,
+		idField:'sid',//主键列
+		fitColumns:true,//列是否进行自动宽度适应
+		pageSize : 20,
+		pageList : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ],
+		columns:[[
+			{field:'YEAR',title:'目标年度',width:40,sortable : true},
+			{field:'DEPTNAME',title:'部门',width:60,sortable:true},
+			{field:'AMOUNT',title:'费用金额',width:25,sortable : true},
+			{field:'managePersonName',title:'创建人',width:60,sortable:true},
+			{field:'2',title:'操作',width:50,formatter:function(value, rowData, rowIndex){
+				var str = "<a href='#' onclick='showManageInfoFunc("+rowData.DEPTID + "," + rowData.YEAR +")'>详情 </a>";
+				str += "&nbsp;&nbsp;<a href='#' onclick=\"toAddOrUpdate('"+rowData.DEPTID + "','" + rowData.YEAR +"','" + 0 +"')\">编辑</a>";
+				str += "&nbsp;&nbsp;<a href='#' onclick=\"deleteObjFunc('"+rowData.DEPTID+"','"+rowData.YEAR+"')\">删除</a>";
+				return str;
+			}}
+		]]
+	});
+}
+
+
+function checkForm(){
+	var check = $("#form1").form('validate'); 
+	if(!check){
+		return false; 
+	}
+	return true;
+}
+
+//根据条件查询
+function doSearch(){
+	if(checkForm()){
+		var queryParams=tools.formToJson($("#form1"));
+		datagrid.datagrid('options').queryParams=queryParams; 
+		datagrid.datagrid("reload");
+		$('#searchDiv').modal('hide');
+	}
+}
+
+
+</script>
+</head>
+<body onload="doInit()" style="overflow:hidden;font-size:12px">
+	<table id="datagrid" fit="true" ></table>
+	<div id="toolbar">
+		<div class="base_layout_top" style="position:static">
+			<span class="easyui_h1">部门费用计划</span>
+		</div>
+		<div style="padding:10px">
+			<button class="btn btn-info" onclick="toAddOrUpdate(0,0,'1')">新增预算</button>&nbsp;
+<!-- 			<button class="btn btn-danger" onclick="batchDeleteFunc()" style="display:none;" >批量删除</button>&nbsp;&nbsp; -->
+			<button class="btn btn-default" data-toggle="modal" data-target="#searchDiv"><i class="glyphicon glyphicon-zoom-in"></i>&nbsp;高级查询</button>
+		</div>
+		<form id="form1" name="form1">
+		<div class="modal fade" id="searchDiv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">查询条件</h4>
+					</div>
+					<div class="modal-body">
+						<table class="none-table">
+							<tr>
+								<td class="TableData" >单位部门：</td>
+								<td class="TableData">
+									<input type="text" name="deptId" id=deptId size="" class="BigInput  easyui-validatebox"  style="display:none;" >
+								</td>
+							</tr>
+							<tr>
+								<td class="TableData">目标年度：</td>
+								<td class="TableData"  >
+									<select id="year" name="year" class="BigSelect easyui-validatebox" >
+										<option value="">请选择</option>
+										<%
+											int currentYear = Integer.parseInt(new SimpleDateFormat("yyyy").format(new Date()));
+											int counter = currentYear + 30;
+											int defaultYear = 2000;
+											for(int i=defaultYear;i<=counter;i++){
+										%>
+										<option value="<%=i %>"  <%=currentYear==i?"selected":"" %>><%=i %></option>
+										<%
+											}
+										%>
+										
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="TableData">费用金额大于：</td>
+								<td class="TableData">
+									<input type='text' class="BigInput  easyui-validatebox" validType='pointTwoNumber[]' id='amountMax' name='amountMax' style="width:180px;" maxlength="9" />
+								</td>
+							</tr>
+							<tr>
+								<td class="TableData">费用金额小于：</td>
+								<td class="TableData">
+									<input type='text' class="BigInput  easyui-validatebox" validType='pointTwoNumber[]' id='amountMin' name='amountMin' style="width:180px;" maxlength="9" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan='4' >
+									<input type="button" onClick="$('#deptId').val('');deptIdProxy.val('');reSetFunc();"  class="btn btn-default" value="清空">
+									<input type="button" class="btn btn-primary" onclick="doSearch();" value="查询">
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	</div>
+</body>
+</html>

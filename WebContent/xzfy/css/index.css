@@ -1,0 +1,300 @@
+
+
+.operate-container{
+    height:100%;
+    float: right;
+}
+.case-container{
+    width:100%;
+    height:100%;
+    border:1px solid #E0DFE5;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #E0DFE5;
+    margin:auto;
+}
+.case-title{
+    height:7%
+}
+.main-left {
+    width: 93px;
+    height:100%;
+    display: inline-block;
+    overflow: hidden;
+    margin-right:10px;
+    background:#F1F1F3;
+    padding-left:15px
+}
+.main-left ul{
+    height:95%;
+}
+.lanky-tab{
+    height:27px;
+    width:100px;
+    box-sizing: border-box;
+    border:1px solid #FCCABD;
+    margin-top:10px;
+    text-align: center;
+    line-height: 27px;
+    position:relative;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.visited-status{
+    background:#4CA2FF;
+    color:#fff;
+    border:1px solid #3F9AFF;
+}
+.actived-status{
+    background:#FF855A;
+    color:#fff;
+    border:1px solid #FE764D
+}
+.status-img{
+    position: absolute;
+    top: 13%;
+    left: 90%;
+}
+.default-status{
+    border:1px solid #B1D3FC;
+}
+.main-right {
+    width: 92%;
+    height: 100%;
+    display: inline-block;
+    position: fixed;
+}
+.case-content{
+    height:90%;
+
+}
+.case-content div{
+    height:100%;
+}
+#myframe{
+    height:90%
+}
+
+.module-top{
+    width:100%;
+    height:6%;
+
+}
+.case-desc{
+    width:100%;
+    height:35px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.desc-left{
+    display:inline-block;
+}
+.case-identifier,.case-status{
+    color:#7394CF;
+    margin-right:20px;
+}
+.desc-right{
+    display:inline-block;
+    float:right;
+}
+.deadlind{
+    font-size: 20px;
+    color:#D43454;
+    padding:0 10px 0 10px;
+}
+.content{
+    height:97%;
+    overflow: auto;
+    width: 100%;
+}
+
+.lanky-tab {
+    width: 73px;
+    height: 27px;
+    margin-top: 14px;
+}
+
+.head {
+    width: 100%;
+    height: 51px;
+    line-height: 51px;
+    font-size: 18px;
+    background-color: #F7F7F7;
+}
+
+.content {
+    width: 100%;
+}
+
+
+
+.lanky-tr {
+    height: 25px;
+    font-size: 18px;
+    color: #343434;
+    background-color: #F7F7F7;
+}
+
+.lanky-th {
+    line-height: 25px;
+    font-size: 14px;
+    color: #3376C3;
+    padding: 4px 0 4px 15px;
+    background:#F6F6F6;
+    border:1px solid #EDEDED;
+}
+
+.lanky-item {
+    width: 14%;
+    margin: 0 auto;
+    text-indent: 10px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.lanky-td {
+    width: 10%;
+    text-align: left;
+}
+
+.lanky-item2 {
+    width: 14%;
+    margin: 0 auto;
+    text-indent: 10px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.lanky-td2 {
+    width: 10%;
+    text-align: left;
+}
+
+.lanky-info {
+    border: 1px solid #cfcfcf;
+    background-color: #F7F7F7;
+}
+
+.lanky-p {
+    height: 70px;
+}
+
+.lanky-table {
+    width: 98%;
+    /* border-top: 1px solid #cfcfcf;
+    border-left: 1px solid #cfcfcf; */
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+}
+
+.lanky-table td,
+.lanky-table th {
+    border: none;
+}
+
+.lanky-table td {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-indent: 5px;
+}
+
+p {
+    word-wrap: break-word;
+    overflow: auto
+}
+
+input {
+    vertical-align: inherit;
+}
+
+.lanky-input {
+    height: 99%;
+    width: 100%;
+    vertical-align: inherit;
+    border:1px solid #DADADA
+}
+
+.stage-file {
+    width: 96%;
+    height: 35px;
+}
+/*td中可编辑列表*/
+
+.edit-table-td {
+    width: 90%;
+}
+
+.edit-table-item {
+    vertical-align: top;
+}
+
+.lanky-edit-table {
+    border: none;
+}
+
+.lanky-table .edit-table th {
+    text-align: center;
+    border: 1px #aaa solid;
+}
+/* #case-div table{
+   margin-bottom:10px;
+   height:40%;
+   width:98%
+} */
+.edit-table tbody {
+    font-size:12px;
+}
+
+.edit-table-add {
+    font-size:12px;
+}
+
+#reception table tbody{
+    font-size:12px;
+    text-align: left
+}
+
+#clientInfo table tbody{
+    font-size:12px
+}
+#matters table tbody{
+    font-size:12px
+}
+
+.lanky-container{
+    width:98%;
+    border:1px solid #EEEEEE;
+    margin-bottom:10px
+}
+.lanky-title{
+    width:100%;
+    border-bottom: 1px solid #EEEEEE;
+    height:35px;
+    background:#F6F6F6;
+    line-height: 34px;
+    padding-left:20px;
+    box-sizing: border-box;
+    color:#5682C1;
+    font-size:14px;
+}
+
+
+.lanky-content{
+    width:100%
+}
+.lanky-star {
+    color: red;
+    font-weight: bold;
+}
+
+
+.lanky-item:after{
+    content:'*';
+    color:red;
+}
+
+
+.disabled-grey{
+    border:1px solid rgb(199, 195, 195) !important;
+    background:rgb(202, 200, 200);
+}

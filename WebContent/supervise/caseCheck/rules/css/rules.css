@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber {
+	text-overflow: ellipsis;
+}
+
+.power-table-label {
+	text-align: right;
+	width: 100px;
+}

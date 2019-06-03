@@ -1,0 +1,96 @@
+.ztree {
+	padding: 0px;
+}
+.ztree li ul {
+	margin: 0px; padding: 0px;
+}
+.ztree li {
+	line-height: 30px;
+}
+.ztree li a {
+	padding: 0px; height: 30px !important; line-height: 30px; display: block;
+}
+.ztree li a:hover {
+	text-decoration: none; background-color: rgb(231, 231, 231);
+}
+.ztree li a.curSelectedNode {
+	border: 0px currentColor; border-image: none; background-color: rgb(212, 212, 212);
+}
+.ztree li.selfSelectedNode {
+	border: 0px currentColor; border-image: none; background-color: rgb(212, 212, 212);
+}
+.ztree li a.level0.curSelectedNode {
+	background-color: transparent;
+}
+.ztree li span {
+	line-height: 30px;
+}
+.ztree li span.button {
+	margin-top: -3px;
+}
+.ztree li span.button.switch {
+	width: 20px; height: 20px; line-height: 20px;
+}
+.ztree li a.level0 span {
+	font-size: 14px; font-weight: bold;
+}
+.ztree li span.button {
+	background-image: url("../img/tree/zTreeSwitch.png");
+}
+.ztree li span.button.ico_open {
+	vertical-align: middle;
+}
+.ztree li span.button.ico_close {
+	vertical-align: middle;
+}
+.ztree li span.button.switch.level1 {
+	width: 20px; height: 20px;
+}
+.ztree li span.button.noline_open {
+	background-position: 0px 0px;
+}
+.ztree li span.button.noline_close {
+	background-position: -18px 0px;
+}
+.ztree li span.button.noline_open.level0 {
+	background-position: 0px -18px;
+}
+.ztree li span.button.noline_close.level0 {
+	background-position: -18px -18px;
+}
+.ztree .avator_big.selfSelectedNode {
+	
+}
+.ztree .avator_big.selfSelectedNode a {
+	height: 56px !important;
+}
+.ztree .space {
+	display: inline-block;
+}
+.ztree .desc {
+	color: rgb(128, 128, 128); overflow: hidden; margin-left: 5px; display: none; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.ztree .user_avator {
+	width: 20px; height: 20px;
+}
+.ztree .user_funcs {
+	margin: 0px 4px; height: 14px; text-align: center; line-height: 14px; display: none;
+}
+.ztree .user_funcs.user_send_msg {
+	vertical-align: -1px;
+}
+.ztree .user_funcs.user_send_email {
+	
+}
+.ztree .avator_big {
+	position: relative;
+}
+.ztree .avator_big .user_name {
+	top: 3px; position: absolute;
+}
+.ztree .avator_big .desc {
+	top: 25px; margin-left: 0px; display: inline-block; position: absolute;
+}
+.ztree .avator_big .user_avator {
+	width: 40px; height: 40px; margin-top: 8px; margin-right: 5px;
+}

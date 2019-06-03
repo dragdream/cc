@@ -1,0 +1,66 @@
+.app-title{
+	line-height:45px;
+	font-weight:bold;
+}
+.app-tip{
+	font-size:13px;
+	color:gray;
+}
+.app-icon-radius {
+	width: 50px;
+	height: 50px;
+	margin: 3px 1px;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 25px;
+}
+.mui-popover{
+	font-size:16px;
+}
+.mui-input-row input,select,option{
+	font-size:14px;
+	color:gray;
+}
+.mui-input-row select{
+	margin-left:15px;
+}
+select{
+	font-size:14px;
+	color:gray;
+}
+option{
+	font-size:14px;
+}
+textarea{
+	font-size:14px;
+}
+.mui-input-group{
+	margin-top:10px;
+	font-size:14px;
+}
+#appSegment{
+	position:absolute;left:0px;right:0px;bottom:0px;top:0px;display:none;
+}
+.userSelectDiv {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1000000;
+    background-color: white;
+}
+.userSelectFrame{
+	width:100%;
+	height:100%;
+	border:0;
+}
+.mui-media-body{
+	font-size:14px;
+}
+.app-pagination{
+	padding:10px;
+}

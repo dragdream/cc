@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="style/css/css.css">
+<link rel="stylesheet" type="text/css" href="style/css/general.css">
+<script type="text/javascript" src="js/jquery.pack.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script>
+<script>
+$(document).ready(function(){
+	$.addTab("tabs","tabs-content",{title:"桌面",url:"个人桌面.htm",active:true});
+	$.addTab("tabs","tabs-content",{title:"搜狐",url:"http://www.sohu.com",active:false,closable:false});
+	$.addTab("tabs","tabs-content",{title:"新浪",url:"http://www.sina.com",active:false,closable:true});
+	$.addTab("tabs","tabs-content",{title:"新浪1",url:"http://www.sina.com",active:false,closable:true});
+	$.addTab("tabs","tabs-content",{title:"新浪2",url:"http://www.sina.com",active:false,closable:true});
+	$.addTab("tabs","tabs-content",{title:"新浪3",url:"http://www.sina.com",active:false,closable:true});
+	$.addTab("tabs","tabs-content",{title:"新浪4",url:"http://www.sina.com",active:false,closable:true});
+});
+</script>
+<title>主页</title>
+</head>
+<body>
+<!--------------- 系统头部 -------------->
+<div id="header">
+		<!---------- logo ---------->
+		<div class="logo"><img src="style/images/header/logo.png" /></div>
+        <div class="header_nav">
+        		<div id="tabs" style=""></div>
+        </div>
+        <!---------- 头部右侧 ---------->
+        <div class="header_right">
+        		<div class="search">
+                		<div class="container">
+                        	<input name="search" type="text" value="Serach" />
+                            <p>搜索</p>
+                        </div>
+                </div>
+                <div class="sign_in">
+                		<p>签到</p>
+                        <div class="container">
+                        		<h2>09 : 24 : 24</h2>
+                                <h3><input name="" type="button" value="按钮" /></h3>
+                        </div>
+                </div>
+                <div class="skin_peeler">
+                		<p>换肤</p>
+                        <div class="container">
+                        		<h2>更换界面主题</h2>
+                                <ul>
+                                		<li class="blue on"></li>
+                                        <li class="orange"></li>
+                                        <li class="green"></li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="set_up">
+                		<p>设置</p>
+                </div>
+                <div class="sign_out">
+                		<p>退出</p>
+                </div>
+                <div class="structure">
+                		<p>组织架构</p>
+                        <div class="container">
+                        		<div class="hd">
+                                		<ul>
+                                        		<li class="on">在线人员（12）</li>
+                                                <li>全部人员（123）</li>
+                                        </ul>
+                                </div>
+                                <div class="bd">
+                                		<h3>中腾OA协同办公智能管理平台</h3>
+                                        <div id="scrollbar1">
+                                        		<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                                                <div class="viewport">
+			 											<div class="overview">
+                                        						<ul class="one">
+                                        		<li class="options"><a class="cu" href="javascript:;">综合部</a>
+                                                	<ul class="two">
+                                                    	<li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="female"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="female"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="female"><a href="javascript:;">刘小才</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="options"><a class="cu" href="javascript:;">市场部</a>
+                                                	<ul class="two">
+                                                    	<li class="options"><a class="cu" href="javascript:;">市场部1</a>
+                                                        	<ul class="three">
+                                                            		<li class="male"><a href="javascript:;">刘小才</a></li>
+                                                                    <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="options"><a class="cu" href="javascript:;">市场部</a>
+                                                	<ul class="two">
+                                                    	<li class="options"><a class="cu" href="javascript:;">市场部1</a>
+                                                        	<ul class="three">
+                                                            		<li class="male"><a href="javascript:;">刘小才</a></li>
+                                                                    <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="options"><a class="cu" href="javascript:;">市场部</a>
+                                                	<ul class="two">
+                                                    	<li class="options"><a class="cu" href="javascript:;">市场部1</a>
+                                                        	<ul class="three">
+                                                            		<li class="male"><a href="javascript:;">刘小才</a></li>
+                                                                    <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="options"><a class="cu" href="javascript:;">市场部</a>
+                                                	<ul class="two">
+                                                    	<li class="options"><a class="cu" href="javascript:;">市场部1</a>
+                                                        	<ul class="three">
+                                                            		<li class="male"><a href="javascript:;">刘小才</a></li>
+                                                                    <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                        <li class="male"><a href="javascript:;">刘小才</a></li>
+                                                    </ul>
+                                                </li>
+                                        </ul>
+                                        				</div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        </div>
+</div>
+<!--------------- 系统主体 -------------->
+<div id="content">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+           <!---------- 侧栏导航 开始---------->
+            <td class="sidebar">
+            <div class="start_up">展开收起</div>
+                <div class="downward">向下</div>
+                <!----- 导航菜单 ----->
+                <div class="sidebar_nav">
+                		<div class="hd">
+                			<ul class="sidebar_ul">
+                                    <li class="n1"><span>个人办公</span></li>
+                                    <li class="n2"><span>工作流程</span></li>
+                                    <li class="n3"><span>计划任务</span></li>
+                                    <li class="n4"><span>公文管理</span></li>
+                                    <li class="n5"><span>行政办公</span></li>
+                                    <li class="n6"><span>知识交流</span></li>
+                                    <li class="n7"><span>人事管理</span></li>
+                                    <li class="n8"><span>客户管理</span></li>
+                                    <li class="n9"><span>合同管理</span></li>
+                                    <li class="n10"><span>费用管理</span></li>
+                                    <li class="n11"><span>库存管理</span></li>
+                                    <li class="n12"><span>档案管理</span></li>
+                                    <li class="n13"><span>报表中心</span></li>
+                                    <li class="n14"><span><a href="javascript:;">报表门户</a></span></li>
+                                    <li class="n15"><span><a href="javascript:;">CMS门户</a></span></li>
+                                    <li class="n16"><span>系统管理</span></li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                        		<!--- 个人办公 --->
+                        		<div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">个人考勤</a></li>
+                                                        <li><a href="javascript:;">个人邮件</a></li>
+                                                        <li><a href="javascript:;">工作日志</a></li>
+                                                        <li><a href="javascript:;">消息提醒</a></li>
+                                                        <li><a href="javascript:;">日程安排</a></li>
+                                                        <li><a href="javascript:;">个人通讯簿</a></li>
+                                                        <li><a href="javascript:;">个人网盘</a></li>
+                                                        <li><a href="javascript:;">即时通讯</a></li>
+                                                        <li><a href="javascript:;">手机短信</a></li>
+                                                        <li><a href="javascript:;">分级监控</a></li>
+                                                </ul>
+                        		</div>
+                                <!--- 工作流程 --->
+                        		<div class="two_menu">
+                                        		<ul>	
+                                                		<li><a href="javascript:;">新建工作</a></li>
+                                                        <li><a href="javascript:;">我的工作</a></li>
+                                                        <li><a href="javascript:;">工作查询</a></li>
+                                                        <li><a href="javascript:;">工作委托</a></li>
+                                                        <li><a href="javascript:;">工作监控</a></li>
+                                                        <li><a href="javascript:;">工作销毁</a></li>
+                                                        <li><a href="javascript:;">流程统计</a></li>
+                                                        <li><a href="javascript:;">流程设置</a></li>
+                                                </ul>
+                        		</div>
+                                <!--- 计划任务 --->
+                             	<div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">个人计划</a></li>
+                                                		<li><a href="javascript:;">部门计划</a></li>
+                                                		<li><a href="javascript:;">公司计划</a></li>
+                                                		<li><a href="javascript:;">批阅计划</a></li>
+                                                		<li><a href="javascript:;">共享计划</a></li>
+                                                		<li><a href="javascript:;">任务中心</a></li>
+                                                </ul>
+                                </div>
+                                <!--- 公文管理 --->
+                             	<div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">公文起草</a></li>
+                                                		<li><a href="javascript:;">我的公文</a></li>
+                                                		<li><a href="javascript:;">待收件</a></li>
+                                                		<li><a href="javascript:;">待阅件</a></li>
+                                                		<li><a href="javascript:;">发文反馈</a></li>
+                                                		<li><a href="javascript:;">传阅反馈</a></li>
+                                                		<li><a href="javascript:;">公文设置</a></li>
+                                                </ul>
+                                </div>
+                                <!--- 行政办公 --->
+                               <div class="two_menu">
+                                        		<ul>
+														<li class="cu"><p>会议管理</p>
+                      
+                                                       	<div class="three_menu">
+                                                            		<ul>
+                                                                    		<li><a href="javascript:;">会议申请</a></li>
+                                                                    		<li><a href="javascript:;">回忆查询</a></li>
+                                                                    		<li><a href="javascript:;">我的会议</a></li>
+                                                                    		<li><a href="javascript:;">会议纪要</a></li>
+                                                                    		<li><a href="javascript:;">会议管理</a></li>
+                                                                    		<li><a href="javascript:;">会议设备管理</a></li>
+                                                                    		<li><a href="javascript:;">会议室管理</a></li>
+                                                                    		<li><a href="javascript:;">管理员设置</a></li>
+                                                                    </ul>
+                                                            </div>                                   
+                                                        </li>
+                                                        <li class="cu"><p>通知公告</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">公告管理</a></li>
+                                                                    		<li><a href="javascript:;">公告审批</a></li>
+                                                                    		<li><a href="javascript:;">公告审批设置</a></li>
+                                                                    </ul>
+                                                            </div>                                   
+                                                        </li>
+                                                        <li><a href="javascript:;">公告查收</a></li>
+                                                        <li><a href="javascript:;">新闻发布</a></li>
+                                                        <li><a href="javascript:;">新闻查收</a></li>
+                                                        <li><a href="javascript:;">大事记</a></li>
+                                                        <li><a href="javascript:;">大事记管理</a></li>
+                                                        <li><a href="javascript:;">日程查询</a></li>
+                                                        <li class="cu"><p>车辆管理</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">车辆申请</a></li>
+                                                                    		<li><a href="javascript:;">车辆申请查询</a></li>
+                                                                    		<li><a href="javascript:;">车辆使用管理</a></li>
+                                                                            <li><a href="javascript:;">调度员设置</a></li>
+                                                                            <li><a href="javascript:;">车辆维护管理</a></li>
+                                                                            <li><a href="javascript:;">车辆信息管理</a></li>
+                                                                    </ul>
+                                                            </div>                                                           
+                                                        </li>
+                                                        <li><a href="javascript:;">投票查询</a></li>
+                                                        <li><a href="javascript:;">投票管理</a></li>
+                                                        <li class="cu"><p>用品管理</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">用品登记</a></li>
+                                                                    		<li><a href="javascript:;">用品审核</a></li>
+                                                                    		<li><a href="javascript:;">用品信息管理</a></li>
+                                                                            <li><a href="javascript:;">用品调度管理</a></li>
+                                                                            <li><a href="javascript:;">库/类别设置</a></li>
+                                                                    </ul>
+                                                            </div>  
+                                                        </li>
+                                                        <li class="cu"><p>用品记录</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">入库记录</a></li>
+                                                                    		<li><a href="javascript:;">报废记录</a></li>
+                                                                    		<li><a href="javascript:;">领用记录</a></li>
+                                                                            <li><a href="javascript:;">借用记录</a></li>
+                                                                            <li><a href="javascript:;">归还记录</a></li>
+                                                                            <li><a href="javascript:;">维护记录</a></li>
+                                                                            <li><a href="javascript:;">删除记录</a></li>
+                                                                    </ul>
+                                                            </div>  
+                                                        </li>
+                                                        <li class="cu"><p>固定资产</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">资产管理</a></li>
+                                                                    		<li><a href="javascript:;">资产领用</a></li>
+                                                                    		<li><a href="javascript:;">资产返库</a></li>
+                                                                            <li><a href="javascript:;">资产维修</a></li>
+                                                                            <li><a href="javascript:;">资产报废</a></li>
+                                                                            <li><a href="javascript:;">业务明细</a></li>
+                                                                            <li><a href="javascript:;">维修确认</a></li>
+                                                                            <li><a href="javascript:;">后台设置</a></li>
+                                                                    </ul>
+                                                            </div>  
+                                                        </li>
+                                                        <li class="cu"><p>图书管理</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">图书类别管理</a></li>
+                                                                    		<li><a href="javascript:;">设置管理员</a></li>
+                                                                    		<li><a href="javascript:;">借还书管理</a></li>
+                                                                            <li><a href="javascript:;">图书查询</a></li>
+                                                                    </ul>
+                                                            </div>  
+                                                        </li>
+                                                </ul>
+                               </div>
+                               <!--- 知识交流 --->
+                               <div class="two_menu">
+                                        		<ul>
+                                                		<li class="cu"><p>通讯簿</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">公共通讯簿</a></li>
+                                                                    		<li><a href="javascript:;">公共通讯簿设置</a></li>
+                                                                    </ul>
+                                                            </div> 
+                                                        </li>
+                                                        <li><a href="javascript:;">公共网盘</a></li>
+                                                        <li><a href="javascript:;">公共网盘设置</a></li>
+                                                        <li><a href="javascript:;">讨论区</a></li>
+                                                        <li><a href="javascript:;">下载中心</a></li>
+                                                        <li><a href="javascript:;">电子期刊</a></li>
+                                                        <li><a href="javascript:;">规章制度</a></li>
+                                                </ul>
+                               </div>
+                               <!--- 人事管理 --->
+                               <div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">人事档案管理</a></li>
+                                                		<li class="cu"><p>考勤管理</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">考勤审批</a></li>
+                                                                    		<li><a href="javascript:;">考勤设置</a></li>
+                                                                            <li><a href="javascript:;">考勤记录</a></li>
+                                                                            <li><a href="javascript:;">考勤统计</a></li>
+                                                                    </ul>
+                                                            </div> 
+                                                        </li>
+                                                        <li class="cu"><p>在线考试</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">题库管理</a></li>
+                                                                    		<li><a href="javascript:;">试题管理</a></li>
+                                                                            <li><a href="javascript:;">试卷管理</a></li>
+                                                                            <li><a href="javascript:;">考试信息管理</a></li>
+                                                                            <li><a href="javascript:;">参加考试</a></li>
+                                                                    </ul>
+                                                            </div> 
+                                                        </li>
+                                                        <li class="cu"><p>招聘管理</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">招聘需求</a></li>
+                                                                    		<li><a href="javascript:;">招聘计划</a></li>
+                                                                            <li><a href="javascript:;">招聘计划审批</a></li>
+                                                                            <li><a href="javascript:;">人才库</a></li>
+                                                                            <li><a href="javascript:;">招聘筛选</a></li>
+                                                                            <li><a href="javascript:;">招聘录用</a></li>
+                                                                    </ul>
+                                                            </div> 
+                                                        </li>
+                                                        <li class="cu"><p>培训管理</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">培训计划</a></li>
+                                                                    		<li><a href="javascript:;">培训计划审批</a></li>
+                                                                            <li><a href="javascript:;">培训记录</a></li>
+                                                                    </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="cu"><p>薪酬管理</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">工资帐套管理</a></li>
+                                                                    		<li><a href="javascript:;">员工帐套设置</a></li>
+                                                                            <li><a href="javascript:;">保险设置</a></li>
+                                                                            <li><a href="javascript:;">工资自助查询</a></li>
+                                                                            <li><a href="javascript:;">工资管理</a></li>
+                                                                            <li><a href="javascript:;">统计报表</a></li>
+                                                                    </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="cu"><p>绩效管理</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">指标集管理</a></li>
+                                                                    		<li><a href="javascript:;">考核任务管理</a></li>
+                                                                            <li><a href="javascript:;">考核自评</a></li>
+                                                                            <li><a href="javascript:;">考核</a></li>
+                                                                    </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="cu"><p>设置</p>
+                                                            <div class="three_menu">
+                                                                        <ul>
+                                                                    		<li><a href="javascript:;">年假规则设置</a></li>
+                                                                    		<li><a href="javascript:;">HR代码表</a></li>
+                                                                    </ul>
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                               </div>
+                               <!--- 客户管理 --->  
+                               <div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">客户管理</a></li>
+                                                        <li><a href="javascript:;">联系人管理</a></li>
+                                                        <li><a href="javascript:;">跟单管理</a></li>
+                                                        <li><a href="javascript:;">合同管理</a></li>
+                                                        <li><a href="javascript:;">售后服务</a></li>
+                                                        <li><a href="javascript:;">竞争对手</a></li>
+                                                        <li><a href="javascript:;">报表统计</a></li>
+                                                        <li><a href="javascript:;">维护设置</a></li>
+                                                </ul>
+                                        </div>
+                               <!--- 合同管理 --->
+                               <div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">合同查看</a></li>
+                                                        <li><a href="javascript:;">合同管理</a></li>
+                                                        <li><a href="javascript:;">合同提醒</a></li>
+                                                        <li><a href="javascript:;">类型设置</a></li>
+                                                </ul>
+                               </div>
+                               <!--- 费用管理 ---> 
+                               <div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">部门费用计划</a></li>
+                                                        <li><a href="javascript:;">部门计划查询</a></li>
+                                                        <li><a href="javascript:;">个人计划管理</a></li>
+                                                        <li><a href="javascript:;">个人计划查询</a></li>
+                                                        <li><a href="javascript:;">费用申请</a></li>
+                                                </ul>
+                               </div>
+                               <!--- 库存管理 ---> 
+                               <div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">入库业务</a></li>
+                                                        <li><a href="javascript:;">出库业务</a></li>
+                                                        <li><a href="javascript:;">库存报表</a></li>
+                                                        <li><a href="javascript:;">仓库管理</a></li>
+                                                        <li><a href="javascript:;">库存盘点</a></li>
+                                                        <li><a href="javascript:;">产品管理</a></li>
+                                                </ul>
+                               </div>
+                               <!--- 档案管理 --->    
+                               <div class="two_menu">
+                                        		<ul>
+														<li><a href="javascript:;">卷库管理</a></li>
+                                                        <li><a href="javascript:;">案卷管理</a></li>
+                                                        <li><a href="javascript:;">文件管理</a></li>
+                                                        <li><a href="javascript:;">节约管理</a></li>
+                                                        <li><a href="javascript:;">案卷节约</a></li>
+                                                        <li><a href="javascript:;">借阅审批</a></li>
+                                                        <li><a href="javascript:;">借阅记录</a></li>
+                                                </ul>
+                               </div>
+                               <!--- 报表中心 ---> 
+                               <div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">流程报表</a></li>
+                                                        <li><a href="javascript:;">通用报表</a></li>
+                                                        <li><a href="javascript:;">流程报表管理</a></li>
+                                                        <li><a href="javascript:;">通用报表管理</a></li>
+                                                </ul>
+                               </div>
+                               <!--- 报表门户 --->
+                               <div class="two_menu">
+                                        		<ul>
+                                                
+                                                </ul>
+                               </div>
+                               <!--- CMS门户 --->
+                               <div class="two_menu">
+                                        		<ul>
+
+                                                </ul>
+                               </div>
+                               <!--- 系统管理 --->
+                               <div class="two_menu">
+                                        		<ul>
+                                                		<li><a href="javascript:;">xxx</a></li>
+                                                        <li><a href="javascript:;">xxx</a></li>
+                                                </ul>
+                               </div>
+                        </div>
+                        
+                </div>
+                <div class="upward">向上</div>
+            </td>
+            <!--------- 桌面右侧 ---------->
+            <td class="main_right" valign="top">
+                     <!----- 分屏 ----->
+                     <div class="zm_box">
+                     <div id="tabs-content" style="height:100%;" fit="true"></div>
+                    
+                     </div>
+            </td>
+          </tr>
+        </table>
+
+</div>
+<!--------------- 尾部 -------------->
+<div id="footer">
+中安腾鹏科技有限公司
+</div>
+</body>
+</html>

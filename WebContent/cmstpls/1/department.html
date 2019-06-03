@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="keywords" content="某某 政府 官网 官方 网站"/>
+<meta http-equiv="description" content="某某市人民政府"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>某某市人民政府</title>
+
+<link rel="stylesheet" type="text/css" href="<@Rootpath src="r/cms/www/cn/style/css.css"/>"></LINK>
+<link rel="stylesheet" type="text/css" href="<@Rootpath src="r/cms/www/cn/style/main.css"/>"></LINK>
+<script src="<@Rootpath src="r/cms/jquery.js"/>" type="text/javascript"></script>
+<script src="<@Rootpath src="r/cms/front.js"/>" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	Cms.siteFlow("", location.href, document.referrer);
+});
+</script>
+</head>
+<body>
+	<script src="<@Rootpath src="r/cms/www/cn/js/less.version.js"/>" type="text/javascript"></script>
+	<script src="<@Rootpath src="r/cms/www/cn/js/ischrome.js"/>" type="text/javascript"></script>
+	<div class="main-body">
+<div class="top-bar">
+	<div class="bar">
+		<div class="main-wrap clearfix">
+			<div class="four-links">
+				<a target="_blank">某某省人民政府</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市人民政府</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市人大</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市政协</a>
+			</div>
+			<div class="version-links">
+				<a  target="_blank" style="color:#DD736C;">公务邮箱</a>
+				<span class="link-sep"></span>
+				<a id="accessible" href="javascript:;">无障碍阅读</a>
+				<span class="link-sep"></span>
+				<a id="chinese" data-default="简体" data-changed="繁體" href="javascript:;">繁體</a>
+				<span class="link-sep"></span>
+				<a >English</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="<@Rootpath src="r/cms/www/cn/js/chinese.js"/>" type="text/javascript"></script>
+<script src="<@Rootpath src="r/cms/www/cn/js/accessible.js"/>" type="text/javascript"></script>
+<script type="text/javascript">
+//简繁体转换
+initChinese(document.querySelector("#chinese"), ["title"]);
+//无障碍
+initAccessible(document.querySelector(".main-body"), document.querySelector("#accessible"));
+</script>
+		<div class="main-wrap main-container">
+<div class="main-nav">
+	<@Site>
+  		 <a class="node" href="<@Out name="REL_PATH" />">首页</a>
+	</@Site>
+	<@Channel>
+		 	 <#assign curChannelId=this.channelId />
+		</@Channel>
+	<@Channels type="TOP">
+		<a class="node <#if this.channelId==curChannelId>focus</#if>" href="<@Out name="REL_PATH" />" ><@Out name="chnlName" /></a>
+	</@Channels>
+	<form action="" method="get" class="search-bar" onsubmit="return search_submit(this)">
+		<input type="text" name="q">
+		<input type="submit" value="">
+		<em>查询间隔10秒</em>
+	</form>
+	<script type="text/javascript">
+	var search_submit = function(form){
+		var input = form.querySelector("input[name=q]");
+		var value = input.value.replace(/(^\s*)|(\s*$)/g, "");
+		if(value) {
+			//每10秒可以查询一次
+			if(jQuery.cookie("s")){
+				var em = form.querySelector("em");
+				em.style.display = "block";
+				setTimeout(function(){
+					em.style.display = "none";
+				}, 2000);
+				return false;
+			} else {
+				input.value = value;
+				var date = new Date();
+				date.setTime(date.getTime() + 10000);
+				jQuery.cookie("s", value, {expires:date});
+				return true;
+			}
+		} else {
+			return false;
+		}
+	}
+	</script>
+</div>
+<script src="<@Rootpath src="/r/cms/www/cn/js/tabs.js"/>" type="text/javascript"></script>
+<div class="tile-region mt-region">
+	<div class="tile-group low wide">
+		<div class="tile low full sixfold-height color-panel">
+			<div class="wrap">
+				<div class="box-tile">
+					<div class="box-title">
+						<span>工作部门</span>
+					</div>
+					<div class="box-content">
+						<div class="dept-icon-list pd-lr-30 clearfix">
+							<a target="_blank" >市发改委</a>
+							<a target="_blank" >市教育局</a>
+							<a target="_blank" >市科技局</a>
+							<a target="_blank" >市工信委</a>
+							<a target="_blank" >市民委</a>
+							<a target="_blank" >市公安局</a>
+							<a target="_blank" >市监察局</a>
+							<a target="_blank" >市民政局</a>
+							<a target="_blank" >市司法局</a>
+							<a target="_blank" >市财政局</a>
+							<a target="_blank" >市人社局</a>
+							<a target="_blank" >市国土局</a>
+							<a target="_blank" >市安监局</a>
+							<a target="_blank" >市建委</a>
+							<a target="_blank" >市房管局</a>
+							<a target="_blank" >市规划局</a>
+							<a target="_blank" >市交通委</a>
+							<a target="_blank" >市城市管理局</a>
+							<a target="_blank" >市环保局</a>
+							<a target="_blank" >市农委</a>
+							<a target="_blank" >市水务局</a>
+							<a target="_blank" >市林业局</a>
+							<a target="_blank" >市商务局</a>
+							<a target="_blank" >市文广新局</a>
+							<a target="_blank" >市卫计委</a>
+							<a target="_blank" >市食品药品监管局</a>
+							<a target="_blank" >市审计局</a>
+							<a target="_blank" >市体育局</a>
+							<a target="_blank" >市统计局</a>
+							<a target="_blank" >市旅游局</a>
+							<a target="_blank" >市粮食局</a>
+							<a target="_blank" >市信访局</a>
+							<a target="_blank" >市政府外侨办</a>
+							<a target="_blank" >市政府法制办</a>
+							<a target="_blank" >市人防办</a>
+							<a target="_blank" >市文物局</a>
+							<a target="_blank" >市园林局</a>
+							<a target="_blank" >市国资委</a>
+							<a target="_blank" >市工商局</a>
+							<a target="_blank" >市质监局</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tile low full threefold-height color-panel">
+			<div class="wrap">
+				<div class="box-tile">
+					<div class="box-title">
+						<span>直属事业机构</span>
+					</div>
+					<div class="box-content">
+						<div class="dept-icon-list col-3 pd-lr-30 clearfix">
+							<a target="_blank" >市煤炭局</a>
+							<a target="_blank" >公积金中心</a>
+							<a target="_blank" >市事管局</a>
+							<a target="_blank" >市档案局</a>
+							<a target="_blank" >市接待办</a>
+							<a target="_blank" >市供销合作社</a>
+							<a target="_blank" >市地震局</a>
+							<a target="_blank" >市史志办</a>
+							<a target="_blank" >市市场发展局</a>
+							<a target="_blank" >市仲裁委</a>
+							<a target="_blank" >市建投总公司</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tile low full threefold-height color-panel">
+			<div class="wrap">
+				<div class="box-tile">
+					<div class="box-title">
+						<span>派出机构</span>
+					</div>
+					<div class="box-content">
+						<div class="dept-icon-list col-2 pd-lr-30 clearfix">
+							<a target="_blank" >航空港经济综合实验区</a>
+							<a target="_blank" >新区管委会</a>
+							<a target="_blank" >经济开发区管委会</a>
+							<a target="_blank" >高新技术产业开发区管委会</a>
+							<a target="_blank" >火车站地区管理委员会</a>
+							<a target="_blank" >生态旅游风景区管委会</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tile-group low">
+		<div class="tile low full twofold-height">
+			<div class="wrap">
+				<img class="image" src="<@Rootpath src="/r/cms/www/cn/images/decorations/deco_department_01.png"/>" />
+			</div>
+		</div>
+		<a target="_blank"  class="tile low active color-yellow">
+			<div class="wrap">
+				<div class="title-cn">第一区</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-sky-blue">
+			<div class="wrap">
+				<div class="title-cn">第二区</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-lime-green">
+			<div class="wrap">
+				<div class="title-cn">第三区</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank" class="tile low active color-blue">
+			<div class="wrap">
+				<div class="title-cn">第四区</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-dark-blue">
+			<div class="wrap">
+				<div class="title-cn">第五区</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-slate-blue">
+			<div class="wrap">
+				<div class="title-cn">第六区</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-green">
+			<div class="wrap">
+				<div class="title-cn">第七县</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-light-red">
+			<div class="wrap">
+				<div class="title-cn">第八市</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-light-pink">
+			<div class="wrap">
+				<div class="title-cn">第九市</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-sea-green">
+			<div class="wrap">
+				<div class="title-cn">一十市</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<a target="_blank"  class="tile low active color-yellow-green">
+			<div class="wrap">
+				<div class="title-cn">十一市</div>
+				<div class="icon">s</div>
+			</div>
+		</a>
+		<div class="tile low color-yellow">
+			<div class="wrap">
+			</div>
+		</div>
+		<a target="_blank"  class="tile low full active color-sky-blue">
+			<div class="wrap">
+				<div class="title-cn">信息报送采用量</div>
+				<div class="icon">u</div>
+			</div>
+		</a>
+		<div class="tile low full">
+			<div class="wrap">
+				<img class="image" src="<@Rootpath src="/r/cms/www/cn/images/decorations/deco_department_02.jpg"/>" />
+			</div>
+		</div>
+		<div class="tile low full twofold-height color-gray">
+			<div class="wrap">
+				<div class="select-links department-select-links">
+					<select>
+<option>国务院部门网站</option>
+<option value="http://www.chinatax.gov.cn/">税务总署</option>
+<option value="http://www.customs.gov.cn/publish/portal0/">海关总署</option>
+<option value="http://www.sasac.gov.cn/n1180/index.html">国资委</option>
+<option value="http://www.audit.gov.cn/n1992130/index.html">审计署</option>
+<option value="http://www.pbc.gov.cn/">人民银行</option>
+<option value="http://www.nhfpc.gov.cn">人口计生委</option>
+<option value="http://www.moh.gov.cn/publicfiles//business/htmlfiles/wsb/index.htm">卫生部</option>
+<option value="http://www.mcprc.gov.cn/">文化部</option>
+<option value="http://www.mofcom.gov.cn/">商务部</option>
+<option value="http://www.agri.gov.cn/">农业部</option>
+<option value="http://www.mwr.gov.cn/">水利部</option>
+<option value="http://www.miit.gov.cn/n11293472/index.html">工业和信息化部</option>
+<option value="http://www.moc.gov.cn/">交通运输部</option>
+<option value="http://www.china-railway.com.cn/">铁路总公司</option>
+<option value="http://www.mohurd.gov.cn/">住建部</option>
+<option value="http://www.mlr.gov.cn/">国土资源部</option>
+<option value="http://www.mohrss.gov.cn/">人力资源和社会保障部</option>
+<option value="http://www.mof.gov.cn/">财政部</option>
+<option value="http://www.moj.gov.cn/">司法部</option>
+<option value="http://www.mca.gov.cn/">民政部</option>
+<option value="http://www.ccdi.gov.cn/">监察部</option>
+<option value="http://www.mps.gov.cn/n16/index.html">公安部</option>
+<option value="http://www.seac.gov.cn/gjmw/index.htm">国家民委</option>
+<option value="http://www.mod.gov.cn/">国防部</option>
+<option value="http://www.most.gov.cn/">科技部</option>
+<option value="http://www.moe.gov.cn/">教育部</option>
+<option value="http://www.ndrc.gov.cn/">发展改革委</option>
+<option value="http://www.mfa.gov.cn/chn/gxh/tyb/">外交部</option>
+					</select>
+					<select>
+<option>省内各市政府网站</option>
+
+					</select>
+					<select>
+<option>本市其他网站</option>
+<option >市公务员局</option>
+<option >市反邪教协会</option>
+<option >信息化</option>
+<option >质量检验中心</option>
+<option >市科协</option>
+<option >妇联</option>
+<option >市总工会</option>
+<option >市检察院</option>
+<option >市团委</option>
+<option >市政协</option>
+<option >人大</option>
+					</select>
+					<select>
+<option>地方政务网站</option>
+<option value="http://www.taiwan.cn/">台湾</option>
+<option value="http://www.macau.gov.mo/">澳门</option>
+<option value="http://www.gov.hk">香港</option>
+<option value="http://www.xinjiang.gov.cn/">新疆</option>
+<option value="http://www.qh.gov.cn/">青海</option>
+<option value="http://www.nx.gov.cn/">宁夏</option>
+<option value="http://www.gansu.gov.cn/">甘肃</option>
+<option value="http://www.shaanxi.gov.cn/">陕西</option>
+<option value="http://www.chinatibetnews.com/">西藏</option>
+<option value="http://www.yn.gov.cn/">云南</option>
+<option value="http://www.gzgov.gov.cn/">贵州</option>
+<option value="http://www.sc.gov.cn">四川</option>
+<option value="http://www.cq.gov.cn/">重庆</option>
+<option value="http://www.hainan.gov.cn/">海南</option>
+<option value="http://www.gxzf.gov.cn/">广西</option>
+<option value="http://www.gd.gov.cn/">广东</option>
+<option value="http://www.hunan.gov.cn/">湖南</option>
+<option value="http://www.hubei.gov.cn/">湖北</option>
+<option value="http://www.henan.gov.cn/">河南</option>
+<option value="http://www.sd.gov.cn/">山东</option>
+<option value="http://www.jiangxi.gov.cn/">江西</option>
+<option value="http://www.fujian.gov.cn/">福建</option>
+<option value="http://www.ah.gov.cn/">安徽</option>
+<option value="http://www.zj.gov.cn/gb/zjnew/index.html">浙江</option>
+<option value="http://www.jiangsu.gov.cn/">江苏</option>
+<option value="http://www.shanghai.gov.cn/shanghai/node2314/index.html">上海</option>
+<option value="http://www.hlj.gov.cn/">黑龙江</option>
+<option value="http://www.jl.gov.cn/">吉林</option>
+<option value="http://www.ln.gov.cn/">辽宁</option>
+<option value="http://www.nmg.gov.cn/">内蒙古</option>
+<option value="http://www.shanxigov.cn/">山西</option>
+<option value="http://www.hebei.gov.cn/">河北</option>
+<option value="http://www.tj.gov.cn/">天津</option>
+<option value="http://www.beijing.gov.cn/">北京</option>
+					</select>
+					<select>
+<option>重要新闻媒体</option>
+<option value="http://www.people.com.cn/">人民网</option>
+<option value="http://www.xinhuanet.com/">新华网</option>
+<option value="http://www.dahe.cn/">大河网</option>
+					</select>
+					<select>
+<option>友好城市</option>
+<option value="http://www.hegang.gov.cn/">黑龙江-鹤岗市</option>
+<option value="http://www.nanning.gov.cn/">广西-南宁</option>
+<option value="http://www.nanjing.gov.cn/">江苏-南京市</option>
+<option value="http://www.wuxi.gov.cn/">江苏-无锡市</option>
+<option value="http://www.ningbo.gov.cn/">浙江-宁波市</option>
+<option value="http://www.lyg.gov.cn/">江苏-连云港市</option>
+<option value="http://www.qingdao.gov.cn/">山东-青岛市</option>
+<option value="http://www.cc.jl.gov.cn/">吉林-长春市</option>
+<option value="http://www.jinan.gov.cn/">山东-济南市（姊妹城市）</option>
+<option value="http://www.haikou.gov.cn/">海南-海口市</option>
+<option value="http://www.yc.gov.cn/">黑龙江-伊春市</option>
+<option value="http://www.wenzhou.gov.cn/">浙江-温州市</option>
+<option value="http://www.guangzhou.gov.cn/">广东-广州市</option>
+<option value="http://www.xa.gov.cn/ptl/index.html">陕西-西安市</option>
+<option value="http://www.fuzhou.gov.cn/">福建-福州市</option>
+<option value="http://www.irbid.gov.jo/">约旦伊尔比德市</option>
+<option value="http://www.clujnapoca.ro/">罗马尼亚克鲁日－纳波卡市</option>
+<option value="http://www.ssau.ru/">俄罗斯萨马拉市</option>
+<option value="http://www.jinju.go.kr/">韩国晋州市</option>
+<option value="http://www.co.richmond.va.us/">美国里士满市</option>
+					</select>
+				</div>
+				<script type="text/javascript">
+				(function(){
+					$(".select-links>select").bind("change", function(){
+						var option = this.options[this.selectedIndex];
+						if(option.value) {
+							window.open(option.value);
+						}
+					});
+				})();
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+		<div class="copyright">
+			<div class="main-wrap">
+				<table cellpadding=0 cellspacing=0 border=0 width="100%" style="table-layout:fixed;">
+					<tr>
+						<td align="right">
+							
+						</td>
+						<td width=640>
+														<a target="_blank">关于我们</a>
+							|
+							<a target="_blank">郑重声明</a>
+							|
+							<a target="_blank">网站地图</a>
+							|
+							<a>意见反馈</a>
+							|
+							<a target="_blank">旧版网站</a>
+							<br/>建议使用：1024*768分辨率，IE8及以上浏览器 某某市人民政府地址：某某市某某路1002号 邮编：100825
+							<br/>某某市人民政府版权所有 某ICP备62110213号
+						</td>
+						<td align="left"><a target="_blank"><img src="<@Rootpath src="r/cms/www/cn/images/110.png"/>" /></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

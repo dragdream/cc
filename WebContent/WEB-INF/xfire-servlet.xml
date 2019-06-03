@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!-- 	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"> -->
+<!-- 		<property name="urlMap"> -->
+<!-- 			<map> -->
+<!-- 				<entry key="/XfireDocWebService"> -->
+<!-- 					<ref bean="xfireDocWebService" /> -->
+<!-- 				</entry> -->
+<!-- 			</map> -->
+<!-- 		</property> -->
+<!-- 	</bean> -->
+<!-- 	<bean id="echoBean" -->
+<!-- 		class="com.tianee.thirdparty.chinaCertificationInspection.webservice.XfireServerWebServiceImpl" /> -->
+<!-- 	<bean id="xfireDocWebService" class="org.codehaus.xfire.spring.remoting.XFireExporter"> -->
+<!-- 		<property name="serviceFactory"> -->
+<!-- 			<ref bean="xfire.serviceFactory" /> -->
+<!-- 		</property> -->
+<!-- 		<property name="xfire"> -->
+<!-- 			<ref bean="xfire" /> -->
+<!-- 		</property> -->
+<!-- 		<property name="serviceBean"> -->
+<!-- 			<ref bean="echoBean" /> -->
+<!-- 		</property> -->
+<!-- 		<property name="serviceClass"> -->
+<!-- 			<value>com.tianee.thirdparty.chinaCertificationInspection.webservice.XfireServerWebServiceI</value> -->
+<!-- 		</property> -->
+<!-- 	</bean> -->
+</beans>

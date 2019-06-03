@@ -1,0 +1,36 @@
+.a {
+    border: 0px solid rgb(205, 205, 205);
+    width: 100%;
+    height: 170px;
+    background: white;
+
+}
+/*.b{border:1px solid green; }*/
+
+.c {
+    color: white;
+   border-radius: 5px;
+    width: 72px;
+    height: 82px;
+    float: left;
+    margin: 2px 2px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.c:hover{
+    cursor: pointer;
+}
+.d{
+	display:block;
+	width:60px;
+    position: relative;
+    top:55px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left:7px;
+}
+.pto-1{
+    background: url("../img/1.png") ;
+}

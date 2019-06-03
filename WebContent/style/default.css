@@ -1,0 +1,713 @@
+body{background: #ffffff;color:#333333;font-family:'Microsoft YaHei';}
+a{color:#333333;}
+.red{color:red;font-weight: bold;}
+.fl{float: left;}
+.fr {float:right;}
+a {
+    outline: none;
+    outline-style:none;
+    -moz-out-style:none;
+}
+input,input:focus {
+
+}
+input[type=checkbox], input[type=radio] {
+    margin:2px 0 0;
+    outline:none;
+}
+.browser {
+    width:1000px;
+    margin:0 auto;
+    color:#fff;
+    height:50px;
+    background-color:#ff8d12;
+    text-align:center;
+    line-height:50px;
+    font-size:14px;
+    display:none;
+    position:fixed;
+    left:25%;
+    top:-50px;
+    z-index:99;
+}
+.container {
+    width: 1220px;
+}
+.header{
+    height: 150px;
+    width: 100%;
+}
+.header .logo{
+    display:inline-block;
+    padding-top: 40px;
+    margin-left: 135px;
+}
+.logo-bg{
+    width:100%;
+    width: 635px;
+    height: 500px;
+}
+.main{
+    max-height: 550px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.main .main-bg{
+    height: 545px;
+    width: 100%;
+}
+#err {
+    display:none;
+}
+.main .main-bg-color{background: #0099cc; background-position:center center; background-size: cover; width: 100%;}
+.main .logo-left-image {
+    max-width: 635px;
+    height: 517px;
+    padding-top: 28px;
+    overflow: hidden;
+}
+.main .logo-info {
+    width: 100%;
+    background: #ffffff;
+    height: 440px;
+    box-shadow:  5px 0px 10px rgba(0, 153, 204, .3);
+    -webkit-box-shadow: 5px 0px 10px rgba(0, 153, 204, .3);
+    -moz-box-shadow: 5px 0px 10px rgba(0, 153, 204, .3);
+}
+.main .foot-menu {
+    width: 385px;
+    background: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    box-shadow: 0px -3px 3px rgba(0, 153, 204, .3);
+    -webkit-box-shadow: 0px -3px 3px rgba(0, 153, 204, .3);
+   -moz-box-shadow: 0px -3px 3px rgba(0, 153, 204, .3);
+    margin-top: 30px;
+}
+.main .foot-menu{color:#ccc;}
+.main .foot-menu a{display: inline-block;width: 122px;text-align: center;}
+.main .head-portrait-bg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px -3px 3px rgba(0, 153, 204, .3);
+    -webkit-box-shadow: 0px -3px 3px rgba(0, 153, 204, .3);
+    -moz-box-shadow: 0px -3px 3px rgba(0, 153, 204, .3);
+    margin-top: -50px;
+    margin-left: 142.5px;
+}
+
+.main .head-portrait-bg img {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:none;
+}
+.main .side-word{
+    width: 270px;
+    margin-top: -120px;
+    margin-left: 175px;
+}
+.side-word ul{float:left; position:absolute;height:40px;width:270px;}
+.main .side-word li p{
+    font-size: 26px;
+    color: #004993;
+    margin: 0 auto;
+}
+.main-form{
+    padding-top: 60px;
+}
+.form-horizontal .user-input {
+    border-radius: 0;
+    height: 48px;
+    font-size: 14px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    padding-left:50px;
+}
+.form-horizontal .checkbox {
+    padding-top:0px;
+}
+.form-horizontal .code-input {
+    width:142px;
+    padding-left: 15px;
+}
+.vcode-img {
+    margin:0px 15px;
+}
+.form-horizontal .form-group-sf {
+    width: 323px;
+    margin: 0px auto;
+    position: relative;
+    height: 48px;
+    margin-bottom: 30px;
+}
+.form-horizontal .form-group-sf .position-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 15px;
+    top: -36px;
+    display: block;
+}
+.form-horizontal .form-group-sf  .user-icon{
+    background: url("person-input.png") no-repeat;
+    background-size: cover;
+
+}
+.form-horizontal .form-group-sf  .pw-icon {
+    background: url("password-input.png") no-repeat;
+    background-size: cover;
+}
+.form-horizontal .form-group-sf  .user-icon.warning{
+    background: url("person-warning.png") no-repeat;
+    background-size: cover;
+}
+.form-horizontal .form-group-sf  .pw-icon.warning {
+    background: url("password-warning.png") no-repeat;
+    background-size: cover;
+}
+.form-control:focus{
+    border-color:#09c;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 153, 204,.075),0 0 8px rgba(0, 153, 204,.6);
+    box-shadow:inset 0 1px 1px rgba(0, 153, 204,.075),0 0 8px rgba(0, 153, 204,.6);
+}
+.form-control.warning{
+    border-color: #f00f0f;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(240, 15, 15,.075),0 0 8px rgba(240, 15, 15,.6);
+    box-shadow:inset 0 1px 1px rgba(240, 15, 15,.075),0 0 8px rgba(240, 15, 15,.6);
+}
+.form-control.warning:focus{
+    border-color: #f00f0f;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(240, 15, 15,.075),0 0 8px rgba(240, 15, 15,.6);
+    box-shadow:inset 0 1px 1px rgba(240, 15, 15,.075),0 0 8px rgba(240, 15, 15,.6);
+}
+.errSpan {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    display: none;
+    height: 25px;
+    line-height: 25px;
+    left: 230px;
+    top: 11px;
+    padding: 0 5px;
+    background: rgb(226, 87, 87);
+    border-radius: 5px;
+}
+#vcodediv {
+    display:none;
+    height:48px;
+    line-height:48px;
+    margin-bottom:10px;
+}
+#errVcode {
+    left: 55px;
+}
+
+.form-horizontal .form-group-sf .margin-l{margin-left: 31px;}
+.form-horizontal .form-group-sf  .alink{height: 30px;line-height: 35px;
+    display: inline-block;}
+.form-horizontal .form-group-sf  .acolor{color:#09c;line-height: 48px;}
+.form-horizontal .form-group-sf  .btnLogin{
+    width: 323px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    letter-spacing: 1.5pt;
+    font-weight: 600;
+    border-radius: 0px;
+    padding: 0px;
+}
+#vimage {
+    width: 90px;
+    height: 48px;
+}
+.mt {
+    margin-top:10px;
+}
+.errdiv {
+    height:40px;
+    line-height:40px;
+}
+#forget-pwdiv {
+    height:48px;
+    line-height:48px;
+    margin-bottom:0px;
+}
+/***搴曢儴***/
+.footer {
+    width: 100%;
+    bottom: 80px;
+    position: fixed;
+}
+.footer p{
+    display:block;
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    height: 30px;
+    line-height: 30px;
+    color:#333;
+}
+.checkbox input[type=checkbox]{
+    top:7px;
+}
+.sys-tip {
+margin-top:10px;
+}
+@media (min-width: 800px) {
+    .header{height: 110px;}
+    .header .logo{
+        padding-top: 40px;
+        margin-left: 56px;
+    }
+    .container,.footer p{
+        width:100%;
+    }
+    .logo-bg{
+        width: 290px;
+        height: 225px;
+    }
+    .errdiv{
+        height: 20px;
+        line-height: 20px;
+    }
+    .main-form {
+        padding-top: 0px;
+    }
+    .main .head-portrait-bg {
+        margin-left: 104.5px;
+    }
+
+    .main .head-portrait-bg,.main .head-portrait-bg img {
+        width: 50px;
+        height: 50px;
+    }
+    .main .main-bg,.main .logo-left-image{
+        height: 250px;
+    }
+    .main .logo-left-image{
+        padding-top:15px;
+    }
+    .main .logo-info{
+        height: 205px;
+    }
+    .login-pannel {
+        width: 250px;
+        margin-left: 170px;
+    }
+    .form-horizontal .user-input{
+        height: 30px;
+        padding-left: 35px;
+        font-size: 12px;
+    }
+    .form-horizontal .form-group-sf .position-icon{
+        top: -23px;
+        width: 16px;
+        height: 16px;
+        left: 8px;
+    }
+    .form-horizontal .form-group-sf,.form-horizontal .form-group-sf .btnLogin{
+        width: 220px;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    #errVcode {
+        left: 15px;
+    }
+    #vcodediv {
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    #forget-pwdiv {
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+    .vcode-img {
+        margin: 0px 0px;
+    }
+    #vimage {
+        width: 74px;
+        height: 30px;
+    }
+    .form-horizontal .code-input{
+        width:100px;
+    }
+    .main .foot-menu{
+        width: 250px;
+        margin-top: 8px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .main .side-word{
+        margin-left: 7px;
+        margin-top: -60px;
+    }
+    .main .side-word li p{
+        font-size: 16px;
+    }
+    .errSpan{
+        left: 130px;
+        top: 4px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    a#forget-pwd{
+        padding-left: 0px;
+    }
+    .main .foot-menu a{
+        width:63px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .footer{
+        bottom: 25px;
+    }
+}
+@media (min-width: 900px) {
+    .header {
+        height: 110px;
+    }
+    .container,.footer p{
+        width:100%;
+    }
+    .header .logo {
+        padding-top: 40px;
+        margin-left:80px;
+    }
+    .logo-bg{
+        width: 420px;
+        height: 330px;
+    }
+
+    .errdiv{
+        height: 30px;
+        line-height: 30px;
+    }
+    .main-form {
+        padding-top: 15px;
+    }
+    .main .head-portrait-bg {
+        margin-left: 116.5px;
+    }
+    .main .head-portrait-bg,.main .head-portrait-bg img {
+        width: 70px;
+        height: 70px;
+    }
+    .main .main-bg,.main .logo-left-image{
+        height: 360px;
+    }
+    .main .logo-left-image{
+        padding-top:15px;
+        padding-left: 60px;
+    }
+    .main .logo-info{
+        height: 280px;
+    }
+    .login-pannel {
+        width: 300px;
+        margin-left: 130px;
+    }
+    .form-horizontal .user-input{
+        height: 35px;
+        font-size: 12px;
+    }
+    .checkbox input[type=checkbox] {
+        top: 10px;
+    }
+    .form-horizontal .form-group-sf .position-icon{
+        top: -28px;
+        width: 20px;
+        height: 20px;
+    }
+    .form-horizontal .form-group-sf,.form-horizontal .form-group-sf .btnLogin{
+        width: 250px;
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+    #errVcode {
+        left: 21px;
+    }
+    #vcodediv {
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+    #forget-pwdiv {
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 0px;
+    }
+    .vcode-img {
+        margin: 0px 8px;
+    }
+    #vimage {
+        width: 74px;
+        height: 35px;
+    }
+    .form-horizontal .code-input{
+        width:105px;
+    }
+    .main .foot-menu{
+        width: 300px;
+        margin-top: 20px;
+         height: 35px;
+        line-height: 35px;
+    }
+    .main .side-word{
+        margin-left: 70px;
+        margin-top: -85px;
+    }
+    .main .side-word li p{
+        font-size: 18px;
+    }
+    .errSpan{
+        left: 160px;
+        top:5px;
+    }
+    .main .foot-menu a{
+        width:95px;
+         height: 35px;
+        line-height: 35px;
+    }
+    .footer {
+        bottom: 60px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1204px;
+    }
+    .header .logo {
+        padding-top: 70px;
+        margin-left:135px;
+    }
+    .logo-bg{
+        width: 530px;
+        height: 415px;
+    }
+
+    .errdiv{
+        height: 30px;
+        line-height: 30px;
+    }
+    .main-form {
+        padding-top: 15px;
+    }
+    .main .head-portrait-bg {
+        margin-left: 116.5px;
+    }
+    .main .head-portrait-bg,.main .head-portrait-bg img {
+        width: 70px;
+        height: 70px;
+    }
+    .main .main-bg,.main .logo-left-image{
+        height: 440px;
+    }
+    .main .logo-left-image{
+        padding-top:15px;
+        padding-left: 75px;
+    }
+    .main .logo-info{
+        height: 352px;
+    }
+    .login-pannel {
+        width: 300px;
+        margin-left: 200px;
+    }
+    .form-horizontal .user-input{
+        height: 40px;
+    }
+    .checkbox input[type=checkbox] {
+        top: 12px;
+    }
+    .form-horizontal .form-group-sf .position-icon{
+        top: -31px;
+        width: 20px;
+        height: 20px;
+    }
+    .form-horizontal .form-group-sf,.form-horizontal .form-group-sf .btnLogin{
+        width: 250px;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    #errVcode {
+        left: 21px;
+    }
+    #vcodediv {
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    #forget-pwdiv {
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 0px;
+    }
+    .vcode-img {
+        margin: 0px 8px;
+    }
+    #vimage {
+        width: 74px;
+        height: 40px;
+    }
+    .form-horizontal .code-input{
+        width:105px;
+    }
+    .main .foot-menu{
+        width: 300px;
+        margin-top: 20px;
+           height: 40px;
+        line-height: 40px;
+    }
+    .main .side-word{
+        margin-left: 125px;
+        margin-top: -100px;
+    }
+    .main .side-word li p{
+        font-size: 22px;
+    }
+    .errSpan{
+        left: 160px;
+        top:8px;
+    }
+    .main .foot-menu a{
+        width:95px;
+         height: 40px;
+        line-height: 40px;
+    }
+    .footer {
+        bottom: 100px;
+    }
+}
+@media (min-width: 1366px) {
+    .header {
+        height: 150px;
+    }
+    .container{
+        width: 1220px;
+    }
+    .header .logo {
+        padding-top: 70px;
+        margin-left: 135px;
+    }
+    .logo-bg{
+        width: 635px;
+        height: 500px;
+    }
+    .errdiv{
+        height:40px;
+        line-height:40px;
+    }
+    .main-form {
+        padding-top: 60px;
+    }
+    .main .head-portrait-bg {
+        margin-left: 142.5px;
+    }
+    .main .head-portrait-bg,.main .head-portrait-bg img {
+        width: 100px;
+        height: 100px;
+    }
+    .main .main-bg,.main .logo-left-image{
+        height: 545px;
+    }
+    .main .logo-left-image{
+        padding-top: 28px;
+        padding-left: 0px;
+    }
+    .main .logo-info{
+        height: 440px;
+    }
+    .login-pannel {
+        width: 385px;
+        margin-left: 170px;
+    }
+    .form-horizontal .user-input{
+        height: 48px;
+        font-size: 14px;
+    }
+    .checkbox input[type=checkbox] {
+        top: 16px;
+    }
+    .form-horizontal .form-group-sf .position-icon{
+        top: -36px;
+        width: 24px;
+        height: 24px;
+    }
+    .form-horizontal .form-group-sf,.form-horizontal .form-group-sf .btnLogin{
+        width: 323px;
+        height: 48px;
+        line-height: 48px;
+        margin-bottom: 30px;
+    }
+    #errVcode {
+        left: 60px;
+    }
+    #vcodediv {
+        height: 48px;
+        line-height: 48px;
+        margin-bottom: 10px;
+    }
+    #forget-pwdiv {
+        height: 48px;
+        line-height: 48px;
+        margin-bottom: 0px;
+    }
+    .vcode-img {
+        margin: 0px 8px;
+    }
+    #vimage {
+        width: 95px;
+        height: 48px;
+    }
+    .form-horizontal .code-input{
+        width: 157px;
+    }
+    .main .foot-menu{
+        width: 385px;
+        margin-top: 30px;
+        height: 48px;
+        line-height: 48px;
+    }
+    .main .side-word{
+        margin-left: 175px;
+        margin-top: -112px;
+    }
+    .main .side-word li p{
+        font-size: 24px;
+    }
+    .main .foot-menu a{
+        width:122px;
+        height: 48px;
+        line-height: 48px;
+    }
+    .errSpan{
+        left: 230px;
+        top: 12px;
+    }
+    .footer {
+        bottom: 100px;
+    }
+}
+@media (max-width: 640px) {
+    .main .logo-left-image{
+    max-width: 120px;
+    }
+}

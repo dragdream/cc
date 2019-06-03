@@ -1,0 +1,39 @@
+
+#overlay {display: none; z-index: 50; height:100%;BACKGROUND: #B5C5E0; filter: alpha(opacity=50);LEFT: 0px; POSITION: absolute; TOP: 0px; -moz-opacity:0.5;opacity:0.5;}
+.ModalDialog { background: #fff; padding: 0px;margin: 10px auto; clear: both; position: absolute;  z-index: 60;display:none;} 
+.header {color:#fff;overflow: hidden; font-weight: normal; background: url('../images/header01.jpg') left -35px repeat-x;height:28px;}
+.header .title {float:left;font-size: 16px;  font-weight: bold;line-height:28px;margin-left:10px;}
+.header .operation {float: right; cursor: pointer; text-decoration: none;}
+.header.closeImg{background: url("../images/close.png");width: 30px;height: 30px;}
+.body {font-size: 9pt;margin: 0 !important; overflow-y: auto; }
+.footer {padding: 0; text-align: center; font-size: 12px; }
+
+input.BigButtonAHover{width:60px;height:30px;height:27px !important;padding-bottom:3px;color:#000000;background:url("../images/big_btn_a.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;background-position:0 -30px;}
+input.BigButtonA{width:60px;height:30px;height:27px !important;padding-bottom:3px;color:#36434E;background:url("../images/big_btn_a.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;}
+input.BigButtonA:hover{background-position:0 -30px;}
+
+
+#detailInfo .template{
+	margin:0 auto;
+	background-color:#ffffff;
+	width:60%;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:14px;
+}
+#detailInfo .template:hover{
+	margin:0 auto;
+	background-color:rgb(242, 242, 242);
+	width:60%;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:14px;
+}
+
+/*top01-pro*/
+.top01-pro{ background:url(../images/tab01.gif) repeat-x left bottom; margin-left:0px; display:inline; float:left; height:28px; width:780px;}
+.top01-pro li{ float:left; display:inline; margin-left:9px;}
+.top01-pro li b{ cursor:pointer; display:block; float:left; background:url(../images/tab02.gif) no-repeat -82px 0; text-align:center; line-height:28px; width:76px; height:28px; font-size:14px; color:#00c;}
+.top01-pro li.hover b{ background:url(../images/tab02.gif) no-repeat; font-weight:bold; text-decoration:none; color:#023d52;}

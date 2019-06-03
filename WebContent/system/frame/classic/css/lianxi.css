@@ -1,0 +1,67 @@
+
+.logo{
+
+  margin-left: -30px;
+}
+.nav-mid{
+
+    margin-left: 145px;
+
+
+}
+
+ .nav-mid input{
+   width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    margin-top: 20px;
+
+    border-radius: 5px;
+    outline: none;
+    background: rgb(143,179,241);
+
+
+}
+.nav-right{
+    margin-left: 28%;
+}
+.nav-right .img{
+    margin-top: 16px;
+    width: 46px;
+    height: 40px;
+    padding-right: 4px;
+}
+.nav-right i{
+    border-right:1px solid white ;
+
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: white;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: white;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: white;
+}
+/*左边*/
+.header-left{
+    float: left;
+    width: 78px;
+    height: 100%;
+    background: red;
+}
+.header-left .ul1 ul li img{
+    width: 44px;
+    height: 44px;
+    padding: 12px 15px;
+}
+.header-right{
+    width: 100%;
+    height: 100%;
+}

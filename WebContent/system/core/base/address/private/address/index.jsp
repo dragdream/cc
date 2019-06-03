@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<%@ include file="/header/header2.0.jsp" %>
+<script type="text/javascript" src="<%=contextPath%>/common/js/layout/layout.js"></script>
+<!-- jQuery 布局器 -->
+<script type="text/javascript" src="<%=request.getContextPath() %>/common/jqueryui/jquery.layout-latest.js"></script>
+<title>通讯录</title>
+</head>
+<body  style="margin:0px;overflow:hidden;">
+    <div style="position:absolute;left:0px;width:200px;top:0px;bottom:0px;">
+		<iframe id="messagemanage"   name="messagemanage" style="width:100%;height:100%"  src="<%=contextPath%>/system/core/base/address/private/address/left.jsp" frameborder="NO" scrolling="auto" noresize ></iframe>
+	</div>
+	<div style="position:absolute;left:210px;top:0px;bottom:0px;right:0px;overflow:hidden;">
+		<iframe id="rightList"  name="rightList" style="width:100%;height:100%" src="<%=contextPath%>/system/core/base/address/private/address/addressList.jsp" scrolling="auto" frameborder="NO"></iframe>
+	</div>
+</body>
+</html>
+

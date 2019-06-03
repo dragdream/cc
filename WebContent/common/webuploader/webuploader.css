@@ -1,0 +1,32 @@
+.webuploader-container {
+	position: relative;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	letter-spacing: 0;
+	padding:0px 6px;
+	font-size: 12px;
+	line-height:24px;
+	text-align: center;
+	border:1px solid #0d93f6;
+	outline:none;
+	background-color: #6666FF;
+	color:#fff;
+	outline: none;
+	font-family: "Microsoft YaHei";
+	cursor:pointer;
+	display:inline-block;
+}
+.webuploader-pick-hover {
+	background: #6699FF;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+

@@ -1,0 +1,3 @@
+#signature.spi=
+#签章服务器地址
+iSignautreServer.url=http://sign.kinggrid.com/iSignatureServer/OfficeServer.jsp

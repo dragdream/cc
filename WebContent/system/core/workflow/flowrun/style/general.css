@@ -1,0 +1,195 @@
+/*通用样式表*/
+* { padding:0; margin:0;}
+html,body { height:100%; max-height:100%; font-family:"Microsoft YaHei";}
+.clear { clear:both; overflow:hidden; height:0;}
+li {list-style-type:none;}
+a {text-decoration:none; font-family:"Microsoft YaHei";}
+a:hover { text-decoration:underline;}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #f3f3f4;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius:5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    background:#ccc;
+    -webkit-box-shadow: inset 0 0 6px #ccc; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background:#ccc; 
+}
+
+.home span,.operating_button li {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.home span:hover,.operating_button li:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+/*消息弹层样式*/
+.remind{ width:500px; height:370px; position:fixed; left:50%; top:50%; background:#fbfbfb; margin:-180px 0 0 -250px; box-shadow: 0px 2px 8px 3px #a1a1a1; z-index:111111111;}
+.remind .remind_hd{ height:42px; background:#18bbe7;}
+.remind .remind_hd .have_read{ float:left; width:48px; height:42px; background:url(../images/remind_ico.png) no-repeat -2px -3px; border-right:1px #189ddf solid; text-indent:-9999px; cursor:pointer;}
+.remind .remind_hd .delete{ float:right; width:48px; height:42px; background:url(../images/remind_ico.png) no-repeat left -84px; border-left:1px #189ddf solid; text-indent:-9999px; cursor:pointer;}
+.remind .remind_hd .more{ float:right;  width:48px; height:42px; background:url(../images/remind_ico.png) no-repeat -3px -42px; text-indent:-9999px; cursor:pointer;}
+.remind .remind_hd .title{ margin:0 100px 0 50px; line-height:42px; font-size:16px; color:#455156; font-family:"Microsoft YaHei"; text-align:center; color:#FFF;}
+.remind .remind_bd{ height:328px; overflow-y:auto;}
+.remind .remind_bd li{ border-bottom:1px #e5e5e5 solid; padding:6px 15px;}
+.remind .remind_bd li h3{ line-height:18px; font-size:14px; margin-top:10px;}
+.remind .remind_bd li .time{ float:right; font-size:12px; color:#959595;}
+.remind .remind_bd li p{ line-height:20px; color:#959595;}
+/*主体中心区右侧域*/
+#main_conetnt{ width:100%;}
+.desktop{ }
+/*第一版*/
+.desktop .desktop_list{ width:47%; margin-left:2%; float:left;}
+.desktop .desktop_list .modular{ border:1px #cdcdcd solid; margin-top:15px;}
+.desktop .desktop_list .modular .modular_hd{ height:36px; line-height:36px; overflow:hidden; background:#f9f9f9;}
+.desktop .desktop_list .modular .modular_hd .toggle{ float:left; width:37px; height:36px; background:url(../images/work.png) no-repeat left -30px; border-right:1px #cdcdcd solid; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_list .modular .modular_hd .toggle.on{background:url(../images/work.png) no-repeat left -30px;}
+.desktop .desktop_list .modular .modular_hd .delete{ float:right; width:38px; height:36px; background:url(../images/blue/desktop_ico.png) no-repeat left -107px; border-left:1px #cdcdcd solid; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_list .modular .modular_hd .renovate{ float:right;  width:38px; height:36px; background:url(../images/blue/desktop_ico.png) no-repeat left -71px; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_list .modular .modular_hd .title{ margin:0 100px 0 50px; font-size:16px; color:#455156; font-family:"Microsoft YaHei";}
+
+
+.desktop .desktop_list .modular .modular_bd{ border-top:1px #cdcdcd solid; overflow:hidden; background:#FFF; padding:12px 15px 8px 15px;} 
+.desktop .desktop_list .modular .modular_bd .time{ color:#959595; font-size:13px;}
+.desktop .desktop_list .modular .modular_bd .more{ height:24px; margin-top:5px; text-indent:-9999px;}
+.desktop .desktop_list .modular .modular_bd .more a{ float:right; display:block; width:30px; height:24px; background:url(../images/blue/desktop_ico.png) no-repeat -2px -148px; text-indent:-9999px; }
+.desktop .desktop_list .modular .modular_bd .news_headlines{ overflow:hidden; margin:0px;}
+.desktop .desktop_list .modular .modular_bd .news_headlines dt{ float:left; width:222px; height:145px; overflow:hidden;}
+.desktop .desktop_list .modular .modular_bd .news_headlines dd{ margin-left:238px;}
+.desktop .desktop_list .modular .modular_bd .news_headlines dd h6{ line-height:30px; background:url(../images/blue/desktop_ico.png) no-repeat -15px -230px; padding-left:12px; margin:0px;}
+.desktop .desktop_list .modular .modular_bd .news_headlines dd h6 a{ font-size:14px; color:#313131;}
+.desktop .desktop_list .modular .modular_bd .news_headlines dd p{ line-height:22px; max-height:88px; overflow:hidden; font-size:13px; color:#898989; padding-left:12px; font-family:"Microsoft YaHei";}
+.desktop .desktop_list .modular .modular_bd .news_headlines dd span.time{ padding-left:12px;}
+
+.desktop .desktop_list .modular .modular_bd .news_list{ overflow:hidden; margin-top:5px; margin-bottom:5px;}
+.desktop .desktop_list .modular .modular_bd .news_list li{ line-height:32px; border-bottom:1px #c3c3c3 dashed; background:url(../images/blue/desktop_ico.png) no-repeat -15px -229px; text-indent:15px;}
+.desktop .desktop_list .modular .modular_bd .news_list li a{ font-size:14px; color:#313131;}
+.desktop .desktop_list .modular .modular_bd .news_list li span.time{ float:right;}
+.desktop .desktop_list .modular .modular_bd .workflow_list{ overflow:hidden; margin-top:5px; margin-bottom:5px;}
+.desktop .desktop_list .modular .modular_bd .workflow_list li{ line-height:32px; border-bottom:1px #c3c3c3 dashed;}
+.desktop .desktop_list .modular .modular_bd .workflow_list li a{ font-size:14px; color:#313131;}
+.desktop .desktop_list .modular .modular_bd .workflow_list li a .red{ color:#F00;}
+.desktop .desktop_list .modular .modular_bd .workflow_list li a .yellow{ color:#f39800;}
+.desktop .desktop_list .modular .modular_bd .workflow_list li a .grey{ color:#313131;}
+.desktop .desktop_list .modular .modular_bd .workflow_list li span.time{ float:right;}
+
+
+.desktop .desktop_list .modular .modular_bd .schedule{ overflow:hidden; height:291px;}
+.desktop .desktop_list .modular .modular_bd .schedule .schedule_content{ margin-left:285px; margin-top:10px;}
+
+.desktop .desktop_list .modular .modular_bd .schedule .schedule_content h3{ font-size:14px;font-family:"Microsoft YaHei"; font-weight:bold;}
+.desktop .desktop_list .modular .modular_bd .schedule .schedule_content h4{ font-size:40px;font-family:"Microsoft YaHei"; text-indent:20px;}
+.desktop .desktop_list .modular .modular_bd .schedule .schedule_content li{ border-bottom:1px #CCC dashed; line-height:22px; margin:10px 0 0 0; font-size:12px;}
+.desktop .desktop_list .modular .modular_bd .schedule .schedule_content li span.schedule_time{ font-weight:bold; margin-right:10px;}
+.desktop .desktop_list .modular .modular_bd .schedule .schedule_content li span.red{ color:#F00;}
+.desktop .desktop_list .modular .modular_bd .schedule .schedule_content li span.green{ color:#009e96;}
+
+/*第二版*/
+.desktop .desktop_left{ margin-right:300px; height:635px; padding:10px;}
+.desktop .desktop_left .modular{ overflow:hidden; margin-bottom:10px;}
+.desktop .desktop_left .modular .modular_hd{ height:36px; line-height:36px;  border-bottom:1px #cdcdcd solid;}
+.desktop .desktop_left .modular .modular_hd .more{ float:right; width:38px; height:36px; background:url(../images/blue/desktop_ico.png) no-repeat -2px -145px; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_left .modular .modular_hd .more a{ display:block; height:36px;}
+.desktop .desktop_left .modular .modular_hd .renovate{ float:right;  width:38px; height:36px; background:url(../images/blue/desktop_ico.png) no-repeat left -71px; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_left .modular .modular_hd li{ float:left;font-family:"Microsoft YaHei"; font-size:13px; font-weight:bold; color:#7d7d7d; }
+.desktop .desktop_left .modular .modular_hd li.on{ border:1px #cdcdcd solid; color:#7a70ae; border-bottom:none; background:#FFF; position:relative; height:36px;}
+.desktop .desktop_left .modular .modular_hd li span{ padding:0 15px; cursor:pointer;}
+.desktop .desktop_left .modular .modular_bd{ overflow:hidden;}
+.desktop .desktop_left .modular .modular_bd { padding:12px 15px 8px 15px;}
+.desktop .desktop_left .modular .modular_bd .workflow_list{ overflow:hidden; margin-top:5px; margin-bottom:0px; display:none;}
+.desktop .desktop_left .modular .modular_bd .workflow_list li{ line-height:38px; border-bottom:1px #c3c3c3 dashed;}
+.desktop .desktop_left .modular .modular_bd .workflow_list li a{ font-size:14px; color:#313131;}
+.desktop .desktop_left .modular .modular_bd .workflow_list li a .red{ color:#F00;}
+.desktop .desktop_left .modular .modular_bd .workflow_list li a .yellow{ color:#f39800;}
+.desktop .desktop_left .modular .modular_bd .workflow_list li a .grey{ color:#313131;}
+.desktop .desktop_left .modular .modular_bd .workflow_list li span.time{ float:right;}
+.desktop .desktop_left .modular .modular_bd .news{ display:none;}
+.desktop .desktop_left .modular .modular_bd .news_headlines{ width:270px; margin-bottom:0px; float:left;}
+.desktop .desktop_left .modular .modular_bd .news_headlines dt{ width:250px; height:190px; margin-top:10px; overflow:hidden;}
+.desktop .desktop_left .modular .modular_bd .news_headlines dt img{ width:250px; height:190px;}
+.desktop .desktop_left .modular .modular_bd .news_headlines dd{ text-align:center; line-height:30px; padding-top:10px;}
+.desktop .desktop_left .modular .modular_bd .news_headlines dd a{ color:#313131;}
+.desktop .desktop_left .modular .modular_bd .news_list{ overflow:hidden; margin-top:5px; margin-bottom:0px;}
+.desktop .desktop_left .modular .modular_bd .news_list li{ line-height:38px; border-bottom:1px #c3c3c3 dashed; background:url(../images/blue/desktop_ico.png) no-repeat -15px -226px; text-indent:15px;}
+.desktop .desktop_left .modular .modular_bd .news_list li a{ font-size:14px; color:#313131;}
+.desktop .desktop_left .modular .modular_bd .news_list li span.time{ float:right;}
+.desktop .desktop_rihgt{ width:290px; height:635px; float:right;}
+.desktop .desktop_rihgt .modular{ border:1px #cdcdcd solid; margin-top:18px;}
+.desktop .desktop_rihgt .modular .modular_hd{ height:36px; line-height:36px; overflow:hidden; background:#f9f9f9;}
+.desktop .desktop_rihgt .modular .modular_hd .toggle{ float:left; width:37px; height:36px; background:url(../images/work.png) no-repeat left -30px; border-right:1px #cdcdcd solid; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_rihgt .modular .modular_hd .toggle.on{ background:url(../images/work.png) no-repeat left -30px;}
+.desktop .desktop_rihgt .modular .modular_hd .delete{ float:right; width:38px; height:36px; background:url(../images/blue/desktop_ico.png) no-repeat left -107px; border-left:1px #cdcdcd solid; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_rihgt .modular .modular_hd .renovate{ float:right;  width:38px; height:36px; background:url(../images/blue/desktop_ico.png) no-repeat left -71px; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_rihgt .modular .modular_hd .title{ margin:0 100px 0 50px; font-size:16px; color:#455156; font-family:"Microsoft YaHei";}
+.desktop .desktop_rihgt .modular .modular_bd{ border-top:1px #cdcdcd solid; height:585px; overflow:hidden; background:#FFF; padding:12px 15px 8px 15px;} 
+.desktop .desktop_rihgt .modular .modular_bd .time{ color:#959595; font-size:13px;}
+.desktop .desktop_rihgt .modular .modular_bd .schedule{ overflow:hidden; }
+.desktop .desktop_rihgt .modular .modular_bd .schedule .schedule_content{ margin-top:10px;}
+.desktop .desktop_rihgt .modular .modular_bd .schedule .schedule_content h3{ font-size:14px;font-family:"Microsoft YaHei"; font-weight:bold;}
+.desktop .desktop_rihgt .modular .modular_bd .schedule .schedule_content h4{ font-size:50px;font-family:"Microsoft YaHei"; text-indent:20px;}
+.desktop .desktop_rihgt .modular .modular_bd .schedule .schedule_content li{ border-bottom:1px #CCC dashed; line-height:22px; margin:10px 0 0 0; font-size:12px;}
+.desktop .desktop_rihgt .modular .modular_bd .schedule .schedule_content li span.schedule_time{ font-weight:bold; margin-right:10px;}
+.desktop .desktop_rihgt .modular .modular_bd .schedule .schedule_content li span.red{ color:#F00;}
+.desktop .desktop_rihgt .modular .modular_bd .schedule .schedule_content li span.green{ color:#009e96;}
+
+/*工作流*/
+.desktop .workflow_title{ width:aut; margin-left:1.8%; height:32px;font-size:14px}
+.desktop .workflow_title li{ width:100px; height:30px; line-height:28px; float:left; margin-right:10px; border:1px #b5b5b5 solid; border-radius:8px; text-indent:35px; color:#747474;font-family:"Microsoft YaHei"; cursor:pointer}
+.desktop .workflow_title li.on{ background:#18bbe7; border:1px #18bbe7 solid; color:#FFF;}
+.desktop .workflow_title li.worka.on{ background:url(../images/work.png) no-repeat 6px top #18bbe7;}
+.desktop .workflow_title li.workb.on{ background:url(../images/work.png) no-repeat 6px -180px #18bbe7;}
+.desktop .workflow_title li.worka{ background:url(../images/work.png) no-repeat 6px -150px;}
+.desktop .workflow_title li.workb{ background:url(../images/work.png) no-repeat 6px -60px ;}
+.desktop .desktop_list3{ width:31%; margin-left:1.8%; float:left;}
+.desktop .desktop_list3 .modular{ margin-top:15px;}
+.desktop .desktop_list3 .modular .modular_hd{ background-image:none; height:26px; line-height:26px; overflow:hidden;border-bottom:2px solid #0d94fd;}
+.desktop .desktop_list3 .modular .modular_hd .toggle{ float:right; width:37px; height:26px; cursor:pointer;background:url(../images/off.png) no-repeat center;}
+.desktop .desktop_list3 .modular .modular_hd .toggle.on{background:url(../images/on.png) no-repeat center;}
+.desktop .desktop_list3 .modular .modular_hd .delete{ float:right; width:38px; height:36px; background:url(../images/blue/desktop_ico.png) no-repeat left -107px; border-left:1px #cdcdcd solid; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_list3 .modular .modular_hd .renovate{ float:right;  width:38px; height:36px; background:url(../images/blue/desktop_ico.png) no-repeat left -71px; text-indent:-9999px; cursor:pointer;}
+.desktop .desktop_list3 .modular .modular_hd .title{margin:0;padding:0 10px;float:left;background-color:#0d94fd; font-size:14px; color:#fff; font-family:"Microsoft YaHei";}
+.desktop .desktop_list3 .modular .modular_hd .title_bg{width:20px;height:26px;background-image: url("../images/title_bg.png");background-position: center center;background-repeat: no-repeat;float:left;}
+
+
+.desktop .desktop_list3 .modular .modular_bd{ overflow:hidden; background:#FFF; padding:2px 8px 2px 8px;}
+.desktop .desktop_list3 .modular .modular_bd .time{ color:#959595; font-size:13px;}
+.desktop .desktop_list3 .modular .modular_bd .more{ height:24px; margin-top:5px; text-indent:-9999px;}
+.desktop .desktop_list3 .modular .modular_bd .more a{ float:right; display:block; width:30px; height:24px; background:url(../images/blue/desktop_ico.png) no-repeat -2px -148px; text-indent:-9999px; }
+.desktop .desktop_list3 .modular .modular_bd .news_list li a{ font-size:14px; color:#313131;}
+.desktop .desktop_list3 .modular .modular_bd .news_list li span.time{ float:right;}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list{ overflow:hidden;margin-bottom:5px;}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li{ line-height:32px; border-bottom:1px #c3c3c3 dashed;}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li a{ font-size:12px; color:#313131;}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li a .red{ color:#F00;}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li a .yellow{ color:#f39800;}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li a .grey{ color:#313131;}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li span.time{ float:right;}
+
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li span.xb{ float:right; display:block; width:30px; height:30px; background:url(../images/work.png) no-repeat left -30px; text-indent:-9999px;cursor:pointer}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li span.fx{ float:right; display:block; width:30px; height:30px; background:url(../images/show_flow.png) no-repeat center; text-indent:-9999px;cursor:pointer}
+.desktop .desktop_list3 .modular .modular_bd .workflow_list li span.wjj{ float:right; display:block; width:30px; height:30px; background:url(../images/new_workflow.png) no-repeat center; text-indent:-9999px;cursor:pointer}
+

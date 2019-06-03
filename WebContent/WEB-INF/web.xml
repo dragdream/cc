@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<description>OAOP</description>
+	<display-name>OAOP</display-name>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:config/spring.xml,classpath:config/spring-hibernate.xml,classpath:config/spring-quartz.xml,classpath:config/spring-hessian.xml</param-value>
+	</context-param>
+	
+	<filter>
+		<filter-name>openSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>
+		<init-param>
+			<param-name>singleSession</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<listener>
+		<listener-class>com.tianee.webframe.servlet.TeeSysInitServlet</listener-class>
+	</listener>
+	
+	<servlet>
+    <servlet-name>SetContextServlet</servlet-name>
+    <servlet-class>com.runqian.util.webutil.SetContextServlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>reportServlet</servlet-name>
+    <servlet-class>com.runqian.report4.view.ReportServlet</servlet-class>
+    <init-param>
+      <param-name>configFile</param-name>
+      <param-value>/WEB-INF/reportConfig.xml</param-value>
+    </init-param>
+	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>DMServlet</servlet-name>
+    <servlet-class>com.raq.web.view.DMServlet</servlet-class>
+    <init-param>
+      <param-name>configFile</param-name>
+      <param-value>/WEB-INF/dmConfig.xml</param-value>
+    </init-param>
+    <load-on-startup>10</load-on-startup>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>reportServlet</servlet-name>
+    <url-pattern>/reportServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DMServlet</servlet-name>
+    <url-pattern>/DMServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DMServlet</servlet-name>
+    <url-pattern>/DMServletAjax</url-pattern>
+  </servlet-mapping>
+
+  <taglib>
+    <taglib-uri>/WEB-INF/runqianReport4.tld</taglib-uri>
+    <taglib-location>/WEB-INF/runqianReport4.tld</taglib-location>
+  </taglib>
+
+  <!-- 自定义按钮标签 -->
+  <taglib>
+    <taglib-uri>/WEB-INF/tags/priv.tld</taglib-uri>
+	<taglib-location>/WEB-INF/tags/priv.tld</taglib-location>
+  </taglib>		
+  
+	<filter>
+		<description>字符集过滤器</description>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<description>字符集编码</description>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	
+	
+	<filter>
+		<description>URL权限校验</description>
+		<filter-name>requestFilter</filter-name>
+		<filter-class>com.tianee.webframe.servlet.TeeRequestFilter</filter-class>
+		<init-param>
+			<description>字符集编码</description>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	
+	<filter>  
+        <filter-name>XssFilter</filter-name>  
+        <filter-class>com.tianee.webframe.servlet.XssFilter</filter-class>  
+    </filter>  
+    <filter-mapping>  
+        <filter-name>XssFilter</filter-name>  
+        <url-pattern>*.jsp</url-pattern>  
+    </filter-mapping> 
+	
+	
+	<servlet>
+		<servlet-name>messageAttachServlet</servlet-name>
+		<servlet-class>com.tianee.oa.core.attachment.servlet.TeeMessageAttachmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>messageAttachServlet</servlet-name>
+		<url-pattern>/messageAttachServlet/upload.action</url-pattern>
+	</servlet-mapping>
+
+	
+	<filter-mapping>
+		<filter-name>openSessionInViewFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+	  <filter-name>requestFilter</filter-name>
+ 	 <url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+	  <filter-name>requestFilter</filter-name>
+ 	 <url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	
+	<listener>
+		<description>spring监听器</description>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<listener>
+		<description>Introspector缓存清除监听器</description>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+	
+	<listener>
+	  <listener-class>com.tianee.webframe.servlet.TeeServletRequestListener</listener-class>
+	</listener>
+
+	<listener>
+ 		 <listener-class>com.tianee.webframe.servlet.TeeSessionListener</listener-class>
+	</listener>
+	<servlet>
+		<description>spring mvc servlet</description>
+		<servlet-name>springMvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<description>spring mvc 配置文件</description>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:config/spring-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springMvc</servlet-name>
+		<url-pattern>*.action</url-pattern>
+	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>3600</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>init.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error/500.jsp</location>
+	</error-page>
+	<distributable />
+	
+	<!-- 外部服务 -->
+<!-- 	<servlet> -->
+<!--     	<servlet-name>ZtServiceExporter</servlet-name> -->
+<!--     	<servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>     -->
+<!--     </servlet> -->
+<!--     <servlet-mapping>     -->
+<!--         <servlet-name>ZtServiceExporter</servlet-name> -->
+<!--         <url-pattern>/ztService</url-pattern> -->
+<!--     </servlet-mapping> -->
+	
+	
+	<!-- 金格签章组件 -->
+<!-- 	<filter> -->
+<!-- 		<filter-name>jfinal</filter-name> -->
+<!-- 		<filter-class>com.jfinal.core.JFinalFilter</filter-class> -->
+<!-- 		<init-param> -->
+<!-- 			<param-name>configClass</param-name> -->
+<!-- 			<param-value>com.kg.GlobalConfig</param-value> -->
+<!-- 		</init-param> -->
+<!-- 	</filter> -->
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>jfinal</filter-name> -->
+<!-- 		<url-pattern>/iSignatureHTML5/*</url-pattern> -->
+<!-- 	</filter-mapping> -->
+</web-app>

@@ -1,0 +1,7 @@
+/**邮件样式***/
+
+/*操作按钮*/
+.email_opt_float{
+	float:left;
+	margin-right:8px;
+}

@@ -1,0 +1,21 @@
+/* css 重置 */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: #ebebeb;
+    font: normal 12px/22px 宋体;
+}
+
+img {
+    display:block
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}

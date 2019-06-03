@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+.panel-header {
+    height: 40px;
+}
+
+.panel-title {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+}
+.panel-icon, .panel-tool {
+    position: absolute;
+    top: 30%;
+    height: auto;
+    overflow: hidden;
+}
+
+button {
+    opacity: 0.5;
+    background-color: rgb(119,119,119);
+}
+.1-btn {
+    background-color: rgb(119,119,119);
+}

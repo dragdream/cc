@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+.none-border-tr {
+	border: none !important;
+}
+
+.custom-text-overflow{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.table-td-full-width{
+    width: 100%!important;
+}

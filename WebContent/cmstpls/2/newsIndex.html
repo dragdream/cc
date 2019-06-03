@@ -1,0 +1,112 @@
+<#include '/header.html'>
+<div class="main_box main_box_style1">
+ <div class="main_box_inner">
+   <div class="main_box_inner_left">
+<div id="nav_105"  class="nav_box nav_box_menu">
+	<@Channels type='IDS' ids='news'>
+			<div  class="nav_title"><span  class="nav_sign"><@Out name="chnlName" /></span><span  class="nav_more"></span></div>
+	</@Channels>
+<div id="nav_menu_105"  class="nav_menu">
+	<ul id="rootul_105">
+		<@Channels type="CHILD" id="news" >
+				<li id="sl547"><a href="<@Out name="REL_PATH" />" class="sla547"><@Out name="chnlName" /></a></li>
+		</@Channels>
+	</ul>
+</div>
+
+</div>
+<script type="text/javascript">
+shut_allsubnav("rootul_105");
+expand_subnav("sl547","0");
+</script>
+
+<div class="cx">
+<div class="tit">黄金九月“惠”到底</div>
+<div class="con">
+第一投资，风雨十年，感谢客户的一路陪伴与支持信任，我们特意拖出了投资基金理财方案大回馈活动，九月间办理委托业务的客户即可赠送iphone6手机一部，数量有限。
+</div>
+<div class="mo">
+了解详情 >>   
+<br/>
+咨询电话：800-888-8888
+</div>
+</div>
+
+
+</div>
+   <div class="main_box_inner_right">
+<div class="current_location current_location_547">
+	<@Location >
+     <a href="<@Out name='url'/>" class="cl_1"><@Out name='name'/></a>&gt;
+  </@Location>
+</div>
+<div class="sublanmu_box sublanmu_box_547">
+<div class="sublanmu_content sublanmu_content_article">
+<ul class="article">
+	<@Channel>
+	<#if this.channelId=37>
+	<@Documents pager="true"  chnlIds="companyNews">
+		<li><span class="title">
+		<a href="<@Out name="REL_PATH"/>" target="_self" title="<@Out name="docTitle" />" style=""><@Out name="docTitle" /></a></span>
+		<span class="date"><@Out name="crTime" dateFormat="yy-MM-dd"/></span>
+		</li>
+    </@Documents>
+    <#elseif  this.channelId=38>
+    <@Documents pager="true"  chnlIds="hydt">
+		<li><span class="title">
+		<a href="<@Out name="REL_PATH"/>" target="_self" title="<@Out name="docTitle" />" style=""><@Out name="docTitle" /></a></span>
+		<span class="date"><@Out name="crTime" dateFormat="yy-MM-dd"/></span>
+		</li>
+    </@Documents>
+    <#else>
+    <@Documents pager="true"  chnlIds="companyNews">
+		<li><span class="title">
+		<a href="<@Out name="REL_PATH"/>" target="_self" title="<@Out name="docTitle" />" style=""><@Out name="docTitle" /></a></span>
+		<span class="date"><@Out name="crTime" dateFormat="yy-MM-dd"/></span>
+		</li>
+    </@Documents>
+    </#if>
+    </@Channel>
+</ul>
+
+</div>
+</div></div>
+ </div>
+ <div class="clear main_box_inner_bottom"></div>
+</div>
+
+
+<div class="bottom_box"><div style="width:1100px;margin:0 auto;height:180px;position:relative;">
+	<div class="db_fd">
+		第<br />
+一<br />
+投<br />
+资<br />
+管<br />
+理
+	</div>
+	<div class="dbk">
+		<div class="banquan">
+			<p>
+				版权所有 &copy; XXXXX公司 保留一切权利
+			</p>
+<br />
+			<p>
+				业务咨询电话：0760-xxxxxxxx / 0760-xxxxxxxx			</p>
+		</div>
+		<div class="ewm">
+			<img src="<@Rootpath src='images/home/ewm.png'/>" /> 
+		</div>
+		<div class="ewm_1">
+			<div style="font-size:14px;margin-top:40px;">
+				扫描微信二维码  关注最新投资信息
+			</div>
+			<div style="clear:both;overflow:hidden;margin-top:20px;">
+				<a href="" class="db_1_1">&nbsp;</a><a href="" class="db_1_2">&nbsp;</a><a href="" class="db_1_3">&nbsp;</a> 
+			</div>
+		</div>
+	</div>
+	<p class="db_bt" align="center">
+		<a target="_blank" href="">企业网站管理系统</a>版权所有&nbsp;Copyright <span style="font-family:Arial;">&copy;</span> 2008-2009&nbsp;&nbsp; <a href="" target="_blank">www.xxxxxxx.com</a> 
+	</p>
+</div></div><div align='center' style='padding:5px'>Powered by <a href='' target='_blank'><strong>CMS</strong></a></div></div></body></html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+ xmlns:context="http://www.springframework.org/schema/context"  
+ xmlns:p="http://www.springframework.org/schema/p"  
+ xmlns:mvc="http://www.springframework.org/schema/mvc"  
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+ xmlns:tx = "http://www.springframework.org/schema/tx" 
+ xmlns:aop = "http://www.springframework.org/schema/aop" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans  
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+      http://www.springframework.org/schema/context  
+      http://www.springframework.org/schema/context/spring-context.xsd  
+      http://www.springframework.org/schema/tx  
+      http://www.springframework.org/schema/tx/spring-tx-3.0.xsd  
+      http://www.springframework.org/schema/aop  
+	  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+      http://www.springframework.org/schema/mvc  
+      http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd"> 
+      
+      
+     <!-- 注解扫描非Controller类 -->
+	<context:component-scan base-package="com.tianee,com.beidasoft" />
+	
+	<!-- 引入属性文件 -->
+	<context:property-placeholder location="classpath:config/sysconfig.properties" />
+	
+	<!-- 服务层日志拦截器 -->
+	<bean id="serviceLoggingInterceptor" class="com.tianee.webframe.interceptor.TeeServiceLoggingInterceptor"></bean>
+	
+	<!-- Service方法拦截器 -->
+	<bean
+		class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator"
+		autowire="no">
+		<property name="proxyTargetClass" value="true"></property>
+		<property name="beanNames">
+			<list>
+				<value>*Service</value>
+			</list>
+		</property>
+
+		<property name="interceptorNames">
+			<list>
+				<value>serviceLoggingInterceptor</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- webservice axis2  Lucene索引服务  -->
+	<bean id="lucene" class="com.tianee.lucene.TeeLuceneSoapService"></bean>
+	
+	<bean class="com.tianee.webframe.servlet.TeeSysInitServlet"/>
+ </beans>

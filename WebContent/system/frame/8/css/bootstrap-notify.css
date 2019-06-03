@@ -1,0 +1,30 @@
+.notifications {
+	height: 16px; line-height: 16px; position: fixed;
+}
+.notifications.top-right {
+	top: 5px; right: 10px;
+}
+.notifications.top-left {
+	left: 10px; top: 5px;
+}
+.notifications.top-center {
+	left: 45%; top: 5px;
+}
+.notifications.bottom-left {
+	left: 10px; bottom: 5px;
+}
+.notifications.bottom-right {
+	right: 10px; bottom: 5px;
+}
+.notifications > div {
+	margin: 5px; white-space: nowrap; position: relative; z-index: 9999;
+}
+.notifications.center {
+	left: 0px; top: 48%; width: 100%;
+}
+.notifications.center > div {
+	width: 20%; text-align: center;
+}
+.notifications > div i {
+	margin-right: 5px; display: inline-block;
+}

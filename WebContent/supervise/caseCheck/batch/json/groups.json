@@ -1,0 +1,125 @@
+{
+  "groupsNumber":3 ,
+  "groups": [
+    {
+      "groupID": 1,
+      "groupLeader": "张三",
+      "personNumber": 4,
+      "members": [
+        {
+          "groupID": 1,
+          "name": "张三",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222220,
+          "isGroupLeader": 0
+        },
+        {
+          "groupID": 1,
+          "name": "张三丰",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222221,
+          "isGroupLeader": 1
+        },
+        {
+          "groupID": 1,
+          "name": "鲁班",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222222,
+          "isGroupLeader": 1
+        },
+        {
+          "groupID": 1,
+          "name": "孙尚香",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 1,
+          "IDCard": 42222222222222223,
+          "isGroupLeader": 1
+        }
+      ]
+    },
+    {
+      "groupID": 2,
+      "groupLeader": "李四",
+      "personNumber": 4,
+      "members": [
+        {
+          "groupID": 2,
+          "name": "李四",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222220,
+          "isGroupLeader": 0
+        },
+        {
+          "groupID": 2,
+          "name": "刘备",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222221,
+          "isGroupLeader": 1
+        },
+        {
+          "groupID": 2,
+          "name": "关羽",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222222,
+          "isGroupLeader": 1
+        },
+        {
+          "groupID": 2,
+          "name": "大乔",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 1,
+          "IDCard": 42222222222222223,
+          "isGroupLeader": 1
+        }
+      ]
+    },
+    {
+      "groupID": 3,
+      "groupLeader": "王五",
+      "personNumber": 3,
+      "members": [
+        {
+          "groupID": 3,
+          "name": "王五",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222220,
+          "isGroupLeader": 0
+        },
+        {
+          "groupID": 3,
+          "name": "曹操",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222221,
+          "isGroupLeader": 1
+        },
+        {
+          "groupID": 3,
+          "name": "许诸",
+          "department": "深圳市司法局",
+          "caseType": 1,
+          "sex": 0,
+          "IDCard": 42222222222222222,
+          "isGroupLeader": 1
+        }
+      ]
+    }
+  ]
+}

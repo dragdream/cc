@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<project name="OAOP Install Build"  basedir=".">
+	<!-- ================================================================== -->
+	<!-- 初始化参数配置                            -->
+	<!-- ================================================================== -->
+	<target name="init">
+		<property environment="env"/>
+		<property name="target.dir" value="D:/TeePublic"/>
+		<property name="target.tmp" value="${target.dir}/tmp"/>
+		<property name="base.dir" value="."/>
+		<property name="src.dir" value="src"/>
+		<property name="core.dir" value="core"/>
+		<property name="auth.dir" value="auth"/>
+		<property name="webroot.dir" value="WebContent"/>
+		<property name="lib.dir" value="${webroot.dir}/WEB-INF/lib"/>
+		<property name="tomcat.dir" value="tomcat"/>
+		<property name="tomcat.lib.dir" value="${tomcat.dir}/lib"/>
+		
+		<mkdir dir="${target.dir}"/>
+		<mkdir dir="${target.dir}/WebContent"/>
+		<mkdir dir="${target.dir}/work"/>
+		
+		<delete includeemptydirs="true">
+			<fileset dir="${target.dir}/work/">
+				<include name="**/*"/>
+			</fileset>
+		</delete>
+		<delete includeemptydirs="true">
+			<fileset dir="${target.dir}/WebContent/">
+				<include name="**/*"/>
+			</fileset>
+		</delete>
+	</target>
+	
+	<!-- ================================================================== -->
+	<!-- 初始化构建路径                            -->
+	<!-- ================================================================== -->
+	<target name="classpath" depends="init">            
+		<path id="local.class.path">
+			<fileset dir="${lib.dir}" includes="*.jar"/>
+			<fileset dir="${tomcat.lib.dir}" includes="*.jar" />
+			<fileset dir="${tomcat.dir}/bin" includes="*.jar" />
+			<fileset dir="${java.home}/lib" includes="*.jar" />
+		</path>
+		<path id="local.class.path.unpacked">
+		      <pathelement location="${webroot.dir}/WEB-INF/classes" />
+		</path>
+	</target>
+	
+	<!-- ================================================================== -->
+	<!-- 打包                            -->
+	<!-- ================================================================== -->
+	<target name="dowork" depends="init">
+		<copydir dest="${target.dir}/WebContent" src="${webroot.dir}" excludes="*.svn,*.scc,/WEB-INF/classes/delay.auth"></copydir>
+		<!--<copydir dest="${target.dir}/work" src="${base.dir}/tomcat/work" excludes=".svn,.scc"></copydir> -->
+	</target>
+	
+	<target name="doEnd" depends="init">
+		<java classname="com.tianee.webframe.util.file.PublishTools">
+			<classpath>
+				<path refid="local.class.path"></path>
+			</classpath>
+			<arg value="${target.dir}/WebContent"/>
+		</java>
+	</target>
+	
+	<!-- 一键打包 -->
+	<target name="oneStepBuildProduct" depends="classpath,dowork,doEnd"></target>
+	
+</project>

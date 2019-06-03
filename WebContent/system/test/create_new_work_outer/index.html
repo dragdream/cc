@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+</head>
+<body>
+	
+	<form action="http://192.168.31.232/flowRun/createNewWork4Outer.action" enctype="multipart/form-data" method="post">
+		<input type="text" name="DATA_姓名" title="'姓名'为流程表单控件的名称"/><br/>
+		<input type="text" name="DATA_年龄" title="'年龄'为流程表单控件的名称"/><br/>
+	
+		<input type="file" name="file1"/><br/>
+		<input type="file" name="file2"/><br/>
+		<input type="file" name="file3"/><br/>
+		<button type="submit">提交</button>
+	
+		<input 必填 type="hidden" name="CREATE_USER" value="admin" title="发起人账号，必须在OA中存在"/>
+		<input 必填 type="hidden" name="FLOW_ID" value="37" title="流程定义ID"/>
+		<input 必填 type="hidden" name="VALIDATION" value="0" title="1：校验发起权限 0：不校验发起权限"/>
+		<input 非必填 type="hidden" name="RUN_NAME" value="" title="初始化工作名称"/>
+		<input 非必填 type="hidden" name="redirect_url" value="" title="保存成功后所重定向的页面url，为空则自动关闭页面"/>
+	</form>
+</body>
+</html>

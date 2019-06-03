@@ -1,0 +1,152 @@
+<script>
+ // 请勿修改，否则可能出错
+var userAgent = navigator.userAgent, 
+rMsie = /(msie\s|trident.*rv:)([\w.]+)/, 
+rFirefox = /(firefox)\/([\w.]+)/, 
+rOpera = /(opera).+version\/([\w.]+)/, 
+rChrome = /(chrome)\/([\w.]+)/, 
+rSafari = /version\/([\w.]+).*(safari)/;
+var browser;
+var version;
+var ua = userAgent.toLowerCase();
+function uaMatch(ua) {
+	var match = rMsie.exec(ua);
+	if (match != null) {
+		return { browser : "IE", version : match[2] || "0" };
+	}
+	var match = rFirefox.exec(ua);
+	if (match != null) {
+		return { browser : match[1] || "", version : match[2] || "0" };
+	}
+	var match = rOpera.exec(ua);
+	if (match != null) {
+		return { browser : match[1] || "", version : match[2] || "0" };
+	}
+	var match = rChrome.exec(ua);
+	if (match != null) {
+		return { browser : match[1] || "", version : match[2] || "0" };
+	}
+	var match = rSafari.exec(ua);
+	if (match != null) {
+		return { browser : match[2] || "", version : match[1] || "0" };
+	}
+	if (match != null) {
+		return { browser : "", version : "0" };
+	}
+}
+var browserMatch = uaMatch(userAgent.toLowerCase());
+if (browserMatch.browser) {
+	browser = browserMatch.browser;
+	version = browserMatch.version;
+}
+
+
+
+var classid="A64E3073-2016-4baf-A89D-FFE1FAA10EC0";
+var codebase="/system/core/ntko/OfficeControl_1.cab#version=5,0,3,9";
+var ntkoDom = [];
+if (browser=="IE"){
+		ntkoDom.push('<!-- 用来产生编辑状态的ActiveX控件的JS脚本-->   ');
+		ntkoDom.push('<!-- 因为微软的ActiveX新机制，需要一个外部引入的js-->   ');
+		ntkoDom.push('<object id="TANGER_OCX" classid="clsid:'+classid+'"');
+		ntkoDom.push('codebase="'+codebase+'" width="100%" height="100%">   ');
+		ntkoDom.push('<param name="IsUseUTF8URL" value="1">   ');
+		ntkoDom.push('<param name="IsUseUTF8Data" value="1">   ');
+		ntkoDom.push('<param name="BorderStyle" value="1">   ');
+		ntkoDom.push('<param name="BorderColor" value="14402205">   ');
+		ntkoDom.push('<param name="TitlebarColor" value="15658734">   ');
+		ntkoDom.push('<param name="ekeytype" value="14">   ');
+		ntkoDom.push('<param name="IsShowToolMenu" value="-1">   ');
+		ntkoDom.push('<param name="IsHiddenOpenURL" value="0">   ');
+		ntkoDom.push('<param name="MakerCaption" value="">   ');
+        ntkoDom.push('<param name="MakerKey" value="">   ');
+		
+        ntkoDom.push('<param name="ProductCaption" value="国家价格认证中心"> ');
+        ntkoDom.push('<param name="ProductKey" value="CB92D43FD92284A57784ADBC6D49B8ABF1383F22">');
+		
+		
+		
+		
+		ntkoDom.push('<param name="TitlebarTextColor" value="0">   ');
+		ntkoDom.push('<param name="MenubarColor" value="14402205">   ');
+		ntkoDom.push('<param name="MenuButtonColor" VALUE="16180947">   ');
+		ntkoDom.push('<param name="MenuBarStyle" value="3">   ');
+		ntkoDom.push('<param name="MenuButtonStyle" value="7">   ');
+		ntkoDom.push('<param name="Caption" value="文档处理器">   ');
+		ntkoDom.push('<SPAN STYLE="color:red">不能装载文档控件。请在检查浏览器的选项中检查浏览器的安全设置。</SPAN>   ');
+		ntkoDom.push('</object>');	
+}
+else if (browser=="firefox"){ 	
+		ntkoDom.push('<object id="TANGER_OCX" type="application/ntko-plug"  codebase="'+codebase+'" width="100%" height="100%" ForOnSaveToURL="OnComplete2" ForOnBeginOpenFromURL="OnComplete" ForOndocumentopened="OnComplete3"');
+		
+		ntkoDom.push('ForOnpublishAshtmltourl="publishashtml"');
+		ntkoDom.push('ForOnpublishAspdftourl="publishaspdf"');
+		ntkoDom.push('ForOnSaveAsOtherFormatToUrl="saveasotherurl"');
+		ntkoDom.push('ForOnDoWebGet="dowebget"');
+		ntkoDom.push('ForOnDoWebExecute="webExecute"');
+		ntkoDom.push('ForOnDoWebExecute2="webExecute2"');
+		ntkoDom.push('ForOnFileCommand="FileCommand"');
+		ntkoDom.push('ForOnCustomMenuCmd2="CustomMenuCmd"');
+		ntkoDom.push('_IsUseUTF8URL="-1"   ');
+		
+		ntkoDom.push('_MakerCaption=""   ');
+        ntkoDom.push('_MakerKey=""  ');
+		
+ntkoDom.push('_ProductCaption="国家价格认证中心" ');
+ntkoDom.push('_ProductKey="CB92D43FD92284A57784ADBC6D49B8ABF1383F22"');
+		
+		
+		
+
+		ntkoDom.push('_IsUseUTF8Data="-1"   ');
+		ntkoDom.push('_BorderStyle="1"   ');
+		ntkoDom.push('_BorderColor="14402205"   ');
+		ntkoDom.push('_MenubarColor="14402205"   ');
+		ntkoDom.push('_MenuButtonColor="16180947"   ');
+		ntkoDom.push('_MenuBarStyle="3"  ');
+		ntkoDom.push('_MenuButtonStyle="7"   ');
+		ntkoDom.push('_WebUserName="NTKO"   ');
+		ntkoDom.push('clsid="{'+classid+'}" >');
+		ntkoDom.push('<SPAN STYLE="color:red">尚未安装NTKO Web FireFox跨浏览器插件。请点击<a href="ntkoplugins.xpi">安装组1件</a></SPAN>   ');
+		ntkoDom.push('</object>   ');
+}else if(browser=="chrome"){
+
+		ntkoDom.push('<object id="TANGER_OCX" clsid="{'+classid+'}"  ForOnSaveToURL="OnComplete2" ForOnBeginOpenFromURL="OnComplete" ForOndocumentopened="OnComplete3"');
+		ntkoDom.push('ForOnpublishAshtmltourl="publishashtml"');
+		ntkoDom.push('ForOnpublishAspdftourl="publishaspdf"');
+		ntkoDom.push('ForOnSaveAsOtherFormatToUrl="saveasotherurl"');
+		ntkoDom.push('ForOnDoWebGet="dowebget"');
+		ntkoDom.push('ForOnDoWebExecute="webExecute"');
+		ntkoDom.push('ForOnDoWebExecute2="webExecute2"');
+		ntkoDom.push('ForOnFileCommand="FileCommand"');
+		
+		ntkoDom.push('_MakerCaption=""   ');
+        ntkoDom.push('_MakerKey=""  ');
+		ntkoDom.push('_ProductCaption="国家价格认证中心" ');
+		ntkoDom.push('_ProductKey="CB92D43FD92284A57784ADBC6D49B8ABF1383F22"');
+		
+		
+		
+		ntkoDom.push('ForOnCustomMenuCmd2="CustomMenuCmd"');
+		ntkoDom.push('codebase="'+codebase+'" width="100%" height="100%" type="application/ntko-plug" ');
+		ntkoDom.push('_IsUseUTF8URL="-1"   ');
+		ntkoDom.push('_IsUseUTF8Data="-1"   ');
+		ntkoDom.push('_BorderStyle="1"   ');
+		ntkoDom.push('_BorderColor="14402205"   ');
+		ntkoDom.push('_MenubarColor="14402205"   ');
+		ntkoDom.push('_MenuButtonColor="16180947"   ');
+		ntkoDom.push('_MenuBarStyle="3"  ');
+		ntkoDom.push('_MenuButtonStyle="7"   ');
+		ntkoDom.push('_wmode="transparent"   ');
+		ntkoDom.push('_IsShowToolMenu="-1"   ');
+		ntkoDom.push('_Caption="NTKO OFFICE文档控件示例演示 http://www.ntko.com">    ');
+		ntkoDom.push('<SPAN STYLE="color:red">尚未安装NTKO Web Chrome跨浏览器插件。请点击<a href="ntkoplugins.crx">安装组件</a></SPAN>   ');
+		ntkoDom.push('</object>');
+	}else if (Sys.opera){
+		alert("sorry,ntko暂不支持opera!");
+	}else if (Sys.safari){
+		 alert("sorry,ntko暂不支持safari!");
+	}
+
+	$("#ntkoContainer").append(ntkoDom.join(""));
+</script>

@@ -1,0 +1,42 @@
+.power-overflow-hidden{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.power-table-label{
+    text-indent: 10px; 
+    width: 130px; 
+    text-align: right!important;
+}
+
+.power-table-sm-label{
+    text-indent: 10px; 
+    width: 100px; 
+    text-align: right!important;
+}
+
+.power-table-medium-label{
+    text-indent: 10px; 
+    width: 260px; 
+    text-align: left!important;
+}
+
+.power-table-lg-label{
+    text-indent: 10px; 
+    width: 400px; 
+    text-align: left!important;
+}
+
+.power-line-height {
+    height: 3px!important;
+}
+
+.power-textarea {
+    font-size:14px!important;
+    font-family: MicroSoft YaHei!important; 
+    overflow-y:visible!important; 
+    resize: vertical!important;
+    padding: 0px 4px!important;
+}

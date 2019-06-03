@@ -1,0 +1,77 @@
+ul, ol { list-style-type: none;padding-left:5px;margin-left:0px; }
+
+.one 
+{ 
+display:block; 
+overflow:hidden; 
+height:1px; 
+margin:0 4px; 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5; 
+background:#f2f2f5; 
+} 
+.two 
+{ 
+display:block; 
+overflow:hidden; 
+height:1px;/*线的高度为1px*/ 
+margin:0 3px;/*距离外层DIV的左右边距各3px*/ 
+border-left:1px solid #f2f2f5;/*只显示线的左边的1px*/ 
+border-right:1px solid #f2f2f5;/*只显示线的右边的1px*/ 
+background:#f2f2f5;/*配合内层Div的颜色变化，*/ 
+} 
+.three 
+{ 
+display:block; 
+overflow:hidden; 
+height:1px; 
+margin:0 2px; 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5; 
+background:#f2f2f5; 
+} 
+.four 
+{ 
+display:block; 
+overflow:hidden; 
+height:1px; 
+margin:0 1px; 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5; 
+background:#f2f2f5; 
+} 
+
+.content/*DIV只显示左右的边框，颜色和p标签的一致*/ 
+{ 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5; 
+} 
+.header 
+{ 
+border-left:1px solid #f2f2f5; 
+border-right:1px solid #f2f2f5;
+border-bottom:1px solid  #f2f2f5;
+background:#fff; 
+}
+
+.list{ position:absolute; left:0; top:0; position:relative; height:470px; padding:20px 0 0 10px;}
+.list p{ position:absolute; width:140px; height:30px; left:50%; bottom:0; margin-left:-70px;}
+.list p span{ margin-right:10px; cursor:pointer; background:url(../images/bullet_white.png) left top no-repeat; float:left; width:24px; height:24px;}
+.list p span.span{ background:url(../images/bullet_green.png) left top no-repeat;}
+.list .list_div{ cursor:pointer; width:100%;}
+.list_div_left{ width:15px; height:220px; position:absolute; left:0; top:0; z-index:3; background:url(../images/list_div_left.jpg) left top no-repeat; margin-left:0px;}
+.list_div_center{ width:99%; position:absolute; left:7px; top:0; z-index:2; height:204px; background:url(../images/list_div_center.jpg) left top repeat-x;}
+.list_div_right{ width:15px; position:absolute; right:-6px; top:0; z-index:3; height:204px; background:url(../images/list_div_right.jpg) left top no-repeat; margin-right:0;}
+.list_div_box{ position:relative; height:204px; margin-right:1%; margin-bottom:20px;}
+.list_div_title{ margin:7px 15px 0 10px;}
+.list_div_title h3 img{ margin-right:10px; margin-top:3px;}
+.list_div_tab span{ display:inline-block; margin-right:10px; font-size:14px; color:#555; border:1px solid #88ACCF; border-bottom:none; padding:5px 6px; border-radius:6px 6px 0 0; background:#D5E8FA;}
+.list_div_tab .spanColor{ color:#2C4B54; background:#FFF; border:1px solid #61A3BE; border-bottom:none; margin-top:0px; padding-bottom:6px;}
+.list_div_tab{ position:absolute; top:10px; left:50px;}
+.list_div_title a{ line-height:28px; color:#468c00;}
+.list_div_content{ margin:8px 15px 0 10px; line-height:26px; min-height:130px;overflow:hidden}
+.list_div_content li a{ color:#2c4b55; font-size:12px; width:65%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.list_div_content li i{ font-style:normal;  font-size:12px; color:#777;}
+
+.fl { float: left; }
+.fr { float: right; }

@@ -1,0 +1,159 @@
+
+.header_top {
+    background: rgb(44, 154, 239);
+    width: 100%;
+    height: 115px;
+}
+.header_bom{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+.bo {
+    width: 776px;
+    margin-left: -386px;
+
+    position: fixed;
+    top:30%;
+    left: 50%;
+}
+
+#panel {
+    display: inline-block;
+    background-color: rgb(238, 245, 251);
+    padding-top: 10px;
+    width: 350px;
+}
+
+/*面板头部*/
+#panel .panel-top {
+    padding-top: 10px;
+    width: 220px;
+    margin-left: 110px;
+}
+
+/*面板中间*/
+#panel .panel-content {
+    margin-top: 12px;
+}
+
+#panel .panel-content .int {
+    height: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 44px;
+}
+
+#panel .panel-content label {
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+
+#panel .panel-content .int input {
+    width: 250px;
+    height: 45px;
+    border: 1px solid rgb(62, 164, 239);
+    padding-left: 46px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    line-height: 43px;
+
+}
+
+#panel .panel-content .pwd-login a {
+    display: inline-block;
+    color: #555555;
+    font-size: 13px;
+}
+
+#panel .panel-content .pwd-login {
+    width: 260px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#panel .panel-content .setting .forget-pwd {
+    float: right;
+    padding-right: 100px;
+
+}
+
+#panel .panel-content .setting .auto-login {
+    float: left;
+    padding-left: 100px;
+    text-decoration: none;
+}
+
+#panel .panel-content .pwd-login input {
+    /*设置行内块级标签*/
+    display: inline-block;
+    width: 18px;
+    float: left;
+
+}
+
+#panel .login button {
+    margin-top: 10px;
+    width: 250px;
+    height: 43px;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-color: rgb(62, 164, 239);
+    margin-left: 44px;
+}
+
+#panel .reg {
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: 54px;
+    margin-top: -5px;
+    margin-bottom: 9px;
+}
+
+#panel .reg ul li {
+    color: #555555;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+
+    color: #555555;
+
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+
+    color:#555555;
+
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+    color:#555555;
+
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+
+    color: #555555;
+
+}

@@ -1,0 +1,921 @@
+<!DOCTYPE HTML>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="keywords" content="某某 政府 官网 官方 网站"/>
+<meta http-equiv="description" content="某某市人民政府"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>某某市人民政府</title>
+
+<link rel="stylesheet" type="text/css" href="<@Rootpath src="r/cms/www/cn/style/css.css"/>"></LINK>
+<link rel="stylesheet" type="text/css" href="<@Rootpath src="r/cms/www/cn/style/main.css"/>"></LINK>
+<script src="<@Rootpath src="r/cms/jquery.js"/>" type="text/javascript"></script>
+<script src="<@Rootpath src="r/cms/front.js"/>" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	Cms.siteFlow("", location.href, document.referrer);
+});
+</script>
+</head>
+<body>
+	<script src="<@Rootpath src="r/cms/www/cn/js/less.version.js"/>" type="text/javascript"></script>
+	<script src="<@Rootpath src="r/cms/www/cn/js/ischrome.js"/>" type="text/javascript"></script>
+	<div class="main-body">
+<div class="top-bar">
+	<div class="bar">
+		<div class="main-wrap clearfix">
+			<div class="four-links">
+				<a target="_blank">某某省人民政府</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市人民政府</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市人大</a>
+				<span class="link-sep"></span>
+				<a target="_blank">某某市政协</a>
+			</div>
+			<div class="version-links">
+				<a  target="_blank" style="color:#DD736C;">公务邮箱</a>
+				<span class="link-sep"></span>
+				<a id="accessible" href="javascript:;">无障碍阅读</a>
+				<span class="link-sep"></span>
+				<a id="chinese" data-default="简体" data-changed="繁體" href="javascript:;">繁體</a>
+				<span class="link-sep"></span>
+				<a >English</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="<@Rootpath src="r/cms/www/cn/js/chinese.js"/>" type="text/javascript"></script>
+<script src="<@Rootpath src="r/cms/www/cn/js/accessible.js"/>" type="text/javascript"></script>
+<script type="text/javascript">
+//简繁体转换
+initChinese(document.querySelector("#chinese"), ["title"]);
+//无障碍
+initAccessible(document.querySelector(".main-body"), document.querySelector("#accessible"));
+</script>
+		<div class="main-wrap main-container">
+<div class="main-nav">
+	<@Site>
+  		 <a class="node" href="<@Out name="REL_PATH" />">首页</a>
+	</@Site>
+	<@Channel>
+		 	 <#assign curChannelId=this.channelId />
+		</@Channel>
+	<@Channels type="TOP">
+		<a class="node <#if this.channelId==curChannelId>focus</#if>" href="<@Out name="REL_PATH" />" ><@Out name="chnlName" /></a>
+	</@Channels>
+	<form action="" method="get" class="search-bar" onsubmit="return search_submit(this)">
+		<input type="text" name="q">
+		<input type="submit" value="">
+		<em>查询间隔10秒</em>
+	</form>
+	<script type="text/javascript">
+	var search_submit = function(form){
+		var input = form.querySelector("input[name=q]");
+		var value = input.value.replace(/(^\s*)|(\s*$)/g, "");
+		if(value) {
+			//每10秒可以查询一次
+			if(jQuery.cookie("s")){
+				var em = form.querySelector("em");
+				em.style.display = "block";
+				setTimeout(function(){
+					em.style.display = "none";
+				}, 2000);
+				return false;
+			} else {
+				input.value = value;
+				var date = new Date();
+				date.setTime(date.getTime() + 10000);
+				jQuery.cookie("s", value, {expires:date});
+				return true;
+			}
+		} else {
+			return false;
+		}
+	}
+	</script>
+</div>
+<script src="<@Rootpath src="/r/cms/www/cn/js/tabs.js"/>" type="text/javascript"></script>
+<div class="tile-region mt-region">
+	<div class="tile-group low wide">
+		<div class="tile low full fivefold-height color-panel">
+			<div class="wrap">
+				<div id="tabs-service-1" class="box-tile">
+					<div class="box-title">
+						<span>公民办事</span>
+						<div class="box-tabs-title">
+							<em class="tab-node">主题分类</em>
+							<em class="tab-node">人生事件</em>
+							<em class="tab-node">特殊群体</em>
+						</div>
+					</div>
+					<div class="box-content">
+						<div class="box-tabs-content">
+							<div class="tab-content pd-lr-30">
+								<div class="service-icon-list clearfix">
+									<a target="_blank" >
+										<i>`</i>
+										<span>生育收养</span>
+									</a>
+									<a target="_blank" >
+										<i>K</i>
+										<span>教育</span>
+									</a>
+									<a target="_blank" >
+										<i>C</i>
+										<span>文化</span>
+									</a>
+									<a target="_blank" >
+										<i>i</i>
+										<span>兵役</span>
+									</a>
+									<a target="_blank" >
+										<i>H</i>
+										<span>就业</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58999;</i>
+										<span>婚姻</span>
+									</a>
+									<a target="_blank" >
+										<i>Y</i>
+										<span>纳税</span>
+									</a>
+									<a target="_blank" >
+										<i>N</i>
+										<span>住房</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59009;</i>
+										<span>职业资格</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59023;</i>
+										<span>社会保障</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59052;</i>
+										<span>医疗</span>
+									</a>
+									<a target="_blank" >
+										<i>B</i>
+										<span>户籍</span>
+									</a>
+									<a target="_blank">
+										<i>&#59039;</i>
+										<span>证件办理</span>
+									</a>
+									<a target="_blank" >
+										<i>J</i>
+										<span>交通</span>
+									</a>
+									<a target="_blank" >
+										<i>j</i>
+										<span>公用事业</span>
+									</a>
+									<a target="_blank" >
+										<i>c</i>
+										<span>出境入境</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59011;</i>
+										<span>公安司法</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58995;</i>
+										<span>养老</span>
+									</a>
+									<a target="_blank" >
+										<i>G</i>
+										<span>死亡殡葬</span>
+									</a>
+									<a target="_blank" >
+										<i>}</i>
+										<span>综合其他</span>
+									</a>
+								</div>
+							</div>
+							<div class="tab-content pd-lr-30">
+								<div class="service-icon-list clearfix">
+									<a target="_blank" >
+										<i>K</i>
+										<span>升学</span>
+									</a>
+									<a target="_blank" >
+										<i>}</i>
+										<span>找工作</span>
+									</a>
+									<a target="_blank" >
+										<i>O</i>
+										<span>买房子</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58999;</i>
+										<span>结婚</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58993;</i>
+										<span>生小孩</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59039;</i>
+										<span>失业</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59002;</i>
+										<span>创业</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59003;</i>
+										<span>迁居</span>
+									</a>
+									<a target="_blank" >
+										<i>%</i>
+										<span>退休</span>
+									</a>
+									<a target="_blank" >
+										<i>G</i>
+										<span>后事</span>
+									</a>
+								</div>
+							</div>
+							<div class="tab-content pd-lr-30">
+								<div class="service-icon-list clearfix">
+									<a target="_blank" >
+										<i>K</i>
+										<span>高校毕业生</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58992;</i>
+										<span>人才</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58995;</i>
+										<span>老年人</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59040;</i>
+										<span>残疾人</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58997;</i>
+										<span>特困家庭</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58993;</i>
+										<span>儿童青少年</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59050;</i>
+										<span>妇女</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58996;</i>
+										<span>农民</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58991;</i>
+										<span>外国人</span>
+									</a>
+									<a target="_blank" >
+										<i>&#58994;</i>
+										<span>港澳台侨</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+				initTabs($("#tabs-service-1 .box-tabs-title>.tab-node"), $("#tabs-service-1 .box-tabs-content>.tab-content"));
+				</script>
+			</div>
+		</div>
+		<div class="tile low full fivefold-height color-panel">
+			<div class="wrap">
+				<div id="tabs-service-2" class="box-tile">
+					<div class="box-title">
+						<span>企业办事</span>
+						<div class="box-tabs-title">
+							<em class="tab-node">主题分类</em>
+							<em class="tab-node">事件分类</em>
+							<em class="tab-node">特定群体</em>
+						</div>
+					</div>
+					<div class="box-content">
+						<div class="box-tabs-content">
+							<div class="tab-content pd-lr-30">
+								<div class="service-icon-list clearfix">
+									<a target="_blank" >
+										<i>&#59006;</i>
+										<span>准营准办</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59007;</i>
+										<span>设立变更</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59008;</i>
+										<span>年审年检</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59009;</i>
+										<span>资质认证</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59010;</i>
+										<span>对外交流</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59011;</i>
+										<span>司法公证</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59012;</i>
+										<span>投资融资</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59013;</i>
+										<span>专利版权</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59015;</i>
+										<span>物流采购</span>
+									</a>
+									<a target="_blank" >
+										<i>Q</i>
+										<span>商务活动</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59016;</i>
+										<span>质量卫生</span>
+									</a>
+									<a target="_blank">
+										<i>&#59017;</i>
+										<span>安全防护</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59018;</i>
+										<span>环保绿化</span>
+									</a>
+									<a target="_blank" >
+										<i>O</i>
+										<span>建设管理</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59035;</i>
+										<span>土地房产</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59019;</i>
+										<span>人力资源</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59020;</i>
+										<span>财务税务</span>
+									</a>
+									<a target="_blank" >
+										<i>}</i>
+										<span>劳动保障</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59022;</i>
+										<span>新闻传播</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59000;</i>
+										<span>破产注销</span>
+									</a>
+								</div>
+							</div>
+							<div class="tab-content pd-lr-30">
+								<div class="service-icon-list clearfix">
+									<a target="_blank" >
+										<i>&#59025;</i>
+										<span>开办企业</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59026;</i>
+										<span>申请资质</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59029;</i>
+										<span>投资立项</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59016;</i>
+										<span>扩大生产</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59019;</i>
+										<span>引进人才</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59027;</i>
+										<span>办理社保</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59028;</i>
+										<span>申请专利</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59020;</i>
+										<span>纳税缴费</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59029;</i>
+										<span>申请贷款</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59031;</i>
+										<span>申请破产</span>
+									</a>
+								</div>
+							</div>
+							<div class="tab-content pd-lr-30">
+								<div class="service-icon-list clearfix">
+									<a target="_blank" >
+										<i>&#59032;</i>
+										<span>中小企业</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59033;</i>
+										<span>民营企业</span>
+									</a>
+									<a target="_blank">
+										<i>&#59038;</i>
+										<span>高新技术企业</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59035;</i>
+										<span>困难企业</span>
+									</a>
+									<a target="_blank" >
+										<i>N</i>
+										<span>重点企业</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59036;</i>
+										<span>私营企业</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59037;</i>
+										<span>社会组织</span>
+									</a>
+									<a target="_blank" >
+										<i>&#59034;</i>
+										<span>个体工商户</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+				initTabs($("#tabs-service-2 .box-tabs-title>.tab-node"), $("#tabs-service-2 .box-tabs-content>.tab-content"));
+				</script>
+			</div>
+		</div>
+		<div class="tile low full sevenfold-height color-panel">
+			<div class="wrap">
+				<div id="dept-work-wrap" class="box-tile">
+					<div class="box-title">
+						<span>部门办事</span>
+						<div class="box-select-wrap"></div>
+					</div>
+					<div class="box-content">
+						<div class="box-select-table">
+							<table cellpadding=0 cellspacing=0 border=0 width="100%">
+								<tbody></tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+				(function(){
+					var works_area = [{
+						name: "本省市",
+						depts: [{
+							name: "市发改委",
+							href: ""
+						}, {
+							name: "市教育局",
+							href: ""
+						}, {
+							name: "市工信委",
+							href: ""
+						}, {
+							name: "市民委(宗教局)",
+							href: ""
+						}, {
+							name: "市公安局",
+							href: ""
+						}, {
+							name: "市残联",
+							href: ""
+						}, {
+							name: "市民政局",
+							href: ""
+						}, {
+							name: "市司法局",
+							href: ""
+						}, {
+							name: "市人社局",
+							href: ""
+						}, {
+							name: "市国土资源局",
+							href: ""
+						}, {
+							name: "市安监局",
+							href: ""
+						}, {
+							name: "市城建委",
+							href: ""
+						}, {
+							name: "市房管局",
+							href: ""
+						}, {
+							name: "市规划局",
+							href: ""
+						}, {
+							name: "市交委",
+							href: ""
+						}, {
+							name: "市城市管理局",
+							href: ""
+						}, {
+							name: "市环保局",
+							href: ""
+						}, {
+							name: "市盐业局",
+							href: ""
+						}, {
+							name: "市农委",
+							href: ""
+						}, {
+							name: "市水务局",
+							href: ""
+						}, {
+							name: "市林业局",
+							href: "x"
+						}, {
+							name: "市商务局",
+							href: ""
+						}, {
+							name: "市文广新局",
+							href: ""
+						}, {
+							name: "市卫生局",
+							href: ""
+						}, {
+							name: "市食品药品监管局",
+							href: "x"
+						}, {
+							name: "市体育局",
+							href: ""
+						}, {
+							name: "市粮食局",
+							href: ""
+						}, {
+							name: "市物价局",
+							href: ""
+						}, {
+							name: "市人防办",
+							href: ""
+						}, {
+							name: "市文物局",
+							href: ""
+						}, {
+							name: "市畜牧局",
+							href: ""
+						}, {
+							name: "市园林局",
+							href: ""
+						}, {
+							name: "市国资委",
+							href: ""
+						}, {
+							name: "市住房公积金管理中心",
+							href: ""
+						}, {
+							name: "市地震局",
+							href: ""
+						}, {
+							name: "市工商局",
+							href: ""
+						}, {
+							name: "市质监局",
+							href: ""
+						}, {
+							name: "市气象局",
+							href: ""
+						}, {
+							name: "市烟草专卖局",
+							href: ""
+						}]
+					}];
+					var col_count = 3;	//列数
+					var select = $("<select>").appendTo($("#dept-work-wrap .box-select-wrap"));
+					var table = $("#dept-work-wrap .box-select-table>table>tbody");
+					for (var i = 0; i < works_area.length; i++) {
+						var area = works_area[i];
+						var option = $("<option>").text(area.name);
+						option.appendTo(select);
+					}
+					select.bind("change", function(){
+						table.empty();
+						var area = works_area[this.selectedIndex];
+						var tr = null;
+						for (var i = 0; i < area.depts.length; i++) {
+							var dept = area.depts[i];
+							if(!tr || tr.children().length == col_count) tr = $("<tr>").appendTo(table);
+							var td = $("<td>").appendTo(tr);
+							var a = $("<a>").text(dept.name).attr("href", dept.href || "javascript:;").attr("target", "_blank");
+							a.appendTo(td);
+						}
+					});
+					select.trigger("change");
+				})();
+				</script>
+			</div>
+		</div>
+	</div>
+	<div class="tile-group low">
+		<div class="tile low full">
+			<div class="wrap">
+				<img class="image" src="<@Rootpath src="/r/cms/www/cn/images/decorations/deco_service_01.png"/>" />
+			</div>
+		</div>
+		<a class="tile low active color-yellow">
+			<div class="wrap">
+				<div class="title-cn">身份证办理</div>
+				<div class="icon">&#59039;</div>
+			</div>
+		</a>
+		<a class="tile low active color-sky-blue">
+			<div class="wrap">
+				<div class="title-cn">户口办理</div>
+				<div class="icon">B</div>
+			</div>
+		</a>
+		<a class="tile low active color-yellow-green">
+			<div class="wrap">
+				<div class="title-cn">生育证办理</div>
+				<div class="icon">Y</div>
+			</div>
+		</a>
+		<a class="tile low active color-light-blue">
+			<div class="wrap">
+				<div class="title-cn">保障性住房</div>
+				<div class="icon">&#59033;</div>
+			</div>
+		</a>
+		<a class="tile low active color-dark-blue">
+			<div class="wrap">
+				<div class="title-cn">房产登记</div>
+				<div class="icon">&#59035;</div>
+			</div>
+		</a>
+		<a  class="tile low active color-slate-blue">
+			<div class="wrap">
+				<div class="title-cn">公积金贷款</div>
+				<div class="icon">&#59029;</div>
+			</div>
+		</a>
+		<a  class="tile low active color-green">
+			<div class="wrap">
+				<div class="title-cn">机动车驾驶</div>
+				<div class="icon">J</div>
+			</div>
+		</a>
+		<a class="tile low active color-light-red">
+			<div class="wrap">
+				<div class="title-cn">老年人福利</div>
+				<div class="icon">&#58995;</div>
+			</div>
+		</a>
+		<a  class="tile low active color-light-pink">
+			<div class="wrap">
+				<div class="title-cn">残疾人服务</div>
+				<div class="icon">&#59040;</div>
+			</div>
+		</a>
+		<a  class="tile low active color-yellow">
+			<div class="wrap">
+				<div class="title-cn">企业优惠扶持</div>
+				<div class="icon">&#59032;</div>
+			</div>
+		</a>
+	</div>
+	<div class="tile-group low">
+		<div class="tile low full">
+			<div class="wrap">
+				<img class="image" src="<@Rootpath src="/r/cms/www/cn/images/decorations/deco_service_02.png"/>" />
+			</div>
+		</div>
+		<a class="tile low active color-slate-blue">
+			<div class="wrap">
+				<div class="title-cn">教育服务</div>
+				<div class="icon">K</div>
+			</div>
+		</a>
+		<a class="tile low active color-green">
+			<div class="wrap">
+				<div class="title-cn">就业服务</div>
+				<div class="icon">}</div>
+			</div>
+		</a>
+		<a class="tile low active color-light-red">
+			<div class="wrap">
+				<div class="title-cn">医疗卫生</div>
+				<div class="icon">&#59052;</div>
+			</div>
+		</a>
+		<a class="tile low active color-dark-blue">
+			<div class="wrap">
+				<div class="title-cn">社会保障</div>
+				<div class="icon">&#59023;</div>
+			</div>
+		</a>
+		<a class="tile low active color-light-blue">
+			<div class="wrap">
+				<div class="title-cn">住房服务</div>
+				<div class="icon">B</div>
+			</div>
+		</a>
+		<a class="tile low active color-lime-green">
+			<div class="wrap">
+				<div class="title-cn">公共事业</div>
+				<div class="icon">G</div>
+			</div>
+		</a>
+		<a class="tile low active color-sky-blue">
+			<div class="wrap">
+				<div class="title-cn">企业服务</div>
+				<div class="icon">N</div>
+			</div>
+		</a>
+		<div class="tile low">
+			<div class="wrap">
+				<img class="image" src="<@Rootpath src="/r/cms/www/cn/images/decorations/deco_service_04.png"/>" />
+			</div>
+		</div>
+	</div>
+	<div class="tile-group low">
+		<div class="tile low full">
+			<div class="wrap">
+				<img class="image" src="<@Rootpath src="/r/cms/www/cn/images/decorations/deco_service_03.png"/>" />
+			</div>
+		</div>
+		<div class="tile low full auto-height">
+			<div class="wrap">
+				<a  class="tile no-pd fix-a active color-light-red">
+					<div class="wrap">
+						食
+					</div>
+				</a>
+				<a  class="tile no-pd fix-a active color-light-pink">
+					<div class="wrap">
+						住
+					</div>
+				</a>
+				<a  class="tile no-pd fix-a active color-slate-blue">
+					<div class="wrap">
+						行
+					</div>
+				</a>
+				<a  class="tile no-pd fix-a active color-sky-blue">
+					<div class="wrap">
+						游
+					</div>
+				</a>
+				<a class="tile no-pd fix-a active color-yellow-green">
+					<div class="wrap">
+						购
+					</div>
+				</a>
+				<a class="tile no-pd fix-a active color-green">
+					<div class="wrap">
+						娱
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="tile full fix-b-height color-panel">
+			<div class="wrap">
+				<ul id="service-cascade-links" class="service-cascade-links">
+					<li>
+						<span>医疗社保</span>
+						<dl class="clearfix">
+							<dd><a >医院查询</a></dd>
+							<dd><a >预约挂号</a></dd>
+							<dd><a >社保查询</a></dd>
+							<dd><a >养老保险</a></dd>
+						</dl>
+					</li>
+					<li>
+						<span>教育培训</span>
+						<dl class="clearfix">
+							<dd><a >公办职业培训学校</a></dd>
+							<dd><a >民办职业培训学校</a></dd>
+						</dl>
+					</li>
+					<li>
+						<span>价格查询</span>
+						<dl class="clearfix">
+							<dd><a >供热煤价格</a></dd>
+							<dd><a >农副产品零售价格</a></dd>
+							<dd><a >城镇居民服务价格</a></dd>
+							<!-- <dd><a >农业生产资料价格</a></dd> -->
+						</dl>
+					</li>
+					<li>
+						<span>交通出行</span>
+						<dl class="clearfix">
+							<dd><a >交通运输</a></dd>
+							<dd><a >路况信息</a></dd>
+							<dd><a >维修企业</a></dd>
+							<dd><a >驾校查询</a></dd>
+						</dl>
+					</li>
+					<li>
+						<span>房产土地</span>
+						<dl class="clearfix">
+							<dd><a >地价信息</a></dd>
+							<dd><a >房屋权属初始登记</a></dd>
+							<dd><a >二手房转让</a></dd>
+							<dd><a >土地登记</a></dd>
+						</dl>
+					</li>
+					<li>
+						<span>公共事业</span>
+						<dl class="clearfix">
+							<dd><a >水费查询</a></dd>
+							<dd><a >天然气费查询</a></dd>
+							<dd><a >电费查询</a></dd>
+						</dl>
+					</li>
+					<li>
+						<span>企业查询</span>
+						<dl class="clearfix">
+							<dd><a >注册企业查询</a></dd>
+							<dd><a >直销企业查询</a></dd>
+						</dl>
+					</li>
+					<li>
+						<span>招聘求职</span>
+						<dl class="clearfix">
+							<dd><a >天基人才网</a></dd>
+							<dd><a >河南思博人才</a></dd>
+							<dd><a >职介机构查询</a></dd>
+						</dl>
+					</li>
+					<li>
+						<span>司法机构</span>
+						<dl class="clearfix">
+							<dd><a >某某市司法局</a></dd>
+							<dd><a >某某市公安局</a></dd>
+							<dd><a >某某市检察院</a></dd>
+						</dl>
+					</li>
+				</ul>
+				<script type="text/javascript">
+				initTabs($("#service-cascade-links>li"));
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+		<div class="copyright">
+			<div class="main-wrap">
+				<table cellpadding=0 cellspacing=0 border=0 width="100%" style="table-layout:fixed;">
+					<tr>
+						<td align="right">
+							
+						</td>
+						<td width=640>
+														<a target="_blank">关于我们</a>
+							|
+							<a target="_blank">郑重声明</a>
+							|
+							<a target="_blank">网站地图</a>
+							|
+							<a>意见反馈</a>
+							|
+							<a target="_blank">旧版网站</a>
+							<br/>建议使用：1024*768分辨率，IE8及以上浏览器 某某市人民政府地址：某某市某某路1002号 邮编：100825
+							<br/>某某市人民政府版权所有 某ICP备62110213号
+						</td>
+						<td align="left"><a target="_blank"><img src="<@Rootpath src="r/cms/www/cn/images/110.png"/>" /></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

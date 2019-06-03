@@ -1,0 +1,441 @@
+/*案件中的公共样式  案件登记和案件填报*/
+
+
+/*头部页签*/
+
+.tab {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.tab ul li {
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}
+
+.case-tab {
+    display: inline-block;
+    margin: 0 auto;
+    width: 231px;
+    height: 41px;
+    background-image: url('Polygon_stroke4.png');
+    background-size: cover;
+}
+
+.case-tab-active {
+    background-image: url('Polygon_stroke4_active.png');
+    background-size: cover;
+    color: #4B70A5;
+}
+
+
+/*下方按钮组区域*/
+
+input[type=button] {
+    cursor: pointer;
+}
+
+#rp_btn {
+    position: fixed;
+    bottom: 0px;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    padding: 6px 30px 6px;
+    border-top: 1px #e6e9ed solid;
+    /* margin-right: 10px; */
+    /* margin: 0 auto; */
+}
+
+#rp_btn input {
+    width: 80px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.rp-btn-left {
+    float: left;
+}
+
+
+/*可编辑列表*/
+
+.edit-table-div {
+    width: 96%;
+    margin: 20px auto;
+}
+
+.edit-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px #aaa solid;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.edit-table th {
+    background: #EFEFEF;
+    height: 40px;
+    min-width: 50px;
+    border: 1px #E6E6E6 solid;
+    text-align: center;
+}
+
+.edit-table tr td input {
+    height: 80%;
+    width: 80%;
+    border: none;
+    text-align: center;
+}
+
+.edit-table tr td select {
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+
+.edit-table tr td {
+    border: 1px #E6E6E6 solid;
+    height: 40px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.edit-table-add {
+    margin: 0;
+    text-align: center;
+    background-color: #EDF6FF;
+    height: 30px;
+    line-height: 30px;
+    border: 1px #E6E6E6 solid;
+    border-top: none;
+    cursor: pointer;
+    overflow: hidden;
+    color: #4B70A5;
+}
+
+
+/*内容框头部*/
+
+.case-head-title {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    font-size: 14px;
+    text-indent: 10px;
+    text-align: left;
+    background: #F4F4F4;
+    margin: 0;
+    color: #4B70A5;
+}
+
+
+/*按钮公共样式*/
+
+.fy-btn {
+    height: 28px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.blue-btn {
+    background-color: #47A1FF;
+}
+
+.green-btn {
+    background-color: #1A9B7C;
+}
+
+.yellow-btn {
+    background-color: #FEBB2F;
+}
+
+.uplode-btn {
+    background-color: #47A1FF;
+    width: 50px;
+}
+
+#finish {
+    width: 120px!important;
+}
+
+
+/* 来件接待信息*/
+
+#getcase {
+    width: 80px;
+}
+
+.other-one,
+.other-two {
+    margin-left: 6%；;
+    /* display: inline-block; */
+    display: inline-block;
+    width: 100%;
+    margin-left: 6%;
+}
+
+.recpinfo {
+    width: 90%;
+    border: 1px solid #EFEFEF;
+    margin: 10px auto;
+}
+
+.recmat-div {
+    width: 90%;
+    border: 1px solid #EFEFEF;
+    margin: 10px auto;
+}
+
+
+/*公共表单 输入框 选择框 标签*/
+
+.inputlable {
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    width: 100%;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.fyform table {
+    width: 100%;
+    border: none;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.fyinput {
+    height: 28px;
+    border-radius: 0px;
+    width: 80%;
+    display: inline-block;
+    border: 1px solid #bdbcbc;
+    padding: 0;
+}
+
+.fyselect {
+    height: 30px;
+    border-radius: 0px;
+    width: 80%;
+    display: inline-block;
+    border: 1px solid #bdbcbc;
+}
+
+.inputlable:after {
+    content: "*";
+    color: red;
+}
+
+
+/*4列列表部分*/
+
+.td-col4-title {
+    text-align: right;
+    width: 10%;
+}
+
+.td-col4-content {
+    width: 40%;
+}
+
+.td-col2-title {
+    width: 10%;
+    text-align: right;
+}
+
+.td-col2-content {
+    width: 91%;
+}
+
+.rowinput {
+    width: 90%;
+}
+
+.funcTd {
+    color: #EB9C1D;
+    font-size: 20px;
+}
+
+
+/* 当事人 */
+
+.partyDiv {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+}
+
+.party-body {
+    padding: 20px;
+}
+
+hr {
+    border: 1px dotted #d8dfe2;
+    margin: 10px 0;
+}
+
+.party-btn {
+    width: 140px;
+}
+
+
+/*复议事项*/
+
+.radioUl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radioUl li {
+    height: 30px;
+}
+
+.lilable {
+    display: inline-block;
+    width: 100px;
+    margin-left: 30px;
+    text-align: right;
+}
+
+
+/* 复议材料*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.setHeight {
+    margin: 35px 0;
+}
+
+.material {
+
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+
+.material tr {
+    height: 25px;
+    min-height: 25px;
+    border: 1px solid #eeeeee;
+}
+
+.material th {
+    background: #DBECFE;
+    text-align: left;
+    text-indent: 15px;
+    font-size: 13px;
+}
+
+.material-title {
+    width: 15%;
+    height: 100%;
+    background: #EDF6FF;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.material-content {
+    width: 65%;
+    background: #F8F8F8;
+    margin-left: 20px;
+}
+
+.material-func {
+    width: 10%;
+    text-align: center;
+    background-color: #F8F8F8;
+    border-left: 1px solid #eeeeee;
+}
+
+.nofile {
+    color: red;
+}
+
+.material-list {
+    width: 90%;
+    background: #F8F8F8;
+}
+
+.material-func button {
+    height: 20px;
+    border: none;
+    /* margin: 1%; */
+    width: 40px;
+    background: #51A0FD;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.material-ul li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.li-func {
+    float: right;
+    margin-right: 30px;
+}
+
+.li-func a {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.material-head {
+    background-color: #ddd;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.material-head button {
+    height: 26px;
+    border: none;
+    /* margin: 1%; */
+    width: 40%;
+    background: #51A0FD;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.mtr-head {
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+    background: #eeeeee;
+}
+
+.regTb {
+    font-size: 16px;
+}
+
+.material-ul {
+    line-height: 30px;
+}
+
+.textell{
+	overflow:hidden; /*超出宽度部分的隐藏*/
+	white-space:nowrap; /*文字不换行*/
+	text-overflow:ellipsis; /*超出则...代替*/
+}

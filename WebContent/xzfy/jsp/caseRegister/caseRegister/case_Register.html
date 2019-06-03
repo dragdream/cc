@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登记页面</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../../js/base/jquery-1.9.1.min.js"></script>
+    <script src="../../js/base/juicer-min.js"></script>
+    <link rel="stylesheet" href="../css/init1.css">
+    <link rel="stylesheet" type="text/css" href="../css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/demo.css">
+    <script type="text/javascript" src="../../js/base/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/base/jquery.easyui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="case.css" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont/iconfont.css" />
+
+    <style>
+        body {
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #EFF0F4;
+        }
+        
+        #d1 {
+            margin-bottom: 40px;
+            padding: 10px;
+            background-color: #fff;
+            margin-top: 10px;
+        }
+        c
+        .tab {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+        }
+        
+        .tab ul li {
+            width: 25%;
+        }
+    </style>
+
+</head>
+<!-- <body onload="doInit();" style="background: radial-gradient(circle at 20%, #80FFFF, #FFEB3B);text-align:center; overflow-y:hidden;overflow-x:hidden; padding-left: 10px; padding-right: 10px;"> -->
+
+<body onload="doInit();">
+    <div class="tab">
+        <ul>
+            <li onclick="showpage(0);"><span class="case-tab case-tab-active">来件\接待信息</span></li>
+            <li onclick="showpage(1);"><span class="case-tab">当事人信息</span></li>
+            <li onclick="showpage(2);"><span class="case-tab">复议事项</span></li>
+            <li onclick="showpage(3);"><span class="case-tab">案件材料</span></li>
+        </ul>
+    </div>
+    <!-- 来件接待信息  -->
+    <div class="content" id="d1">
+        <input id="getcase" class="fy-btn blue-btn" type="button" value="案件提取" title="案件提取" />
+
+        <div class="fyform">
+            <table class="table-col4">
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable apply-lable">申请方式：</label></td>
+                    <td class="td-col4-content">
+                        <select class="fyselect apply-select">
+                           <option>请选择</option>
+                           <option>当面接待</option>
+                           <option>书面来件</option>
+                         </select>
+                    </td>
+                    <td class="td-col4-title"></td>
+                    <td class="td-col4-content"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="fyform select-one">
+            <table class="table-col4">
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">接待地点：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                    <td class="td-col4-title"><label class="inputlable">接待日期：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                </tr>
+
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">接待人：</label></td>
+                    <td class="td-col4-content"><select class="fyselect">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    </select></td>
+                    <td class="td-col4-title"><label class="inputlable">第二接待人：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                </tr>
+
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">处理结果：</label></td>
+                    <td><select class="fyselect">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                </select></td>
+                    <td class="td-col4-title"><label class="inputlable  control-label">请求：</label></td>
+                    <td><select class="fyselect">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                </select></td>
+
+                </tr>
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">接待地点：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                </tr>
+            </table>
+
+            <div class="recpinfo">
+                <p class="case-head-title">被接待人信息</p>
+                <div class="edit-table-div">
+                    <table id="recp-table" class="edit-table"></table>
+                    <p class="edit-table-add" onclick="recp_insertRow();">添加</p>
+                </div>
+            </div>
+
+            <table class="table-col2">
+                <tr class="tr-col2">
+                    <td class="td-col2-title"><label class="inputlable">接待情况：</label></td>
+                    <td class="td-col2-content"><textarea class="rowinput" rows="3"></textarea></td>
+                </tr>
+            </table>
+
+            <div class="other-one">
+                <td class="td-col4-title"><label>其他复议机关\法院受理同一复议申请：</label></td>
+                <span><td><input type="radio" name="optradio" />   是</span>
+                <span><td><input type="radio" name="optradio" />   否</span>
+                <td class="td-col4-title"><label>复议机关名称：</label></td>
+                <td><select class="">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                </select></td>
+            </div>
+            <div class="other-two">
+                <td class="td-col4-title"><label>接收材料：</label></td>
+                <span><td><input type="radio" name="matradio" onclick="showTable();"/>   是</span>
+                <span><td><input type="radio" name="matradio" onclick="hideTable();"/>   否</span>
+            </div>
+
+            <div class="recmat-div">
+                <div class="edit-table-div ">
+                    <table id="material-table" class="edit-table"></table>
+                    <p class="edit-table-add" onclick="material_insertRow();">添加</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="fyform select-two">
+            <table class="table-col4">
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">来信人姓名：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                    <td class="td-col4-title"><label class="inputlable">来信人电话：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                </tr>
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">申请日期：</label></td>
+                    <td class="td-col4-content">
+                        <div class="fyinput">
+                            <input class="easyui-datetimebox" style="width:100%;height: 100%;">
+                        </div>
+                    </td>
+                    <td class="td-col4-title"><label class="inputlable">收件类型：</label></td>
+                    <td class="td-col4-content"><select class="fyselect">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                </select></td>
+                </tr>
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">来信人通信地址：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                    <td class="td-col4-title"><label class="inputlable">来信人邮编：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                </tr>
+
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">来文编号：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                    <td class="td-col4-title"></td>
+                    <td class="td-col4-content"></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <!-- 当事人信息  -->
+    <div class="content" id="d1">
+        <div class="partyDiv">
+
+            <p class="case-head-title">申请人</p>
+            <div class="party-body">
+                <div>
+                    <label>申请人类别：</label>
+                    <span><input type="radio" name="optradio" />   公民</span>
+                    <span><input type="radio" name="optradio" />   法人或其他组织</span>
+                    <span><input type="radio" name="optradio" />   个体工商户</span>
+                </div>
+
+                <div class="edit-table-div applicant-div">
+                    <table id="applicant-table" class="edit-table"></table>
+                    <p class="edit-table-add" onclick="applicant_insertRow();">添加</p>
+                </div>
+                <hr/>
+                <!-- 用button控制添加的表格-->
+                <input class="fy-btn blue-btn party-btn" type="button" value="添加申请人代理人" title="添加申请人代理人" onclick="add_agent();" />
+                <div class="edit-table-div applicant-agent-div">
+                    <table id="applicant-agent-table" class="edit-table"></table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 复议事项  -->
+    <div class="content" id="d1">
+        <div class="fyform">
+            <table class="table-col4">
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">案件编号：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                    <td class="td-col4-title"><label class="inputlable">申请日期：</label></td>
+                    <td class="td-col4-content">
+                        <div class="fyinput">
+                            <input class="easyui-datetimebox" style="width:100%;height: 100%;">
+                        </div>
+                    </td>
+
+                </tr>
+
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">申请事项：</label></td>
+                    <td class="td-col4-content"><select class="fyselect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select></td>
+                    <td class="td-col4-title"><label class="inputlable">行政类别管理：</label></td>
+                    <td class="td-col4-content"><select class="fyselect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select></td>
+
+                </tr>
+
+                <tr class="tr-col4">
+                    <td class="td-col4-title"><label class="inputlable">行政不作为：</label></td>
+                    <td class="td-col4-content"> <span class="radio-group">
+                            <input type="radio" name="radio-xz4" onclick="yesDuty();"/><label>是</label>
+                            <input type="radio" name="radio-xz4" onclick="noDuty();" checked="ture"/><label>否</label>
+                            </span>
+                    </td>
+                    <!-- 点击是 yesduty -->
+                    <td class="td-col4-title yesduty"><label class="inputlable">不作为事项：</label></td>
+                    <td class="td-col4-content yesduty"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                    <!-- 点击否 noduty -->
+                    <td class="td-col4-title noduty"><label class="inputlable">行政类别管理：</label></td>
+                    <td class="td-col4-content noduty"><select class="fyselect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select></td>
+                </tr>
+                <!-- 点击否 noduty -->
+                <tr class="tr-col4 noduty">
+                    <td class="td-col4-title"><label class="inputlable">具体行政行为文号：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                    <td class="td-col4-title"><label class="inputlable">具体行政行为做出日期：</label></td>
+                    <td class="td-col4-content">
+                        <div class="fyinput">
+                            <input class="easyui-datetimebox" style="width:100%;height: 100%;">
+                        </div>
+                    </td>
+                </tr>
+                <!-- 点击否 noduty -->
+                <tr class="tr-col4 noduty">
+                    <td class="td-col4-title"><label class="inputlable">收到处罚决定书日期：</label></td>
+                    <td class="td-col4-content">
+                        <div class="fyinput">
+                            <input class="easyui-datetimebox" style="width:100%;height: 100%;">
+                        </div>
+                    </td>
+                    <td class="td-col4-title"><label class="inputlable">得知该具体行为途径：</label></td>
+                    <td class="td-col4-content"><input type="text" class="fyinput" id="" placeholder="" /></td>
+                </tr>
+
+                <!-- 点击是 yesduty -->
+                <tr class="tr-col4 yesduty">
+                    <td class="td-col4-title"><label class="inputlable">申请人要求被申请人履行该项法定职责日期：</label></td>
+                    <td class="td-col4-content">
+                        <div class="fyinput">
+                            <input class="easyui-datetimebox" style="width:100%;height: 100%;">
+                        </div>
+                    </td>
+                    <td class="td-col4-title"></td>
+                    <td class="td-col4-content"></td>
+                </tr>
+                <!--单列表单-->
+                <tr>
+                    <td class="td-col4-title"><label class="inputlable">具体行政行为：</label></td>
+                    <td colspan="3"> <textarea class="rowinput" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="td-col4-title"><label class="inputlable">行政复议请求：</label></td>
+                    <td colspan="3"> <textarea class="rowinput" rows="3"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td class="td-col4-title"><label class="inputlable">行政复议请求：</label></td>
+                    <td colspan="3"> <textarea class="rowinput" rows="3"></textarea></td>
+                </tr>
+
+                <!-- 按钮组 -->
+                <tr>
+                    <td class="td-col4-title"><label class="inputlable">行政复议前置：</label></td>
+                    <td colspan="3"> <span class="radio-group">
+                            <input type="radio" name="radio-xz1" /><label>是</label>
+                            <input type="radio" name="radio-xz1" /><label>否</label>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="td-col4-title"><label class="inputlable">申请举行听证会：</label></td>
+                    <td colspan="3"> <span class="radio-group">
+                             <input type="radio" name="radio-xz3" /><label>是</label>
+                             <input type="radio" name="radio-xz3" /><label>否</label>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-col4-title"><label class="inputlable">申请赔偿：</label></td>
+                    <td colspan="3"> <span class="radio-group">
+                            <input type="radio" name="radio-xz4" onclick="showInput(this);"/><label>是</label>
+                            <input type="radio" name="radio-xz4" onclick="hideInput(this);"/><label>否</label>
+                        </span>
+                        <span class="li-input">
+                        <label class="lilable">赔偿请求类型：</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                        <label class="lilable">赔偿请求金额：</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-col4-title"><label class="inputlable">申请附带对规范性文件的审查：</label></td>
+                    <td colspan="3"> <span class="radio-group">
+                            <input type="radio" name="radio-xz5" onclick="showInput(this);"/><label>是</label>
+                            <input type="radio" name="radio-xz5" onclick="hideInput(this);"/><label>否</label>
+                        </span>
+                        <span class="li-input">
+                                <label class="lilable">规范性文件名称：</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                                </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- 案件材料  -->
+    <div class="content  materialDiv" id="d1">
+
+    </div>
+
+    <div id="rp_btn" class="fr">
+        <span class="rp-btn-left"> 
+            <input id="record" class="fy-btn yellow-btn" type="button" value="接待笔录" title="接待笔录" onclick="" />
+            <input id="receipt" class="fy-btn yellow-btn" type="button" value="材料收据" title="材料收据" onclick="" />
+            <input id="sheet" class="fy-btn yellow-btn" type="button" value="地址确认单" title="地址确认单" onclick="" />
+        </span>
+
+        <input id="back" class="fy-btn blue-btn" type="button" value="上一步" title="上一步" onclick="back();" />
+        <input id="save" class="fy-btn green-btn" type="button" value="暂  存" title="暂存" onclick="save();" />
+        <input id="copy" class="fy-btn yellow-btn" type="button" value="保存并复制" title="保存并复制" onclick="" />
+        <input id="forward" class="fy-btn blue-btn" type="button" value="下一步" title="下一步" onclick="forward();" />
+    </div>
+    <script>
+        $('.li-input').hide();
+        $('.select-two').hide();
+        $('.yesduty').hide();
+        $('.noduty').show();
+
+        function showInput(that) {
+
+            $(that).parent().siblings('.li-input').show();
+        }
+
+        function hideInput(that) {
+
+            $(that).parent().siblings('.li-input').hide();
+        }
+
+        function yesDuty() {
+            $('.yesduty').show();
+            $('.noduty').hide();
+        }
+
+        function noDuty() {
+            $('.noduty').show();
+            $('.yesduty').hide();
+        }
+        $(".apply-select").change(function() {
+            var selected = $(".apply-select").val();
+            if (selected == "当面接待") {
+                $('.select-one').show();
+                $('.select-two').hide();
+            } else if (selected == "书面来件") {
+                $('.select-one').hide();
+                $('.select-two').show();
+            }
+        })
+
+        $('.case-tab').click(function() {
+            $('.case-tab').removeClass('case-tab-active');
+            $(this).addClass('case-tab-active');
+        })
+    </script>
+    <script src="case.js"></script>
+    <script src="party.js"></script>
+    <script src="case_register.js"></script>
+    <script src="material.js"></script>
+</body>
+
+</html>

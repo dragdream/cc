@@ -1,0 +1,44 @@
+body{
+	background-color:#eaedf2;
+}
+.panel-heading > span{
+	position:absolute;
+}
+.panel-heading{
+	padding: 10px 5px;
+	font-size: 14px;a
+	text-align: left;
+	text-indent:20px;
+	box-sizing: border-box;
+}
+.panel-title {
+	margin-left:15px;
+	display:inline;
+}
+.panel-title a{
+	color:#000;
+}
+.groupContent li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: left;
+	text-indent:60px;
+	cursor:pointer;
+}
+.groupContent li:hover{
+	background-color:#fff;
+	color:#fff;
+}
+.groupContent li a{
+	color:#000;
+}
+.groupContent li a:hover{
+	color:#000;
+}
+.li_active{
+	background-color:#fff;
+}
+#orgZtree{
+	padding-left:45px!important;
+}

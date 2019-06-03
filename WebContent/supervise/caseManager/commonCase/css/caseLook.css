@@ -1,0 +1,258 @@
+@CHARSET "UTF-8";
+.tabs-header{border-style:none;}
+.common-line-height{
+    height: 3px!important;
+}
+
+/** *** 立案begin *** */
+.case-common-filing-look-td-class1{
+    width: 16%;
+    text-indent: 5px;
+    text-align: right!important;
+    height: 40px;
+}
+.case-common-filing-look-td-class2{
+    width: 30%;
+    height: 40px;
+    max-width: 250px;
+}
+.case-common-filing-look-td-class3{
+    width: 8%;
+    height: 40px;
+}
+/** *** 立案end *** */
+
+/** *** 调查取证begin *** */
+.case-common-research-look-td-class1{
+    text-align: right!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-research-look-td-class2{
+    text-align: right!important; 
+    width: 20%!important;
+    height: 40px!important;
+}
+.case-common-research-look-td-class3{
+    text-align: right!important; 
+    width: 25%!important;
+    height: 40px!important;
+}
+.case-common-research-look-td-class4{
+    text-align: left!important; 
+    width: 20%!important;
+    height: 40px!important;
+}
+.case-common-research-look-td-class5{
+    text-align: left!important; 
+    width: 55%!important;
+    height: 40px!important;
+}
+.case-common-research-look-td-class6{
+    text-align: left!important; 
+    width: 60%!important;
+    height: 40px!important;
+}
+.case-common-research-look-td-class7{
+    width: 20%!important;
+    height: 40px!important;
+}
+/** *** 调查取证end *** */
+
+/** *** 审查信息begin *** */
+.case-common-correct-look-td-class1{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class2{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class3{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class4{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+
+.case-common-correct-look-td-class5{
+    text-align: left!important; 
+    width: 4%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class6{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class7{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+/** *** 审查信息end *** */
+
+/** *** 决定信息begin *** */
+.case-common-correct-look-td-class8{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class9{
+    text-align: left!important; 
+    width: 26%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class10{
+    text-align: left!important; 
+    width: 5%!important;
+    height: 40px!important;
+}
+
+.case-common-correct-look-td-class11{
+    text-align: right!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+
+.case-common-correct-look-td-class12{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+ .case-common-correct-look-td-class13{
+    text-align: right!important; 
+    width: 6%!important;
+    height: 40px!important;
+    padding-left:5px!important;
+}
+.case-common-correct-look-td-class14{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class15{
+    text-align: left!important; 
+    width: 1%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class16{
+    text-align: left!important; 
+    width: 32%!important;
+    height: 40px!important;
+}
+.case-common-correct-look-td-class17{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+
+.case-common-correct-look-td-class18{
+    text-align: right!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+
+.case-common-correct-look-td-class19{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+ .case-common-correct-look-td-class20{
+    text-align: right!important; 
+    width: 8%!important;
+    height: 40px!important;
+    padding-left:5px!important;
+}
+.case-common-correct-look-td-class21{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+/** *** 决定信息end *** */
+
+/** *** 处罚执行begin *** */
+.case-common-present-look-td-class1{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-present-look-td-class2{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-present-look-td-class3{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-present-look-td-class4{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+
+.case-common-present-look-td-class5{
+    text-align: left!important; 
+    width: 4%!important;
+    height: 40px!important;
+}
+.case-common-present-look-td-class6{
+    text-align: right!important; 
+    width: 24%!important;
+    height: 40px!important;
+}
+.case-common-present-look-td-class7{
+    text-align: left!important; 
+    width: 24%!important;
+    height: 40px!important;
+}
+.case-common-present-look-td-class8{
+    text-align: right!important; 
+    width: 0%!important;
+    height: 40px!important;
+}
+.case-common-present-look-td-class9{
+    text-align: left!important; 
+    width: 0%!important;
+    height: 40px!important;
+}
+.case-common-present-look-td-class10{
+    width: 4%;
+    height: 40px;
+}
+/** *** 处罚执行end *** */
+
+/** *** 结案begin *** */
+.case-common-execute-look-td-class1{
+    text-align: right!important; 
+    width: 24%!important;
+    height: 40px!important;
+}
+.case-common-execute-look-td-class2{
+    text-align: left!important; 
+    width: 24%!important;
+    height: 40px!important;
+}
+.case-common-execute-look-td-class3{
+    text-align: right!important; 
+    width: 18%!important;
+    height: 40px!important;
+}
+.case-common-execute-look-td-class4{
+    text-align: left!important; 
+    width: 30%!important;
+    height: 40px!important;
+}
+.case-common-execute-look-td-class5{
+    width: 4%!important;
+    height: 40px!important;
+}
+/** *** 结案end *** */

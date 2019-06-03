@@ -1,0 +1,42 @@
+ .f-li {
+   display: inline-block;
+     font-size: 16px;
+     line-height: 16px;
+     margin-left: 10px;
+     margin-top: 10px;
+
+} .f-li1{
+      display: inline-block;
+     margin-right: 10px;
+     margin-top: 10px
+   ;
+     padding-left: 10px;
+     margin-left: 20px;
+  }
+ .f-li img{
+     width: 30px;
+     height: 30px;
+
+ }
+
+ #f-one{
+     width: 100%;
+
+ }
+ #f-one{
+     width: 60%;
+ }
+ .f-four{
+min-height: 200px;
+     min-width: 100px;
+     border: 1px solid red;
+     float: left;
+     margin-left: 20px;
+
+ }
+
+
+ .f-li1 img{
+     width: 30px;
+     height: 30px;
+ }

@@ -1,0 +1,315 @@
+@CHARSET "UTF-8";
+/** 填报页面-立案begin */
+.common-line-height{
+    height: 3px!important;
+}
+
+.case-common-filing-td-class2{
+    width: 30%;
+    height: 40px;
+    max-width: 250px;
+}
+.case-common-filing-td-class3{
+    width: 8%;
+    height: 40px;
+}
+.case-common-filing-td-class1{
+    width: 10%;
+    text-indent: 5px;
+    text-align: right!important;
+    height: 40px;
+}
+/** 填报页面-立案end */
+
+/** ****** 调查取证begin ****** */
+.case-common-td-research0{
+    text-align: right!important; 
+    width: 10%!important;
+    height: 40px!important;
+}
+.case-common-td-research1{
+    text-align: right!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-td-research2{
+    text-align: right!important; 
+    width: 20%!important;
+    height: 40px!important;
+}
+.case-common-td-research3{
+    text-align: right!important; 
+    width: 25%!important;
+    height: 40px!important;
+}
+.case-common-td-research4{
+    text-align: right!important; 
+    width: 30%!important;
+    height: 40px!important;
+}
+.case-common-td-research5{
+    text-align: right!important; 
+    width: 35%!important;
+    height: 40px!important;
+}
+.case-common-td-research6{
+    text-align: right!important; 
+    width: 45%!important;
+    height: 40px!important;
+}
+.case-common-td-research7{
+    text-align: right!important; 
+    width: 50%!important;
+    height: 40px!important;
+}
+.case-common-td-research8{
+    text-align: right!important; 
+    width: 55%!important;
+    height: 40px!important;
+}
+.case-common-td-research9{
+    text-align: right!important; 
+    width: 60%!important;
+    height: 40px!important;
+}
+
+.case-common-td-research10{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-td-research11{
+    text-align: left!important; 
+    width: 20%!important;
+    height: 40px!important;
+}
+.case-common-td-research12{
+    text-align: left!important; 
+    width: 25%!important;
+    height: 40px!important;
+}
+.case-common-td-research13{
+    text-align: left!important; 
+    width: 30%!important;
+    height: 40px!important;
+}
+.case-common-td-research14{
+    text-align: left!important; 
+    width: 35%!important;
+    height: 40px!important;
+}
+.case-common-td-research15{
+    text-align: left!important; 
+    width: 40%!important;
+    height: 40px!important;
+}
+.case-common-td-research16{
+    text-align: left!important; 
+    width: 45%!important;
+    height: 40px!important;
+}
+.case-common-td-research17{
+    text-align: left!important; 
+    width: 50%!important;
+    height: 40px!important;
+}
+.case-common-td-research18{
+    text-align: left!important; 
+    width: 55%!important;
+    height: 40px!important;
+}
+.case-common-td-research19{
+    text-align: left!important; 
+    width: 60%!important;
+    height: 40px!important;
+}
+.case-common-td-research20{
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-td-research21{
+    width: 20%!important;
+    height: 40px!important;
+}
+.case-common-td-research22{
+    width: 25%!important;
+    height: 40px!important;
+}
+.case-common-td-research23{
+    width: 30%!important;
+    height: 40px!important;
+}
+.case-common-td-research24{
+    width: 35%!important;
+    height: 40px!important;
+}
+.case-common-td-research25{
+    width: 40%!important;
+    height: 40px!important;
+}
+.case-common-td-research26{
+    width: 45%!important;
+    height: 40px!important;
+}
+.case-common-td-research23{
+    width: 30%!important;
+    height: 40px!important;
+}
+.case-common-td-research24{
+    width: 35%!important;
+    height: 40px!important;
+}
+.case-common-td-research25{
+    width: 40%!important;
+    height: 40px!important;
+}
+.case-common-td-research26{
+    width: 45%!important;
+    height: 40px!important;
+}
+.case-common-td-research27{
+    width: 50%!important;
+    height: 40px!important;
+}
+.case-common-td-research28{
+    width: 55%!important;
+    height: 40px!important;
+}
+.case-common-td-research29{
+    width: 60%!important;
+    height: 40px!important;
+}
+
+.case-common-panel-body{
+    height: auto !important;
+}
+
+.case-common-panel-body1{
+    height: 220px !important;
+   /*  min-height: 100px !important; */
+    overflow: auto;
+}
+/** ****** 调查取证end ****** */
+
+/* .datagrid-body{ overflow:hidden; } */
+/** *** 审查信息begin *** */
+.case-common-correct-td-class1{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-correct-td-class2{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-correct-td-class3{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-correct-td-class4{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+
+.case-common-correct-td-class5{
+    text-align: left!important; 
+    width: 4%!important;
+    height: 40px!important;
+}
+.case-common-correct-td-class6{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-correct-td-class7{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+/** *** 审查信息end *** */
+
+/** *** 决定信息begin *** */
+.case-common-correct-td-class8{
+    text-align: right!important; 
+    width: 17%!important;
+    height: 40px!important;
+}
+.case-common-correct-td-class9{
+    text-align: left!important; 
+    width: 26%!important;
+    height: 40px!important;
+}
+.case-common-correct-td-class10{
+    text-align: left!important; 
+    width: 10%!important;
+    height: 40px!important;
+}
+
+.case-common-correct-td-class11{
+    text-align: right!important; 
+    width: 10%!important;
+    height: 40px!important;
+}
+
+.case-common-correct-td-class12{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+ .case-common-correct-td-class13{
+    text-align: right!important; 
+    width: 6%!important;
+    height: 40px!important;
+    padding-left:5px!important;
+}
+.case-common-correct-td-class14{
+    text-align: left!important; 
+    width: 15%!important;
+    height: 40px!important;
+}
+.case-common-correct-td-class15{
+    text-align: left!important; 
+    width: 1%!important;
+    height: 40px!important;
+}
+/** *** 决定信息end *** */
+
+/** *** 证据信息begin *** */
+.case-common-illegal-td-class2{
+    width: 30%;
+    height: 40px;
+    max-width: 250px;
+}
+.case-common-illegal-td-class3{
+    width: 4%;
+    height: 40px;
+}
+.case-common-illegal-td-class1{
+    width: 18%;
+    text-indent: 5px;
+    text-align: right!important;
+    height: 40px;
+}
+/** *** 证据信息end *** */
+
+#common_case_add_3_correct_form td{  
+    white-space: nowrap;
+}
+
+#common_case_add_1_filing_form td{  
+    white-space: nowrap;
+}
+
+.textbox-label{
+    width: auto;
+}
+.textbox-label-after label{
+    padding-right: 30px;
+}
+
+.datebox-calendar-inner {
+    height: 220px;
+}

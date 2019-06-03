@@ -1,0 +1,266 @@
+
+html,body{
+    width:98%;
+    height:100%;
+    margin:auto
+}
+.main-right {
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    position: fixed;
+}
+.case-content{
+    height:80%;
+
+}
+
+
+#case-filling{
+    height:100%;
+}
+#filling-content{
+    height:100%;
+    font-size:12px;
+    overflow: hidden
+}
+.case-similar,.case-rules{
+    width:70px;
+    height:25px;
+    display:inline-block;
+    background:#FF9400;
+    color:#fff;
+    text-align: center;
+    line-height: 25px;
+    border:1px solid #C97600;
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+.generate-accept,.generate-reply,.upload-accept,.upload-reply{
+    width: 130px;
+    height: 25px;
+    background: #4BA0FD;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #3183E0;
+    border-radius: 2px;
+    
+
+}
+.case-buttons{
+    margin-bottom: 8px;
+}
+.btn-left{
+    display: inline-block;
+}
+.btn-right{
+    display: inline-block;
+    float:right;
+}
+
+.case-fill{
+    width:100%;
+    height:30%
+}
+.fill-table{
+    width:100%;
+    height:30px;
+    border:1px solid #EFF2F5;
+    margin-bottom: 2px;
+    
+}
+.fill-title{
+    width:10%;
+    border-right:1px solid #EFF2F5;
+    background:#F2FBFF;
+    height:30px;
+    display:inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+.fill-input{
+    width:76%;
+    display: inline-block;
+}
+input[type=text], textarea{
+    border:none;
+    width:100%;
+    height:20px;
+}
+
+
+.module-middle{
+    width:100%;
+    height:57%
+}
+.stage-title{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background:#F0F0F0;
+    border:1px solid #ECECEC;
+    border-radius: 2px;
+    font-size: 14px;
+}
+.active-estab{
+    border:1px solid #E7E7E7;
+    border-bottom: 1px solid #4478EE;
+    border-top:none;
+    background:#fff;
+    color:#4478EE
+}
+.register-stage,.establish-stage{
+    width:130px;
+    height:100%;
+    display:inline-block;
+    text-align: center;
+    cursor:pointer
+    
+}
+.form-info{
+    margin-top:5px;
+    height: 130px;
+    overflow: hidden;
+}
+.form-info table{
+    border-right:1px solid #EEEEEE;
+    border-bottom:1px solid #EEEEEE;
+    width:100%;
+    overflow: auto;
+    font-size:12px
+}
+.form-info table tbody{
+    overflow: auto
+}
+.form-info table tr:nth-child(1){
+    height:18px !important;
+}
+.form-info table tr:nth-child(1) th{
+    padding:0px !important;
+    height:20px;
+    box-sizing: border-box
+}
+.form-info table tr:nth-child(odd){
+    height:25px;
+    background:#EFEFEF;
+    font-size: 14px
+}
+.form-info table tr:nth-child(even){
+    height:25px;
+}
+.form-info table tr td:last-child{
+    width:150px;
+}
+.form-info table th,td{
+    border-left:1px solid #EEEEEE;
+    border-top:1px solid #EEEEEE;
+    text-align: center
+}
+.establish-calendar,.establish-advices{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    
+}
+
+.estab-input{
+    border:1px solid #E2E2E2 !important;
+    height:30px !important;
+    width:80% !important;
+    border-radius: 4px;
+    font-size: 12px;
+    padding:5px;
+}
+
+.module-bottom{
+    width:100%;
+}
+.operate-container{
+    height:100%;
+    float: right;
+}
+.case-save{
+    width:70px;
+    background:#26BA9A;
+    border:1px solid #2BAD8E;
+    color:#fff;
+    border-radius: 2px;
+    height:25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    cursor:pointer;
+}
+.case-approval{
+    width:70px;
+    background:#4AA5F9;
+    border:1px solid #3C95F3;
+    color:#fff;
+    border-radius: 2px;
+    margin-left:8px;
+    height:25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    cursor:pointer;
+}
+.case-hearing-person{
+    width:70px;
+    background:#F99806;
+    border:1px solid #D39B64;
+    color:#fff;
+    border-radius: 2px;
+    margin-left:8px;
+    height:25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    cursor:pointer;
+}
+
+.btn-left span{
+    vertical-align: bottom;
+}
+
+/* accepttencelist的样式 */
+
+
+.form-item{
+    display:inline-block;
+    box-sizing: border-box;
+    width: 33%;
+    overflow: hidden
+}
+.BigInput{
+    border:1px solid #D0D0D0 !important;
+    width:70% !important
+}
+.date-input{
+    width: 31% !important;
+    border: 1px solid #D0D0D0 !important;
+}
+.search-btn{
+    width:60px;
+    float:right
+}
+.form-label{
+    width: 75px;
+    text-align: right;
+    display: inline-block;
+}
+.form-container{
+    margin:8px auto
+}
+.datagrid-btable{
+    width:100%
+}
+
+
+/* .datagrid-btable tbody{
+    width:100%
+} */
+
+

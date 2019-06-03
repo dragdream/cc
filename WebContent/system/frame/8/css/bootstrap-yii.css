@@ -1,0 +1,252 @@
+.clearfix {
+	
+}
+.clearfix::before {
+	line-height: 0; display: table; content: "";
+}
+.clearfix::after {
+	line-height: 0; display: table; content: "";
+}
+.clearfix::after {
+	clear: both;
+}
+.hide-text {
+	font: 0px/0 a; border: 0px currentColor; border-image: none; color: transparent; font-size-adjust: none; font-stretch: normal; text-shadow: none; background-color: transparent;
+}
+.input-block-level {
+	width: 100%; display: block; min-height: 30px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.grid-view {
+	padding-top: 20px;
+}
+.grid-view table.items th a {
+	display: block; position: relative;
+}
+.grid-view table.items th a .caret {
+	top: 7px; right: 5px; display: none; position: absolute;
+}
+.grid-view table.items th a.asc .caret {
+	display: block;
+}
+.grid-view table.items th a.desc .caret {
+	border-top-color: currentColor; border-bottom-color: rgb(0, 0, 0); border-top-width: medium; border-bottom-width: 4px; border-top-style: none; border-bottom-style: solid; display: block;
+}
+.grid-view table.items th:hover a::after {
+	background-position: -312px -96px; top: 0px; width: 14px; height: 14px; right: -10px; line-height: 14px; vertical-align: text-top; display: block; position: absolute; content: ""; background-image: url("../img/glyphicons-halflings.png"); background-repeat: no-repeat;
+}
+.grid-view table.items th:hover a.asc::after {
+	background-position: -289px -96px;
+}
+.grid-view table.items tr.selected td {
+	background: rgb(238, 238, 238);
+}
+.grid-view .filters .filter-container {
+	padding: 0px 15px 0px 0px;
+}
+.grid-view .filters input {
+	width: 100%; margin-bottom: 0px;
+}
+.grid-view .filters select {
+	width: 100%; margin-bottom: 0px;
+}
+.grid-view .button-column {
+	width: 50px; text-align: center;
+}
+.grid-view .checkbox-column {
+	width: 15px;
+}
+.grid-view .summary {
+	text-align: right; margin-bottom: 5px;
+}
+.grid-view .pager {
+	margin-top: 5px;
+}
+.grid-view .empty {
+	font-style: italic;
+}
+.grid-view-loading {
+	background: url("../img/loading.gif") no-repeat;
+}
+.list-view {
+	padding-top: 20px;
+}
+.list-view .summary {
+	text-align: right; margin-bottom: 5px;
+}
+.list-view .pager {
+	margin-top: 5px;
+}
+.list-view .sorter {
+	margin: 0px 0px 5px; text-align: right;
+}
+.list-view .sorter ul {
+	list-style: none; margin: 0px; padding: 0px; display: inline;
+}
+.list-view .sorter li {
+	margin: 0px 0px 0px 5px; padding: 0px; display: inline;
+}
+.list-view .sorter a .caret {
+	top: 7px; right: 5px; position: absolute;
+}
+.list-view .sorter a .caret.desc .caret {
+	border-top-color: currentColor; border-bottom-color: rgb(0, 0, 0); border-top-width: medium; border-bottom-width: 4px; border-top-style: none; border-bottom-style: solid;
+}
+.list-view-loading {
+	background: url("../img/loading.gif") no-repeat;
+}
+.detail-view .null {
+	color: rgb(255, 192, 203);
+}
+.detail-view th {
+	width: 160px; text-align: right;
+}
+span.required {
+	color: rgb(255, 0, 0);
+}
+.form-inline label.error {
+	color: rgb(185, 74, 72);
+}
+.form-horizontal label.error {
+	color: rgb(185, 74, 72);
+}
+.form-vertical label.error {
+	color: rgb(185, 74, 72);
+}
+.form-inline select.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-inline input.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-inline textarea.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-horizontal select.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-horizontal input.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-horizontal textarea.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-vertical select.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-vertical input.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-vertical textarea.error {
+	border-color: rgb(185, 74, 72); color: rgb(185, 74, 72);
+}
+.form-inline select.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-inline input.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-inline textarea.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-horizontal select.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-horizontal input.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-horizontal textarea.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-vertical select.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-vertical input.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-vertical textarea.error:focus {
+	border-color: rgb(149, 59, 57); box-shadow: 0px 0px 6px #d59392; -webkit-box-shadow: 0 0 6px #d59392; -moz-box-shadow: 0 0 6px #d59392;
+}
+.form-inline .help-block.error {
+	color: rgb(185, 74, 72);
+}
+.form-inline .help-inline.error {
+	color: rgb(185, 74, 72);
+}
+.form-horizontal .help-block.error {
+	color: rgb(185, 74, 72);
+}
+.form-horizontal .help-inline.error {
+	color: rgb(185, 74, 72);
+}
+.form-vertical .help-block.error {
+	color: rgb(185, 74, 72);
+}
+.form-vertical .help-inline.error {
+	color: rgb(185, 74, 72);
+}
+.select2-container {
+	margin-bottom: 9px;
+}
+.select2-container-multi .select2-choices {
+	border-radius: 3px; border: 1px solid rgb(204, 204, 204); border-image: none; height: 20px; color: rgb(85, 85, 85); line-height: 20px; font-size: 14px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+.select2-container-multi.select2-dropdown-open .select2-choices {
+	border-radius: 3px 3px 0px 0px; -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0;
+}
+table th {
+	font-weight: bold;
+}
+table td {
+	padding: 9px 10px; text-align: left;
+}
+table th {
+	padding: 9px 10px; text-align: left;
+}
+@media only screen and (max-width:767px)
+{
+table.responsive {
+	margin-bottom: 0px;
+}
+.pinned {
+	background: rgb(255, 255, 255); left: 0px; top: 0px; width: 35%; overflow: hidden; border-right-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; position: absolute; -ms-overflow-x: scroll;
+}
+.pinned table {
+	width: 100%; border-right-color: currentColor; border-left-color: currentColor; border-right-width: medium; border-left-width: medium; border-right-style: none; border-left-style: none;
+}
+.pinned table th {
+	white-space: nowrap;
+}
+.pinned table td {
+	white-space: nowrap;
+}
+.pinned td:last-child {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+div.table-wrapper {
+	overflow: hidden; margin-bottom: 20px; border-right-color: rgb(204, 204, 204); border-right-width: 1px; border-right-style: solid; position: relative;
+}
+div.table-wrapper div.scrollable table {
+	margin-left: 35%;
+}
+div.table-wrapper div.scrollable {
+	overflow: scroll; -ms-overflow-y: hidden;
+}
+table.responsive td {
+	overflow: hidden; white-space: nowrap; position: relative;
+}
+table.responsive th {
+	overflow: hidden; white-space: nowrap; position: relative;
+}
+table.responsive th:first-child {
+	display: none;
+}
+table.responsive td:first-child {
+	display: none;
+}
+table.responsive td:first-child {
+	display: none;
+}
+table.responsive.pinned td {
+	display: none;
+}
+}

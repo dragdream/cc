@@ -1,0 +1,130 @@
+.north{
+    height:40px;
+    background:#005797;
+    border-bottom: 1px solid #138dd7
+}
+.south{
+    height:30px;
+    background:#0077be;
+    border-bottom: 1px solid #138dd7
+}
+.west{
+    width:205px;
+}
+.center{
+
+}
+#main-tabs{
+    position: absolute;
+    top: 0;
+    left: 210px;
+    right: 200px;
+    height: 40px;
+    padding: 0 20px;
+}
+#sub-tabs{
+    border-top:1px solid #327FAD;
+    background:#0077be;
+    overflow-y:hidden;
+}
+.sub-tabs-list{
+    padding: 0 40px;
+}
+.header1{
+background-image:url('../img/header1_bg.jpg');
+}
+.header2{
+width:250px;
+background-image:url('../img/header2_bg.jpg');
+background-position:top right;
+}
+.header3{
+background-image:url('../img/header3_bg.jpg');
+background-position:top left;
+background-repeat:repeat-y;
+}
+.bar1{
+background-image:url('../img/bar1.jpg');
+padding:7px;
+color:white;
+}
+.tabs-title{
+	font-size:14px !important;
+	font-weight:blod !important;
+	color:#065A93 !important;
+}
+.tabs li a.tabs-inner{
+	background-image:url(../img/tab/tabs_bg.jpg);
+	filter:none;
+}
+.tabs-header, .tabs-tool{
+	background-image:url(../img/bottom_bg.jpg);
+}
+.tee_tab_header{
+	background-image:url(../../imgs/tb_header.png);
+	height:30px;
+}
+.tee_tab{
+    line-height: 25px !important;
+    text-align: left !important;
+    margin: 4px !important;
+    padding: 0px 10px 0px 10px !important;
+    background: #336FA3 !important;
+    font-size: 12px !important;
+    float: left !important;
+    cursor: pointer !important;
+    color: #C5CFDA !important;
+    border: 0px !important;
+    border-radius: 3px !important;
+    width:auto;
+    height:30px;
+    overflow:hidden;
+}
+.tee_tab:hover{
+	color:white !important;
+    background: #336FA3 !important;
+    
+}
+.tee_tab_select{
+	color:white !important;
+	font-weight:bold !important;
+}
+.tee_sub_tab{
+    float: left !important;
+    cursor: pointer !important;
+    color: #C5CFDA !important;
+    line-height: 26px !important;
+    margin: 0 10px !important;
+}
+.tee_sub_tab:hover{
+	color:white !important;
+    
+}
+.tee_sub_tab_select{
+	color:white !important;
+	font-weight:bold !important;
+}
+.tee_tab_pointer_left,
+.tee_tab_pointer_right{
+    z-index: 100;
+    background: transparent;
+    height: 38px;
+    width: 20px;
+    color: #C5CFDA;
+}
+.tee_tab_pointer_left{
+    height: 38px;
+    width: 20px;
+    padding-top:12px;
+}
+.tee_tab_pointer_right{
+    height: 38px;
+    width: 20px;
+    padding-top:12px;
+}
+
+.tee_tab_pointer_left:hover,
+.tee_tab_pointer_right:hover{
+    color: #fff;
+    cursor:pointer;
+}

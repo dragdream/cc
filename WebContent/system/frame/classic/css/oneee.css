@@ -1,0 +1,238 @@
+
+.header-right {
+    float: right;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.f-four{
+	overflow: hidden;
+}
+
+.f-header .four {
+    float: left;
+    width: 24%;
+   min-height:   175px;
+    background: white;
+  margin-left: 6px;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.f-center .four {
+    float: left;
+    width: 49%;
+    height: 365px;
+    background: white;
+    margin-top: 15px;
+	margin-left:6px;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.f-footer .four {
+    width:98%;
+    min-height: 300px;
+    background: white;
+    margin-top: 15px;
+    float: left;
+	margin-left:6px;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+/*4*/
+.four-1 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.four-1-1 {
+    float: left;
+    display: inline;
+    margin-top: -8px;
+    margin-left: -10px;
+}
+
+.four-1-2 {
+    float: left;
+    display: inline;
+    margin-left: 5px;
+}
+
+.four-1-3 {
+    float: right;
+    display: inline;
+    margin-left: 5px;
+    margin-top: -3px;
+    margin-right: 20px
+}
+
+.bk {
+    width: 100%;
+    height: 1px;
+    background: rgb(202, 202, 202);
+    position: relative;
+    top: 30px;
+
+}
+
+.four-2 p {
+    float: left;
+
+
+}
+
+.four-2 span {
+
+    float: right;
+    margin-right: 5px;
+
+    color: #bbbbbb;
+}
+.four-2 ul{
+    margin-top: 30px;
+}
+.four-2 ul li{
+
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.four-2 ul li:last-child{
+    border: 0;
+}
+.four-2 ul li:nth-child(2){
+    border: none;
+}
+
+
+
+
+/*4*/
+.four .two-1 .two-2-1 {
+    float: right;
+    display: inline;
+    margin-top: 20px;
+
+    margin-right: 5%;
+}
+
+.two1 .two-2 .two-2-2 {
+    float: right;
+    display: inline;
+    margin-top: 16px;
+    margin-right: 35px;
+}
+
+.zb .two-3-1 {
+    margin-left: 15px;
+    float: left;
+    margin-top: 16px;
+}
+
+.zb-1 {
+    float: left;
+    margin-top: 23px;
+    margin-left: 15px;
+}
+
+.two-1 {
+    border-bottom: 1px solid rgb(202, 202, 202);
+    height: 60px;
+
+}
+
+.two-2 {
+    border-left: 2px solid rgb(38, 157, 241);
+    border-bottom: 1px solid rgb(202, 202, 202);
+    height: 60px;
+
+}
+
+.two2-2 ul li p {
+
+    float: left;
+    margin-left: 25px;
+
+    font-size: 16px;
+}
+
+.two2-2 ul li span {
+    float: right;
+    margin-right: 25px;
+
+}
+
+.two2-2 ul li {
+    height: 40px;
+    line-height: 40px;
+
+    border-bottom: 1px solid rgb(202, 202, 202);
+    width:94%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.two2-2 {
+    margin-top: 20px;
+}
+
+.footer-1-2 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 23px;
+}
+
+.footer-1-1 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+.footer-2-1 {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.text-2 ul li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.text-2 ul li p {
+    float: left;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.text-2 ul li span {
+    float: right;
+    margin-right: 25px;
+    font-size: 16px;
+}
+
+@media screen and  (max-width:921px){
+    .nav .nav-mid input{
+        display: none;
+    }
+    .nav .nav-mid form img {
+        position: fixed;
+       right: 3%;
+        margin-right: 5%;
+        display: block;
+    }
+    .nav .nav-right ul  {
+float: left;
+        margin-left: 6%;
+    }
+}
+
+/*左側工懂條*/
